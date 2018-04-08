@@ -1,5 +1,6 @@
-require('config.env').config();
+var config = require('./config');
 var express = require('express');
+var http = require('http');
 var https = require('https');
 var fs = require('fs');
 
@@ -41,7 +42,7 @@ var waitRequest = function(j, songOptions, song, filename) {
 app.set('views', './views');
 app.set('view engine', 'jade');
 
-app.get('/date?:date', function(req, res) {
+app.get('/date/:date', function(req, res) {
 	var date = req.params.date;
 	var options = {
 		host: 'billboard.modulo.site',
@@ -82,7 +83,7 @@ app.get('/lyrics/:fileName', function(req, res) {
 			var songOptions = {
 				host: 'orion.apiseeds.com',
 				port: 443,
-				path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + APISEEDS_KEY,
+				path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
 				method: 'GET'
 			};
 			waitRequest(i, songOptions, songs[i], filename);
