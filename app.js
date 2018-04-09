@@ -39,8 +39,65 @@ var waitRequest = function(j, songOptions, song, filename) {
 	}, 10000 * j);
 }
 
+var billboardWaitRequest = function(date, j) {
+	setTimeout(function() {
+		var options = {
+			host: 'billboard.modulo.site',
+			port: 80,
+			path: '/charts/' + date,
+			method: 'GET'
+		};
+		var results = "";
+		console.log(options);
+
+		http.request(options, function(resp){
+			resp.setEncoding('utf8');
+			var ws = fs.createWriteStream("data/" + date + ".json");
+
+			resp.on('data', function(chunk){
+				ws.write(chunk);
+			});
+
+			resp.on('end', function() {
+				ws.end();
+			});
+		}).end();
+	}, 10000 * j);
+}
+
 app.set('views', './views');
 app.set('view engine', 'jade');
+
+app.get('/alldates', function(req, res) {
+	var startDate = new Date();
+		startDate.setFullYear(1958);
+		startDate.setMonth(7);
+		startDate.setDate(9);
+	var endDate = new Date();
+		endDate.setFullYear(2015);
+		endDate.setMonth(11);
+		endDate.setDate(26);
+	var currentDate = startDate;
+	var i = 0;
+	while(currentDate.getFullYear() < 2016) {
+		console.log(currentDate.toString());
+		// check if its a saturday
+		var day = currentDate.getDay();
+		if (day == 6) {
+			//format current date
+			var year = currentDate.getFullYear();
+			var month = currentDate.getMonth() + 1;
+			var date_day = currentDate.getDate();
+			var date = year + "-" + month + "-" + date_day;
+			//hit endpoint
+			billboardWaitRequest(date, i);
+		}
+		i++;
+		// increment date
+		var newDate = currentDate.getDate()+1;
+		currentDate.setDate(newDate);
+	}
+});
 
 app.get('/date/:date', function(req, res) {
 	var date = req.params.date;
