@@ -49,19 +49,21 @@ var billboardWaitRequest = function(date, j) {
 		};
 		var results = "";
 		console.log(options);
+		var filename = "data/" + date + ".json";
+		if(!fs.existsSync(filename)) {
+			http.request(options, function(resp){
+				resp.setEncoding('utf8');
+				var ws = fs.createWriteStream(filename);
 
-		http.request(options, function(resp){
-			resp.setEncoding('utf8');
-			var ws = fs.createWriteStream("data/" + date + ".json");
+				resp.on('data', function(chunk){
+					ws.write(chunk);
+				});
 
-			resp.on('data', function(chunk){
-				ws.write(chunk);
-			});
-
-			resp.on('end', function() {
-				ws.end();
-			});
-		}).end();
+				resp.on('end', function() {
+					ws.end();
+				});
+			}).end();
+		}
 	}, 1000 * j);
 }
 
@@ -91,8 +93,8 @@ app.get('/alldates', function(req, res) {
 			var date = year + "-" + month + "-" + date_day;
 			//hit endpoint
 			billboardWaitRequest(date, i);
+			i++;
 		}
-		i++;
 		// increment date
 		var newDate = currentDate.getDate()+1;
 		currentDate.setDate(newDate);
