@@ -50,7 +50,7 @@ var billboardWaitRequest = function(date, j) {
 		var results = "";
 		console.log(options);
 		var filename = "data/" + date + ".json";
-		if(!fs.existsSync(filename)) {
+		if(!fs.statSync(filename)) {
 			http.request(options, function(resp){
 				resp.setEncoding('utf8');
 				var ws = fs.createWriteStream(filename);
