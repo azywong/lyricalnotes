@@ -36,7 +36,7 @@ var waitRequest = function(j, songOptions, song, filename) {
 				}
 			});
 		}).end();
-	}, 10000 * j);
+	}, 1000 * j);
 }
 
 var billboardWaitRequest = function(date, j) {
@@ -62,7 +62,7 @@ var billboardWaitRequest = function(date, j) {
 				ws.end();
 			});
 		}).end();
-	}, 10000 * j);
+	}, 1000 * j);
 }
 
 app.set('views', './views');
@@ -72,7 +72,7 @@ app.get('/alldates', function(req, res) {
 	var startDate = new Date();
 		startDate.setFullYear(1958);
 		startDate.setMonth(7);
-		startDate.setDate(9);
+		startDate.setDate(17);
 	var endDate = new Date();
 		endDate.setFullYear(2015);
 		endDate.setMonth(11);
