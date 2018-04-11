@@ -19,8 +19,8 @@ var waitRequest = function(j, songOptions, song, filename) {
 			});
 
 			response.on('end', function() {
-				console.log(songOptions.path + " http request end");
 				if(songResults.length > 0){
+					console.log(songOptions.path + " http request end");
 					songResults = JSON.parse(songResults);
 					if (songResults.result) {
 						var ws = fs.createWriteStream(filename);
