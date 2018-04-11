@@ -10,9 +10,7 @@ var APISEEDS_KEY = process.env.APISEEDS_KEY;
 
 var waitRequest = function(j, songOptions, song, filename) {
 	setTimeout(function() {
-		console.log("in callback");
 		var songResults = "";
-		console.log(songOptions)
 		https.request(songOptions, function(response){
 			response.setEncoding('utf8');
 
@@ -21,8 +19,7 @@ var waitRequest = function(j, songOptions, song, filename) {
 			});
 
 			response.on('end', function() {
-				console.log(filename + " http request end");
-				console.log("songResults = " + songResults);
+				console.log(songOptions.path + " http request end");
 				if(songResults.length > 0){
 					songResults = JSON.parse(songResults);
 					if (songResults.result) {
@@ -31,12 +28,46 @@ var waitRequest = function(j, songOptions, song, filename) {
 						ws.write(JSON.stringify(song));
 						ws.end();
 					} else {
-						console.log(songResults)
+						console.log(songOptions.path + " results was 0")
 					}
 				}
 			});
 		}).end();
-	}, 1000 * j);
+	}, 5000 * j);
+}
+
+var getLyricsFromBillboardFile = function (filename) {
+	if (fs.existsSync("data/" + filename)) {
+		fs.readFile("data/" + filename, 'utf8', function(err, data) {
+			if (err) throw err;
+
+			var data = JSON.parse(data);
+			var songs = data.songs;
+
+			for (var i = 0; i < songs.length; i++) {
+				var songName = encodeURI(songs[i].song_name.replace("/", " ").replace(/\(.+\)/, ""));
+				var artistName = encodeURI(songs[i].display_artist.replace("/"," "));
+				var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
+				var songOptions = {
+					host: 'orion.apiseeds.com',
+					port: 443,
+					path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
+					method: 'GET'
+				};
+				if(!fs.existsSync(songfilename)) {
+					waitRequest(i, songOptions, songs[i], songfilename);
+				} else {
+					console.log(songfilename + " already exists");
+				}
+			}
+		});
+	} else {
+		// pull billboard file again
+		billboardWaitRequest(filename.replace(".json", ""), 1);
+		console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		console.log(filename + " still needs lyrics");
+		console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	}
 }
 
 var billboardWaitRequest = function(date, j) {
@@ -136,7 +167,7 @@ app.get('/lyrics/:fileName', function(req, res) {
 		var songs = data.songs;
 
 		for (var i = 0; i < songs.length; i++) {
-			var songName = encodeURI(songs[i].song_name.replace("/",""));
+			var songName = encodeURI(songs[i].song_name.replace(/\(.+\)/, ""));
 			var artistName = encodeURI(songs[i].display_artist.replace("/",""));
 			var filename = "data/" + songs[i].song_id + "-lyrics.json";
 			var songOptions = {
@@ -146,6 +177,48 @@ app.get('/lyrics/:fileName', function(req, res) {
 				method: 'GET'
 			};
 			waitRequest(i, songOptions, songs[i], filename);
+		}
+	});
+});
+
+app.get('/alllyrics', function(req, res) {
+
+	var startDate = new Date();
+		startDate.setFullYear(1990);
+		startDate.setMonth(0);
+		startDate.setDate(1);
+	var currentDate = startDate;
+
+	while(currentDate.getFullYear() < 2016) {
+		// check if its a saturday
+		var day = currentDate.getDay();
+		if (day == 6) {
+			//format current date
+			var year = currentDate.getFullYear();
+			var month = currentDate.getMonth() + 1;
+			var date_day = currentDate.getDate();
+			var date = year + "-" + month + "-" + date_day;
+			//hit endpoint
+			var filename = date + ".json";
+
+			getLyricsFromBillboardFile(filename);
+
+		}
+		// increment date
+		var newDate = currentDate.getDate()+1;
+		currentDate.setDate(newDate);
+	}
+});
+
+
+app.get('/songs/:fileName', function(req, res) {
+	fs.readFile("data/" + req.params.fileName, 'utf8', function(err, data) {
+		if (err) throw err;
+		var data = JSON.parse(data);
+		var songs = data.songs;
+
+		for (var i = 0; i < songs.length; i++) {
+			console.log(songs[i].song_name);
 		}
 	});
 });
