@@ -45,8 +45,8 @@ var getLyricsFromBillboardFile = function (filename) {
 			var songs = data.songs;
 
 			for (var i = 0; i < songs.length; i++) {
-				var songName = encodeURI(songs[i].song_name.replace("/", " ").replace(/\(.+\)/, ""));
-				var artistName = encodeURI(songs[i].display_artist.replace("/"," "));
+				var songName = encodeURI(songs[i].song_name.replace(/\//g, "").replace(/\(.+\)/g, ""));
+				var artistName = encodeURI(songs[i].display_artist.replace(/\//g, ""));
 				var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
 				var songOptions = {
 					host: 'orion.apiseeds.com',
