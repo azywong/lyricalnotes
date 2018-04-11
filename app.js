@@ -176,7 +176,11 @@ app.get('/lyrics/:fileName', function(req, res) {
 				path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
 				method: 'GET'
 			};
-			waitRequest(i, songOptions, songs[i], filename);
+			if(!fs.existsSync(filename)) {
+					waitRequest(i, songOptions, songs[i], filename);
+			} else {
+				console.log(filename + " already exists");
+			}
 		}
 	});
 });
