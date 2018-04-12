@@ -28,7 +28,7 @@ var waitRequest = function(j, songOptions, song, filename) {
 						ws.write(JSON.stringify(song));
 						ws.end();
 					} else {
-						console.log(songOptions.path + " results was 0")
+						console.log(songOptions.path + " was not found")
 					}
 				}
 			});
@@ -65,7 +65,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 					}
 				}
 			});
-		}, 100000 * k);
+		}, 200000 * k);
 	} else {
 		// pull billboard file again
 		billboardWaitRequest(filename.replace(".json", ""), 1);
@@ -194,7 +194,7 @@ app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
 		startDate.setFullYear(1991);
-		startDate.setMonth(1);
+		startDate.setMonth(4);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
