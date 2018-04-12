@@ -36,31 +36,36 @@ var waitRequest = function(j, songOptions, song, filename) {
 	}, 5000 * j);
 }
 
-var getLyricsFromBillboardFile = function (filename) {
+var getLyricsFromBillboardFile = function (filename, k) {
 	if (fs.existsSync("data/" + filename)) {
-		fs.readFile("data/" + filename, 'utf8', function(err, data) {
-			if (err) throw err;
 
-			var data = JSON.parse(data);
-			var songs = data.songs;
-
-			for (var i = 0; i < songs.length; i++) {
-				var songName = encodeURI(songs[i].song_name.replace(/\//g, "").replace(/\(.+\)/g, ""));
-				var artistName = encodeURI(songs[i].display_artist.replace(/\//g, ""));
-				var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
-				var songOptions = {
-					host: 'orion.apiseeds.com',
-					port: 443,
-					path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
-					method: 'GET'
-				};
-				if(!fs.existsSync(songfilename)) {
-					waitRequest(i, songOptions, songs[i], songfilename);
-				} else {
-					console.log(songfilename + " already exists");
+		setTimeout(function() {
+			fs.readFile("data/" + filename, 'utf8', function(err, data) {
+				if (err) {
+					console.log(err);
 				}
-			}
-		});
+				console.log("GETTING LYRICS FROM " + filename);
+				var data = JSON.parse(data);
+				var songs = data.songs;
+
+				for (var i = 0; i < songs.length; i++) {
+					var songName = encodeURI(songs[i].song_name.replace(/\//g, "").replace(/\(.+\)/g, ""));
+					var artistName = encodeURI(songs[i].display_artist.replace(/\//g, ""));
+					var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
+					var songOptions = {
+						host: 'orion.apiseeds.com',
+						port: 443,
+						path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
+						method: 'GET'
+					};
+					if(!fs.existsSync(songfilename)) {
+						waitRequest(i, songOptions, songs[i], songfilename);
+					} else {
+						console.log(songfilename + " already exists");
+					}
+				}
+			});
+		}, 100000 * k);
 	} else {
 		// pull billboard file again
 		billboardWaitRequest(filename.replace(".json", ""), 1);
@@ -188,11 +193,11 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(1990);
-		startDate.setMonth(0);
+		startDate.setFullYear(1991);
+		startDate.setMonth(1);
 		startDate.setDate(1);
 	var currentDate = startDate;
-
+	var i = 0;
 	while(currentDate.getFullYear() < 2016) {
 		// check if its a saturday
 		var day = currentDate.getDay();
@@ -204,8 +209,8 @@ app.get('/alllyrics', function(req, res) {
 			var date = year + "-" + month + "-" + date_day;
 			//hit endpoint
 			var filename = date + ".json";
-
-			getLyricsFromBillboardFile(filename);
+			getLyricsFromBillboardFile(filename, i);
+			i++;
 
 		}
 		// increment date
