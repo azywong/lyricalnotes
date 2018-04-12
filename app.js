@@ -49,7 +49,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 				var songs = data.songs;
 
 				for (var i = 0; i < songs.length; i++) {
-					var songName = encodeURI(songs[i].song_name.replace(/\//g, "").replace(/\(.+\)/g, ""));
+					var songName = encodeURI(songs[i].song_name.replace(/\//g, "").replace(/\(.+\)/g, " "));
 					var artistName = encodeURI(songs[i].display_artist.replace(/\//g, ""));
 					var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
 					var songOptions = {
@@ -65,7 +65,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 					}
 				}
 			});
-		}, 200000 * k);
+		},500000 * k);
 	} else {
 		// pull billboard file again
 		billboardWaitRequest(filename.replace(".json", ""), 1);
@@ -194,7 +194,7 @@ app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
 		startDate.setFullYear(1991);
-		startDate.setMonth(4);
+		startDate.setMonth(6);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
