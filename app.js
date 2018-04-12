@@ -21,15 +21,20 @@ var waitRequest = function(j, songOptions, song, filename) {
 			response.on('end', function() {
 				if(songResults.length > 0){
 					console.log(songOptions.path + " http request end");
-					songResults = JSON.parse(songResults);
-					if (songResults.result) {
-						var ws = fs.createWriteStream(filename);
-						song.lyrics = songResults.result.track.text;
-						ws.write(JSON.stringify(song));
-						ws.end();
+					if (songResults.substring(0,1) == "{"){
+						songResults = JSON.parse(songResults);
+						if (songResults.result) {
+							var ws = fs.createWriteStream(filename);
+							song.lyrics = songResults.result.track.text;
+							ws.write(JSON.stringify(song));
+							ws.end();
+						} else {
+							console.log(songOptions.path + " was not found")
+						}
 					} else {
-						console.log(songOptions.path + " was not found")
+						console.log(songOptions.path + " errored out")
 					}
+
 				}
 			});
 		}).end();
@@ -193,8 +198,8 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(1991);
-		startDate.setMonth(6);
+		startDate.setFullYear(1993);
+		startDate.setMonth(8);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
