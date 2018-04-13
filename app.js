@@ -70,7 +70,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 					}
 				}
 			});
-		},500000 * k);
+		},200000 * k);
 	} else {
 		// pull billboard file again
 		billboardWaitRequest(filename.replace(".json", ""), 1);
