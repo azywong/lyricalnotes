@@ -61,6 +61,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 						host: 'orion.apiseeds.com',
 						port: 443,
 						path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
+  						agent: false,
 						method: 'GET'
 					};
 					if(!fs.existsSync(songfilename)) {
@@ -198,9 +199,9 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(2010);
-		startDate.setMonth(4);
-		startDate.setDate(28);
+		startDate.setFullYear(1998);
+		startDate.setMonth(5);
+		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
 	while(currentDate.getFullYear() < 2016) {
