@@ -61,7 +61,8 @@ var getLyricsFromBillboardFile = function (filename, k) {
 						host: 'orion.apiseeds.com',
 						port: 443,
 						path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
-						method: 'GET'
+						method: 'GET',
+  						agent: false
 					};
 					if(!fs.existsSync(songfilename)) {
 						waitRequest(i, songOptions, songs[i], songfilename);
@@ -70,7 +71,7 @@ var getLyricsFromBillboardFile = function (filename, k) {
 					}
 				}
 			});
-		},500000 * k);
+		},200000 * k);
 	} else {
 		// pull billboard file again
 		billboardWaitRequest(filename.replace(".json", ""), 1);
@@ -198,8 +199,8 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(1993);
-		startDate.setMonth(8);
+		startDate.setFullYear(1997);
+		startDate.setMonth(4);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
