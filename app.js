@@ -199,8 +199,8 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(1998);
-		startDate.setMonth(5);
+		startDate.setFullYear(2000);
+		startDate.setMonth(2);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
@@ -217,7 +217,6 @@ app.get('/alllyrics', function(req, res) {
 			var filename = date + ".json";
 			getLyricsFromBillboardFile(filename, i);
 			i++;
-
 		}
 		// increment date
 		var newDate = currentDate.getDate()+1;
