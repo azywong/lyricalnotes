@@ -200,7 +200,7 @@ app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
 		startDate.setFullYear(2000);
-		startDate.setMonth(2);
+		startDate.setMonth(10);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
