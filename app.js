@@ -199,9 +199,9 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(2000);
-		startDate.setMonth(2);
-		startDate.setDate(1);
+		startDate.setFullYear(2013);
+		startDate.setMonth(6);
+		startDate.setDate(25);
 	var currentDate = startDate;
 	var i = 0;
 	while(currentDate.getFullYear() < 2016) {
