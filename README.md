@@ -35,4 +35,26 @@ module.exports = config;
 	- where date is the date in the format that the billboard api wants
 	- files are saved as <date>.json
 
+
+/alllyrics
+
+	- gets all lyrics from a hard coded starting date to a hard coded end date
+	- requires the complete corresponding billboard weeks files
+	- each song file is saved as <song id>-lyrics.json
+
+
+/missinglyrics
+
+	- looks at all billboard weeks from a hard coded starting date to a hard coded end date
+	- checks songs against current lyrics files in the data folder
+	- saves all missing songs in missing.tsv
+	- HAS DUPLICATES
+	- to remove duplicates, run the following in terminal
+	
+	sort missing.tsv | uniq > missing-unique.tsv
+	
+
+
+
+
 None of the endpoints actually do/return anything, they just spin and save files.
