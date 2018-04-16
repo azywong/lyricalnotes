@@ -204,7 +204,7 @@ app.get('/alllyrics', function(req, res) {
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
-	while(currentDate.getFullYear() < 2016) {
+	while(currentDate.getFullYear() < 2010) {
 		// check if its a saturday
 		var day = currentDate.getDay();
 		if (day == 6) {
