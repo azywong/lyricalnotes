@@ -237,5 +237,57 @@ app.get('/songs/:fileName', function(req, res) {
 	});
 });
 
+app.get('/missinglyrics', function(req, res) {
+
+	var startDate = new Date();
+		startDate.setFullYear(1990);
+		startDate.setMonth(0);
+		startDate.setDate(1);
+	var currentDate = startDate;
+	var i = 0;
+
+	var ws = fs.createWriteStream("missing.tsv");
+
+	while(currentDate.getFullYear() < 2010) {
+		// check if its a saturday
+		var day = currentDate.getDay();
+		if (day == 6) {
+			//format current date
+			var year = currentDate.getFullYear();
+			var month = currentDate.getMonth() + 1;
+			var date_day = currentDate.getDate();
+			var date = year + "-" + month + "-" + date_day;
+			//hit endpoint
+			var filename = date + ".json";
+			if (fs.existsSync("data/" + filename)) {
+				setTimeout(function() {
+					fs.readFile("data/" + filename, 'utf8', function(err, data) {
+						if (err) {
+							console.log(err);
+						}
+						console.log("CHECKING LYRICS FROM " + filename);
+						var data = JSON.parse(data);
+						var songs = data.songs;
+						for (var i = 0; i < songs.length; i++) {
+							var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
+							if(!fs.existsSync(songfilename)) {
+								//song doesn't exist.
+								ws.write(songs[i].song_id + "\t" + songs[i].song_name + "\t" + songs[i].display_artist + "\t" + songs[i].artist_id + "\t" + songs[i].spotify_id + "\n");
+							}
+						}
+					});
+				},100 * k);
+			} else {
+				console.log("!!!!!!!!!! missing " + filename + "!!!!!!!!!!!!");
+			}
+			i++;
+		}
+		// increment date
+		var newDate = currentDate.getDate()+1;
+		currentDate.setDate(newDate);
+	}
+	ws.end();
+});
+
 
 app.listen(port);
