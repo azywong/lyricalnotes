@@ -1,6 +1,24 @@
 # lyricalnotes
 
-## config.js
+## Web portion
+
+### purpose
+to host our project's data visualization portion
+
+### location
+located in /docs folder
+
+
+## Node.js App
+
+### purpose
+gets song chart data from http://billboard.modulo.site/
+
+and accompanying lyrics data from https://orion.apiseeds.com/
+
+currently it is limited to 1990-2015
+
+### config.js
 needs a config file that contains the follow.  Replace key with your API key from https://orion.apiseeds.com/
 
 ```
@@ -11,11 +29,11 @@ var config = {
 module.exports = config;
 ```
 
-## getting started
+### getting started
 
 `node app.js`
 
-## end points
+### end points
 /lyrics/:fileName
 
 	- where fileName is the name of a file with all the data from a certain billboard date
