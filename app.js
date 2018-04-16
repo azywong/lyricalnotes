@@ -199,8 +199,8 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(2006);
-		startDate.setMonth(10);
+		startDate.setFullYear(2007);
+		startDate.setMonth(0);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
@@ -245,9 +245,7 @@ app.get('/missinglyrics', function(req, res) {
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
-
-	var ws = fs.createWriteStream("missing.tsv");
-
+	var ws = fs.createWriteStream("missing.tsv", {flags:'a'});
 	while(currentDate.getFullYear() < 2010) {
 		// check if its a saturday
 		var day = currentDate.getDay();
@@ -259,27 +257,19 @@ app.get('/missinglyrics', function(req, res) {
 			var date = year + "-" + month + "-" + date_day;
 			//hit endpoint
 			var filename = date + ".json";
-			if (fs.existsSync("data/" + filename)) {
-				setTimeout(function() {
-					fs.readFile("data/" + filename, 'utf8', function(err, data) {
-						if (err) {
-							console.log(err);
-						}
-						console.log("CHECKING LYRICS FROM " + filename);
-						var data = JSON.parse(data);
-						var songs = data.songs;
-						for (var i = 0; i < songs.length; i++) {
-							var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
-							if(!fs.existsSync(songfilename)) {
-								//song doesn't exist.
-								ws.write(songs[i].song_id + "\t" + songs[i].song_name + "\t" + songs[i].display_artist + "\t" + songs[i].artist_id + "\t" + songs[i].spotify_id + "\n");
-							}
-						}
-					});
-				},100 * k);
-			} else {
-				console.log("!!!!!!!!!! missing " + filename + "!!!!!!!!!!!!");
+			var data = fs.readFileSync("data/" + filename, 'utf8');
+
+			console.log("CHECKING LYRICS FROM " + filename);
+			var data = JSON.parse(data);
+			var songs = data.songs;
+			for (var i = 0; i < songs.length; i++) {
+				var songfilename = "data/" + songs[i].song_id + "-lyrics.json";
+				if(!fs.existsSync(songfilename)) {
+					//song doesn't exist.
+					ws.write(songs[i].song_id + "\t" + songs[i].song_name + "\t" + songs[i].display_artist + "\t" + songs[i].artist_id + "\t" + songs[i].spotify_id + "\n");
+				}
 			}
+
 			i++;
 		}
 		// increment date
