@@ -247,7 +247,6 @@ app.get('/missinglyrics', function(req, res) {
 	var currentDate = startDate;
 	var i = 0;
 	var ws = fs.createWriteStream("missing.tsv", {flags:'a'});
-	ws.write("song_id\tsong_name\tdisplay_artist\tartist_id\tspotify_id\n");
 	while(currentDate.getFullYear() < 2016) {
 		// check if its a saturday
 		var day = currentDate.getDay();
@@ -278,6 +277,7 @@ app.get('/missinglyrics', function(req, res) {
 		var newDate = currentDate.getDate()+1;
 		currentDate.setDate(newDate);
 	}
+	ws.write("song_id\tsong_name\tdisplay_artist\tartist_id\tspotify_id\n");
 	ws.end();
 });
 
@@ -285,7 +285,7 @@ app.get('/getmissinglyrics', function(req, res) {
 	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
 		if (err) throw err;
 		var data = tsv.parse(data);
-		for (var i = 0; i < data.length; i++) {
+		for (var i = 0; i < data.length - 1; i++) {
 			var songName = encodeURI(data[i].song_name);
 			var artistName = encodeURI(data[i].display_artist);
 			var songfilename = "data/" + data[i].id + "-lyrics.json";

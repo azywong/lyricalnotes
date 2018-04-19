@@ -1,19 +1,14 @@
-id	song_name	display_artist	artist_id	spotify_id
 12059	We Will Rock You/We Are The Champions	Queen	277241	5C1N0wFUhhj5FgGKmfVdxy
 12307	Over The Rainbow	Gary Tanner	null	null
 12645	Stay The Night	The Faragher Bros.	null	null
 12696	I Need You	Euclid Beach Band	null	null
-15619	How Will I Know	Whitney Houston	431329	5tdKaKLnC4SgtDZ6RlWeal
-1585	The Christmas Song (Merry Christmas To You)	Nat King Cole	277002	6NMz3Cjvod2qnJjakiRDA8
 16221	Can t We Try	Dan Hill (Duet With Vonda Shepard)	null	null
 16365	Can't We Try	Dan Hill (Duet With Vonda Shepard)	null	null
 17157	Rock Wit cha	Bobby Brown	294398	7BVMXNnQSswMX8IJeZUb5T
 17174	Talk To Myself	Christopher Williams	299280	null
 17176	Me So Horny	The 2 Live Crew	431856	0iZe1e14Xrm3DN1sHW8kZO
-17181	Didn t I (Blow Your Mind)	New Kids On The Block	312175	null
 17186	Back To Life	Soul II Soul	279919	5cLsk5E7Au4hkTvCQFWHMJ
 17189	Don t Make Me Over	Sybil	281298	2QXeYzNsXgtI4YLeyr42aj
-17210	Girl I Am Searching For You	Stevie B	280706	4VG6a2JFWsX3CMHunLf4nO
 17219	If You Leave Me Now	Jaya	304306	null
 17223	The Arms Of Orion	Prince (With Sheena Easton)	351039	null
 17255	I ll Be Good To You	Quincy Jones Featuring Ray Charles	277260	4cLXNwNqXWT1CTR5Gyr7ei
@@ -33,7 +28,6 @@ id	song_name	display_artist	artist_id	spotify_id
 17294	Right And Hype	Abstrac	277919	null
 17302	All Nite	Entouch Featuring Keith Sweat	301780	6q989QMsV87X9Em9J6DONi
 17303	Timeless Love (From "Shocker")	Saraya	278233	null
-17317	Get Up! (Before The Night Is Over)	Technotronic	371857	2MOOJh1xUgND4rLjB6h4jY
 17318	If U Were Mine	The U-Krew	419331	null
 17325	Forever	Kiss	305964	null
 17329	You re The Only Woman	The Brat Pack	297083	null
@@ -44,7 +38,6 @@ id	song_name	display_artist	artist_id	spotify_id
 17385	How  Bout Us (From "True Love")	Grayson Hugh	303099	null
 17391	Save Me	Fleetwood Mac	302218	78ws3lDbo8p61ycvvg0f1T
 17394	Always And Forever	Whistle	431306	4c8YJShoSaDCIOMgp36BM6
-17396	You Make Me Feel (Mighty Real)	Jimmy Somerville	304720	3z0g89pm8UEHZtw2J4IjMt
 17401	Ooh La La (I Can t Get Over You)	Perfect Gentlemen	328514	null
 17406	Nicety	Michel le	310953	1vw9MuorZMUxhsQBGsgyo1
 17409	Turtle Power	Partners In Kryme	326152	3dFAXD9FtN2gmoZToyoJl2
@@ -60,8 +53,6 @@ id	song_name	display_artist	artist_id	spotify_id
 17441	She Ain t Worth It	Glenn Medeiros Featuring Bobby Brown	302931	null
 17445	Got To Tell Me Something	Ana	278983	null
 17452	Tomorrow (A Better You, Better Me)	Quincy Jones With Tevin Campbell	null	4jYuAdVCOMkEQJWV2qvlj6
-17454	Don t Go Away Mad (Just Go Away)	Motley Crue	312021	null
-17458	Now You re Gone	Whitesnake	431326	null
 17460	Could This Be Love	Seduction	278574	3vlhjgeKW3u1Fjzf6JiJvo
 17461	Rise To It	Kiss	305964	null
 17463	Let Me Be Your Lover	The U-Krew	419331	null
@@ -99,7 +90,6 @@ id	song_name	display_artist	artist_id	spotify_id
 17570	I Don t Love You Anymore	The London Quireboys	null	null
 17573	Pray	M.C. Hammer	276852	0l7CcMTq1k965KZPaAtsmR
 17576	On The Way Up	Elisa Fiorillo	301630	0QZ4mdMntgZLBwhMrujznY
-17581	Because I Love You (The Postman Song)	Stevie B	280706	7KVrjDjOJiIHwGagvIt3cA
 17583	Tom s Diner	DNA Featuring Suzanne Vega	1488428	7rQtCINCHFjFgLscYheSMq
 17592	B.B.D. (I Thought It Was Me)?	Bell Biv Devoe	281150	26yEd8XVwJpHDERXo6rZ8X
 17595	And So It Goes	Billy Joel	284376	2r2XzhBMB4liDL9YW80Fqs
@@ -113,20 +103,15 @@ id	song_name	display_artist	artist_id	spotify_id
 17626	I m Not In Love	Will To Power	431380	6PGy9r1qgWeEEICDf2QIQP
 17627	Gonna Make You Sweat	C+C Music Factory	275663	null
 17629	Does She Love That Man?	Breathe Featuring David Glasper	297101	7Cbz21BW7tzfNtUmaUnEfj
-17631	Love Will Never Do (Without You)	Janet Jackson	304191	1SkJ8HjZUZRPYT3R2rh5sA
 17633	The Ghetto	Too Short	430262	3B6WDceNe6lUQnczntRIuf
 17634	Rockin  Over The Beat	Technotronic	371857	5xuktWMVGM0OcOOO39zILo
 17635	World In My Eyes	Depeche Mode	300787	70B5oP5ng1QYClkJ9CeWly
-17636	The Shoop Shoop Song (It s In His Kiss)	Cher	299062	1zvsSw4E65NaVGs8awuWui
 17644	No Matter What	George LaMond (Duet With Brenda K. Starr)	null	null
-17646	Crash (Have Some Fun)	TKA Featuring Michelle Visage	277501	null
 17650	Moneytalks	AC/DC	275312	null
 17656	Go For It! (Heart And Fire)	Joey B. Ellis	304866	null
 17657	Love Me Just For Me	Special Generation	280120	6ODgFXCenDGKdWHdoRmfY5
 17659	Use It Up And Wear It Out	Pat	null	null
 17661	The Swalk	Notorious	312443	null
-17664	The Obvious Child	Paul Simon	328408	0UMcuaJ5G6CMz63F4H6qAe
-17666	It Never Rains (In Southern California)	Tony Toni Tone	null	6ygcYdLszK2DJUU7BWuCxx
 17667	This Is Ponderous	2nu	431859	0aSoxyXaiEGYioFxNzvzcz
 17671	Here Comes The Hammer	M.C. Hammer	276852	4yjM4lHNqVOaLwuD2TAThH
 17678	I ll Do 4 U	Father M.C.	null	6rh98sbJbaieyye26EIfF1
@@ -142,9 +127,7 @@ id	song_name	display_artist	artist_id	spotify_id
 17714	How Can You Expect To Be Taken Seriously?	Pet Shop Boys	328544	5epvW5ju16yMtlGT4b26jm
 17716	Let s Chill	Guy	303267	11fItVX4Ahfyd8F7C53dOQ
 17717	Call It Poison	The Escape Club	404111	3lxGEScEFa9EndItaMZW2O
-17720	I Like The Way (The Kissing Game)	Hi-Five	303491	0flZtKtmkZMNqFF7V7Yfmu
 17721	I Love You	Vanilla Ice	277734	1BRRxHOemfHiZ9UljcYrBs
-17724	Touch Me (All Night Long)	Cathy Dennis	298814	6XUR0ocrwFB6mWJOIXxISi
 17725	Here We Go	C+C Music Factory/F. Williams	null	null
 17727	That s Why	The Party	1540606	null
 17728	Made Up My Mind	SaFire	277419	14evcB9pIStazKsge52O8o
@@ -154,11 +137,9 @@ id	song_name	display_artist	artist_id	spotify_id
 17736	Highwire	The Rolling Stones	419005	7tlbHVveasgXlT0HmHXm5Y
 17737	Oooh This I Need	Elisa Fiorillo	301630	null
 17738	Baby s Coming Back	Jellyfish	304419	null
-17743	It s A Shame (My Sister)	Monie Love	311761	3kAeExOaqHi47eoVKBn13W
 17744	Deep, Deep Trouble	The Simpsons Featuring Bart	419120	null
 17752	Another Like My Lover	Jasmine Guy	304231	null
 17754	Wrap My Body Tight	Johnny Gill	305066	1D6rVLLj7gTls5L1TKVsFf
-17756	Here I Am (Come And Take Me)	UB40	277578	6rxAm3vDDHNvsuRKJ3F9mT
 17760	Love Me Forever Or Love Me Not	Trilogy	430450	null
 17767	(If There Was) Any Other Way	Celine Dion	298857	2X2Wewr3RgpG3vGlXdidUo
 17776	Nightgown	Candyman	298627	7FzA0ZzGbOPx5WRKPCRR67
@@ -202,10 +183,8 @@ id	song_name	display_artist	artist_id	spotify_id
 17903	Gett Off	Prince And The N.P.G.	351039	null
 17904	Kiss Them For Me	Siouxsie	null	2Z6UtnyJWtMUTJhO8wU72W
 17905	I m Not Your Puppet	Hi-C	303490	51HnXIFI3P3t9xpW1UjD8h
-17921	She s Gone (Lady)	Steelheart	280443	null
 17923	The Devil Came Up To Michigan	K.M.C. KRU	276639	null
 17924	Everyotherday	Or-N-More (Featuring Father M.C.)	null	null
-17927	Sometimes (It s A Bitch)	Stevie Nicks	280712	null
 17928	Save Me	Lisa Fischer	307480	5bhHxCq03CHjc5KT6qwj4K
 17929	Why Can t You Come Home	Ex-Girlfriend	301984	null
 17933	Ain t No Future In Yo  Fronting	M.C. Breed	null	null
@@ -247,7 +226,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18056	Right Down To It	Damian Dame	300118	null
 18060	Hearts Don t Think (They Feel)	Natural Selection	312057	null
 18062	To Be With You	Mr. Big	1529316	0Yi128S6QgQDnAKg5A0OZw
-18071	Breakin  My Heart (Pretty Brown Eyes)	Mint Condition	311406	18sytW2s53Of6NVudQyUlH
 18073	I ll Take You There	BeBe	280813	2XbUjG48KR62scMGiOQ6CL
 18074	Hold On (Tighter To Love)	Clubland	299463	25tq1GAZcbFEfJLex2mZSb
 18076	Be True To Yourself	2nd II None	431889	7eH6rFngQor2A08suABvGI
@@ -265,12 +243,10 @@ id	song_name	display_artist	artist_id	spotify_id
 18113	How I Could Just Kill A Man/The Phuncky Feel One	Cypress Hill	299883	null
 18115	If You Go Away	NKOTB	276940	null
 18118	Romeo	Stacy Earl (Featuring The Wild Pair)	null	null
-18121	Juice (Know The Ledge)	Eric B.	301798	4LXsPdBcHAuttD9mKyhA8a
 18132	Peace Of Mind (Love Goes On)	One 2 One	313582	null
 18135	Live And Learn	Joe Public	304836	4ScNzmyZZId9kGK9iXuqjn
 18136	Do Not Pass Me By	M.C. Hammer	276852	2P9HdSB6Cx6MU3IZbmeNdI
 18143	Human Touch/Better Days	Bruce Springsteen	298448	null
-18145	My Lovin  (You re Never Gonna Get It)	En Vogue	301747	1sE5bBK5MWTS42iaQlpTDb
 18147	IOU	Arthur Baker Featuring Nikeeta	279993	null
 18148	Doo Doo Brown	2 Hyped Brothers	null	null
 18149	It s Not A Love Thing	Geoffrey Williams	1519284	null
@@ -295,11 +271,9 @@ id	song_name	display_artist	artist_id	spotify_id
 18212	Victim Of The Ghetto	The College Boyz	299535	28hD4dKpGxU2EsU0KM32NZ
 18213	I ll Be There	Mariah Carey	309388	1Q9FyWHhYmyed0wbNBIKHM
 18231	Whatever It Takes (To Make You Stay)	Troop	430486	null
-18233	57 Channels (And Nothin  On)	Bruce Springsteen	298448	null
 18236	Please Don t Go	K.W.S.	276643	null
 18237	Slowly	Stacy Earl	280277	null
 18243	Faces Of Love	Nia Peeples	312217	null
-18245	Everybody s Free (To Feel Good)	Rozalla	369234	4rkiST7hsHEuU5EMvApemD
 18248	Brainstorming	M.C. Brains	null	null
 18253	The Way I Feel	Tag	277531	5d1dglMOQpQQoYjuq4DHoB
 18254	So What cha Want	Beastie Boys	280828	null
@@ -309,7 +283,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18275	Do I Have To Say The Words?	Bryan Adams	null	1mB6WKPsJRdkbI8bMPXa2C
 18277	The Hitman	AB Logic	275302	1KwVr66tFOfuMypJZtMwqA
 18286	Jump!	The Movement	1540601	0tWafhSMBKXG1xcz6OPDNx
-18291	Keep It Comin  (Dance Till You Can t Dance No More!)	C+C Music Factory	275663	null
 18294	Get With U	Lidell Townsell	307164	null
 18297	Would I Lie To You?	Charles	null	21MLFi0ISlqDBp7DQHPi7p
 18301	All Shook Up (From "Honeymoon In Vegas")	Billy Joel	284376	79XkmN4L7WJWk6ShDSpl8L
@@ -336,14 +309,12 @@ id	song_name	display_artist	artist_id	spotify_id
 18391	It s Gonna Be A Lovely Day	The S.O.U.L. S.Y.S.T.E.M.	277377	5A5Ej8R3QY9xb98dmVowmL
 18393	7	Prince And The New Power Generation	351039	01IlpPIwATpQXfeS49JDSF
 18403	Pleasure	The Soup Dragons	419165	5vbn6XnimP2MCaNKaTfBxQ
-18404	Stand Up (Kick Love Into Motion)	Def Leppard	300687	null
 18408	Revolution (From "Malcolm X")	Arrested Development	279949	1fC7Ff8HOYuR2GMSgHZVwO
 18413	Ditty	Paperboy	1530228	2JaHnS7CcIPoc7Il4BkqdR
 18416	This Could Be The One	Bad Company	280442	5xwosKJ1p4NP0Y1wKslyh2
 18418	Understand This Groove	Sound Factory	279987	null
 18419	Pick It Up	Home Team	303576	13l61zi5OkNeHv57K1KtNi
 18421	Love s Taken Over	Chante Moore	298935	null
-18425	Get Up (Move Boy Move)	AB Logic	275302	null
 18434	Rebirth Of Slick (Cool Like Dat)	Digable Planets	300937	2mu2oL9gdgHGtlg9poer2u
 18442	Love Is (From "Beverly Hills, 90210")	Vanessa Williams/Brian McKnight	null	4AaWOZzoXevjYkbq7AEQWS
 18449	Speed	Alpha Team	278713	null
@@ -358,11 +329,9 @@ id	song_name	display_artist	artist_id	spotify_id
 18496	Love Me The Right Way	Rapination	361864	null
 18497	Love Don t Love You	En Vogue	301747	7rcrDWcZYfo8swPHFbqEmR
 18500	Closer	Remedy	1531689	null
-18503	I ll Never Get Over You (Getting Over Me)	Expose	302003	44qy6ywloZIkMPOMOZzm05
 18505	How I m Comin	LL Cool J	276751	6eeETlsa4gwbfFnO4Minlg
 18506	The Morning Papers	Prince And The New Power Generation	351039	null
 18509	Tonight	Def Leppard	300687	null
-18511	Typical Reasons (Swing My Way)	Prince Markie Dee	351251	null
 18514	Who Is It	Michael Jackson	310778	3Z2Dp8ZIN5gbLNecvB85Vn
 18522	You re The Love Of My Life/The Love I Lost	Sybil	281298	null
 18525	Let s Go Through The Motions (From "Who s The Man?")	Jodeci	304778	null
@@ -373,15 +342,12 @@ id	song_name	display_artist	artist_id	spotify_id
 18547	Give Him A Love He Can Feel	Tene Williams	374452	null
 18551	Cry No More	II D Extreme	276447	null
 18554	Can t Help Falling In Love (From "Sliver")	UB40	277578	7aR1QwbQa26sjDXiVMLik4
-18556	Little Miracles (Happen Every Day)	Luther Vandross	308632	4vgxvqlt55AJHhUxMIUgJA
-18559	Whoomp! (There It Is)	Tag Team	277532	4DCHUu9qgrtFIY5o184J6z
 18563	Gold Diggin  Girls	MC Nas-D	276857	null
 18564	Who s The Man? (From "Who s The Man")	House Of Pain	303640	null
 18568	ABC-123	Levert	306759	3msTYr3qkU0vN4Rb9J8zUU
 18569	One Woman	Jade	1518199	0EnFaSWSkj45lktHxHtcXb
 18571	Something s Goin  On	U.N.V.	277570	null
 18572	Baby I m Yours	Shai	278844	5jnf5Lv2TJX9uYHsFKfrEh
-18577	I m Gonna Be (500 Miles)	The Proclaimers	418888	66S14BkJDxgkYxLl5DCqOz
 18578	A Bad Goodbye	Clint Black With Wynonna	null	6pNfSp9y3M5WZGvIFFXVYQ
 18580	Girl U For Me/Lose Control	Silk	279311	0EcFzZUKTQysjIxMvAtemq
 18582	Humps For The Blvd.	Rodney O	367241	null
@@ -411,7 +377,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18649	Gotta Get Mine	M.C. Breed	null	3tAhpfyJ8HK1r8uCV7x3Uw
 18650	Better Than You	Lisa Keith	307492	null
 18653	What Is Love	Haddaway	276332	0BQblMoALRAlYA7YykYGVl
-18663	World (The Price Of Love)	New Order	312182	null
 18665	Breakadawn	De La Soul	300556	7fhN25PPuuAasF61EJyjLi
 18673	Indo Smoke (From "Poetic Justice")	Mista Grimm	311514	63KcYWznO0w3J5wymiT9QK
 18683	Dreams	Gabrielle	276268	3nOfSqMgLPVA95N85CO6u9
@@ -421,14 +386,12 @@ id	song_name	display_artist	artist_id	spotify_id
 18698	Foreplay	RAab	null	null
 18700	Written On Ya Kitten	Naughty By Nature	312066	0ey2gaUqOYXGdxuShDcFHP
 18701	Again	Janet Jackson	304191	1GrikfH0jDejDvrxo84n4P
-18704	(I Know I Got) Skillz	Shaquille O Neal	278931	552FLke39OTBgGsoKSsjJ9
 18705	I m A Player	Too Short	430262	null
 18709	We Getz Busy	Illegal	276515	null
 18716	Yolanda	Reality	364737	null
 18718	All About Soul	Billy Joel	284376	6EdVNX7wbjL2xS3u99xaa0
 18720	Mr. Vain	Culture Beat	299839	1CJbLAkUiPXrttszpQhnO6
 18723	Looking For Mr. Do Right	Jade	1518199	6yosQszs2pOEkmGKOqagmN
-18727	Sex Me (Parts I & II)	R. Kelly	277270	null
 18728	Baby I'm Yours	Shai	278844	5jnf5Lv2TJX9uYHsFKfrEh
 18735	What's It To You	Clay Walker	299416	346GCw2msr77HA5I5NFsKS
 18745	I'm Real	Kris Kross	306091	05ubQfyYkjNn0yycGKLTDx
@@ -436,7 +399,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18747	All For Love	Bryan Adams/Rod Stewart/Sting	null	5h92ib6UGUe0BkUvNz8AtP
 18751	I'll Be Loving You	Collage	1487585	0VHLWTNv4lV2o7n7DIOA1K
 18752	Cry For You	Jodeci	304778	3RNvMhYFEwpCgPnDGKR5MB
-18753	Cantaloop (Flip Fantasia)	US 3	430705	06DSI8L6IT8SizCw3JLckz
 18754	The Power Of Love	Celine Dion	298857	0KD5Tn7rMZhkkxRDa6cWH4
 18755	Give It Up	The Goodmen	303010	5BAC64GPGTndMkLmIurM9v
 18757	What's My Name?	Snoop Dogg	279664	5XhkV07Vou38wnrzwURUOC
@@ -445,7 +407,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18768	Yours	Shai	278844	5jnf5Lv2TJX9uYHsFKfrEh
 18770	Betcha'll Never Find	Chantay Savage	298932	null
 18775	Mary Jane's Last Dance	Tom Petty And The Heartbreakers	430103	5eYwDBLucWfWI5KsV7oYX2
-18776	Will You Be There (In The Morning)	Heart	303367	3SYff3rqwQcTFikHe4E3sn
 18780	What s My Name?	Snoop Doggy Dogg	null	5XhkV07Vou38wnrzwURUOC
 18783	I ll Be Loving You	Collage	1487585	null
 18786	Mary Jane s Last Dance	Tom Petty And The Heartbreakers	430103	5eYwDBLucWfWI5KsV7oYX2
@@ -454,7 +415,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18794	Betcha ll Never Find	Chantay Savage	298932	null
 18796	Funk Dat/Why Is It?	Sagat	277423	4mEB76RSZIM78IuLmyF7e7
 18800	Choose	Color Me Badd	299542	2SY16OvBCKAyJyhyjRpMAo
-18803	(Lay Your Head On My) Pillow	Tony Toni Tone	null	71ZWjdZy5kChgLEWidRHpE
 18805	Whatta Man	Salt-N-Pepa Featuring En Vogue	277460	7yQsd17sVkOLaDwa4tz9dT
 18806	Dirty Dawg	NKOTB	276940	null
 18809	One On One	To Be Continued...	null	null
@@ -462,7 +422,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18812	Everyday	Phil Collins	332348	3ir0DLMVxshKd7KlVGUWuQ
 18813	Without You/Never Forget You	Mariah Carey	309388	null
 18816	Zunga Zeng	K7	276647	null
-18823	If That s Your Boyfriend (He Wasn t Last Night)	MeShell Ndegeocello	310308	null
 18825	It s All Good	M.C. Hammer	276852	4y2vzy436lUS1yWWQjUf9E
 18828	Krazy	Blackgirl	289330	null
 18833	Hey D.J. (From "Mi Vida Loca")	Lighter Shade Of Brown	307192	4lojlvrqNJnqcrwNXTZapz
@@ -474,14 +433,11 @@ id	song_name	display_artist	artist_id	spotify_id
 18845	My Love	Little Texas	307642	4qwam8v0GW1DjxBM0aM0GW
 18849	Heaven Help/Spinning Around Over You	Lenny Kravitz	306952	null
 18850	Since I Don t Have You	Guns N  Roses	303248	null
-18854	Rock My World (Little Country Girl)	Brooks	null	1fe09crBtSIpU12St9WGPQ
 18858	I Like To Move It	Reel 2 Real Featuring The Mad Stuntman	364799	758I3j3NigmHfnfMUpdKzQ
 18863	Comin  On Strong	Sudden Change	null	null
-18864	Somethin  To Ride To (Fonky Expedition)	The Conscious Daughters	395576	null
 18867	I Want You	Juliet Roberts	305392	5d51RK4Se9DmCfdzdUF062
 18870	You	Candlebox	298617	6jn46QaU0LusKc0TePPuoy
 18872	How Do You Like It?	Keith Sweat	305658	2K5tllslbKc50g1RqtiPuZ
-18874	Lullabye (Goodnight, My Angel)	Billy Joel	284376	2GTC5mupEuJm5HOB76y08J
 18875	Don t Go Breaking My Heart	Elton John	301679	null
 18877	Dreams	The Cranberries	396639	0cli6LmLOFcYqx0JrqAe0k
 18881	Neon Moonlight	Rosco Martinez	368914	null
@@ -519,7 +475,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18977	Give It Up	Public Enemy	354718	28mubiva09IsXf8SshDh0L
 18981	Action	Terror Fabulous Featuring Nadine Sutherland	375698	42F0eI7tFI8Xez4iqXObBt
 18982	Weekend Love	Queen Latifah	277243	4ZlwcqC7NG6Fb1QJIqsJLn
-18985	Bop Gun (One Nation)	Ice Cube Featuring George Clinton	276477	0oZiK5HCMPn241PbUCslkF
 18986	Take It Easy	Mad Lion	308723	7B2K7BhyPTa1pyqEaI4aCC
 18989	On Point	House Of Pain	303640	1TALcD2QbnbneOLV9QgqES
 18995	You	Bonnie Raitt	296425	69uJi5QsBtqlYkGURTBli8
@@ -527,7 +482,6 @@ id	song_name	display_artist	artist_id	spotify_id
 18997	I m The Only One	Melissa Etheridge	310444	4veE1jrMbVSy9FRCiYDGkD
 18998	When I Give My Love	Keith Sweat	305658	4wiwUgr26EF6CgmjUvG4Yg
 18999	I ll Make Love To You	Boyz II Men	297041	627KV5gq7CbBa3RaivClx6
-19002	December 1963 (Oh, What A Night)	Four Seasons	408695	7aN4VGx8EbjXgJ7YbDceiV
 19004	Romantic Call	Patra Featuring Yo-Yo	328281	1siSzxLE2nCUZ4VYTMbCQT
 19014	Juicy/Unbelievable	The Notorious B.I.G.	418733	5ByAIlEEnxYdvpnezg7HTX
 19016	Your Love Is A...	Whitehead Bros.	419425	1tsjWORjVtgakgIDfzOTXB
@@ -569,10 +523,8 @@ id	song_name	display_artist	artist_id	spotify_id
 19133	What's The Frequency, Kenneth?	R.E.M.	277275	null
 19134	U Will Know (From "Jason's Lyric")	B.M.U. (Black Men United)	null	null
 19140	Biological Didn't Bother	Shaquille O'Neal	278931	1XkAMb9xkBEQCwJaccjlpb
-19145	(She's Got) Skillz	All-4-One	278662	2Dvgtbt8C5LS4V9LRPMjCg
 19148	Big Poppa/Warning	The Notorious B.I.G.	418733	2g8HN35AnVGIk7B8yMucww
 19149	Down 4 Whateva (From "A Low Down Dirty Shame")	Nuttin' Nyce	312485	03WsrEB8eyCeUfvRxGP5JX
-19150	Whoomp! (There It Went)	Tag Team, Mickey, Minnie, And Goofy	null	null
 19151	Nika	Vicious	430833	0x8r7tVHilIuGFLl3f1qfQ
 19153	Whiney, Whiney (From "Dumb And Dumber")	Willi One Blood	431382	581sRkelbIjx55tcgOqCr2
 19154	Cocktales	Too Short	430262	6oadMAqfdbOBvGib6lUpn3
@@ -592,7 +544,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19201	People Don't Believe	Scarface Feat. Ice Cube	278349	null
 19205	Let's Get It On	Shabba Ranks	278794	2KznT5GjThKWgDGM7yppb4
 19207	Close To You	Fun Factory	302549	null
-19211	I'll Be Around	Rappin' 4-Tay Featuring The Spinners	362010	2ZxweO12nwE9hPOsd3P7Q5
 19228	Can't You See (From "New Jersey Drive")	Total Feat. The Notorious B.I.G.	430293	1ZcYV3MguzpTM3m9hCyzUx
 19230	Come Back	Londonbeat	307776	1wrb2BWcjHSij6koXArdRg
 19231	Have You Ever Really Loved A Woman?	Bryan Adams	null	6a5Gi94rOk6cpK5NDk1s1x
@@ -619,18 +570,15 @@ id	song_name	display_artist	artist_id	spotify_id
 19298	Sprinkle Me	E-40 (Featuring Suga T)	null	5C0LRpVmi4h5pIwAnujiw0
 19303	Fire	Subway	280911	7p2e6DPXynAHq4m3uM3pLO
 19304	Misery	Soul Asylum	279902	5kKaNe8f5rR8cA3WE7Ol5N
-19314	Take Your Time (Do It Right)	Max-A-Million	310180	null
 19315	Died In Your Arms	Intonation Featuring Joee	303865	1D1v6fJUE5kxg66AvPnIFa
 19316	Glaciers Of Ice/Criminology	Chef Raekwon	null	null
 19321	How Deep Is Your Love	Portrait	1531277	64Lc271OsYQD7t5fwVJwhF
 19328	Listen Me Tic (Woyoi)	Ini Kamoze	303818	null
-19329	Can't Stop My Heart From Loving You (The Rain Song)	Aaron Neville	275380	1QUJJYBsFBhPig3gW9AlOj
 19330	Only Wanna Be With You	Hootie & The Blowfish	303592	1fUHylttRDqDImLCcgFLDs
 19332	Hey Man Nice Shot	Filter	302128	6jc5gHCmrZW1XLcRM3wFlC
 19333	Pull Up To The Bumper	Patra	328281	1zGurRysA9yFI5qa7gaR8O
 19344	Heaven	Solo	1539504	5UzswbI33ICSLOk5NGX9Ny
 19347	On The Down Low	Brian McKnight	297206	45P05ZAAvWZLMyAiMcYUGh
-19352	Scatman (Ski-Ba-Bop-Ba-Dop-Bop)	Scatman John	278365	0wP3e5PzSxafy2TRtlayq9
 19358	How High (From "The Show")	Redman/Method Man	null	6RHnxzplfGkXpDP8LLxz9Y
 19360	Can I Touch You...There?	Michael Bolton	310718	0DTpV2HP75LNhCEkvq1FhV
 19361	Comedown	Bush	1486092	0WvJU1r5QZ5mHFoQlsZZjl
@@ -653,7 +601,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19443	Exhale (Shoop Shoop) (From "Waiting To Exhale")	Whitney Houston	431329	null
 19444	Rock Steady	Bonnie Raitt With Bryan Adams	null	6QTzhcDkKupkvztUgGZooF
 19446	Funny How Time Flies	Intro	303869	6JFqUBSzyeBo0G6WFSrzjk
-19448	Never Alone (Eeyore's Lullaby)	Tyler Collins	430641	7dX6DtgaRipA0ESYdu1yPh
 19450	I Remember	Boyz II Men	297041	7D9weSaGzJe6j4MDxAdjFp
 19452	You'll See	Madonna	308786	0Fb8sdyNluLawg08N1zs48
 19455	Too Hot	Coolio	299639	6VDmaTRvwxZay7kjYIr89z
@@ -677,13 +624,11 @@ id	song_name	display_artist	artist_id	spotify_id
 19506	Microphone Master	Das EFX (Featuring Mobb Deep)	306091	null
 19507	I Will Survive	Chantay Savage	298932	140QoNMw1OQqyo1tpeeTpm
 19512	Take A Look	J'Son	276527	null
-19513	Down Low (Nobody Has To Know)	R. Kelly Featuring Ronald Isley	277270	6zA2SEJJoiNByVMlQ4vgtH
 19516	Ain't No Playa	Rappin' 4-Tay	362010	3Mu5nGJNRiDWdFgHV3OuIo
 19518	La Familia	Frost	302516	3jL4onzSw31cbGqj44I2fu
 19520	Doin It	LL Cool J	276751	1mU0es3QUBRAxKkYvTANpG
 19522	Because You Loved Me (From "Up Close & Personal")	Celine Dion	298857	6hRcrByB9i6rYRiHNh170N
 19524	Do You Want To/Can't Hang	Xscape Featuring MC Lyte	431553	null
-19525	1, 2, 3, 4 (Sumpin' New)	Coolio	299639	0mYAEKWeBayUtsRWAEZhGz
 19527	Woo-Hah!! Got You All In Check/Everything Remains Raw	Busta Rhymes	298558	null
 19528	Physical Funk	Domino	1491941	null
 19533	Envy/Firewater	Fat Joe	302021	null
@@ -724,7 +669,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19631	Where Do You Go	No Mercy	1529901	1i7Gv6yN5aCyygveod0QDH
 19634	Loungin	LL Cool J	276751	0fKolf0hpjCwjTSLszadI8
 19637	I Can't Sleep Baby (If I)	R. Kelly	277270	6JR2utS6oY0U6OVDmIHiqV
-19650	Elevators (Me & You)	OutKast	321442	2oLwDI8tZUOh6SmTMRRfKs
 19658	All I See	A+	275217	5w7Fp2FzATKyejgr3KeLYN
 19659	Po Pimp	Do Or Die (Featuring Twista)	null	null
 19665	Things We Do For Love	Horace Brown	303600	2fzKLDa3YlAJ1Qkkxm5ZqH
@@ -733,17 +677,14 @@ id	song_name	display_artist	artist_id	spotify_id
 19675	Missing You (From "Set It Off")	Brandy, Tamia, Gladys Knight & Chaka Khan	null	0BP2RFjKRSmNtkJW3f1nhR
 19677	Gettin' It	Too Short Feat. Parliament Funkadelic	430262	null
 19679	With You	Somethin' For The People	279773	2teBuhBKQaT63Bn6J4dpuu
-19682	Key West Intermezzo (I Saw You First)	John Mellencamp	304981	4hiP73O5neL2rKZ4tfdxpc
 19687	Can You Feel Me	Dru Down	301336	4DhYwWjQulbUNmeGTFngso
 19690	Pony	Ginuwine	302859	6mz1fBdKATx6qP4oP1I65G
-19691	You'll Be Mine (Party Time)	Gloria Estefan	302943	22E8duYxuw0vNHvmfya61l
 19696	DJ Girl	Katalina	305538	4Nu2HevmTMD9nD0xaWem0L
 19700	What's Love Got To Do With It (From "Supercop")	Warren G Featuring Adina Howard	277837	7DjHbZFUdDtuklH6nfXoaL
 19704	Walls (From "She's The One")	Tom Petty And The Heartbreakers	430103	null
 19708	Nobody	Keith Sweat Featuring Athena Cage	305658	4SF1747p541umnykBp352Q
 19712	One And One	Robert Miles Featuring Maria Nayler	366045	5QkXjRlxeYGFBqpMuaO9xq
 19717	No Diggity	BLACKstreet (Featuring Dr. Dre)	289417	4nzlfXP1sZDumb0m5EOE3s
-19719	The Child (Inside)	Qkumba Zoo	277226	null
 19720	Bohemian Rhapsody (From "High School High")	The Braids	388263	3TAWWWIwm0g7PDGGL70tNn
 19721	I Luv U Baby	The Original	418766	2nkVhQO0ulFsGsGa1khw2y
 19723	Get Ready, Here It Comes (It's The Choo-Choo)	Southsyde B.O.I.Z.	null	null
@@ -763,7 +704,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19793	How Could You (From "Bulletproof")	K-Ci	1496746	7m2Uu0CWIzbK0ODhqTflnR
 19794	Ain t Nobody (From "Beavis And Butt-Head Do America")	LL Cool J	276751	null
 19798	What s Love Got To Do With It (From "Supercop")	Warren G Featuring Adina Howard	277837	7DjHbZFUdDtuklH6nfXoaL
-19800	Luchini aka (This Is It)	Camp Lo	298597	2OXAWAySnYPJHLvgLX5fFT
 19801	Get Up	Lost Boyz	418543	3cVdgpyCPWOmJOFc3Zsp6b
 19805	You Don t Have To Love Me	Monifah	311762	null
 19807	That s How It Is (It s Like That)	Redman Featuring K-Solo	null	null
@@ -783,8 +723,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19839	The Theme (It s Party Time)	Tracey Lee	430328	null
 19844	Hard To Say I m Sorry	Az Yet Featuring Peter Cetera	280389	2OWzR8QoH7KaLtiN65v32x
 19847	Say... If You Feel Alright	Crystal Waters	299825	null
-19850	Here s Your Sign (Get The Picture)	Bill Engvall With Special Guest Travis Tritt	null	7BDQ7lfI6JBLDr7ucZcScv
-19851	Electrolite	R.E.M.	277275	0rpAXije4jYk9YFiwa5rJB
 19855	Hard To Say I'm Sorry	Az Yet Featuring Peter Cetera	280389	2OWzR8QoH7KaLtiN65v32x
 19857	Please Don't Go	No Mercy	1529901	7eXH9uaefOskeBCRs1JgCE
 19858	Things'll Never Change/Rapper's Ball	E-40 Featuring Bo-Rock	276018	null
@@ -793,14 +731,12 @@ id	song_name	display_artist	artist_id	spotify_id
 19866	It's All About U	SWV	277393	3Lrc2QUw1JbF7aoww1WTVq
 19867	Cupid	112	431840	3R260xGpmDkG5eCmgqXrj5
 19869	Do G's Get To Go To Heaven?	Richie Rich	365011	3poe663PviYQ1w9VybzNGj
-19872	Here's Your Sign (Get The Picture)	Bill Engvall With Special Guest Travis Tritt	null	7BDQ7lfI6JBLDr7ucZcScv
 19873	It's In Your Eyes	Phil Collins	332348	61grQ9cR7A0M42fXe7mjKB
 19875	Runnin'	2Pac, Notorious B.I.G., Radio, Dramacydal & Stretch	431886	null
 19876	You Don't Have To Love Me	Monifah	311762	null
 19877	I'll Be	Foxy Brown Featuring Jay-Z	1496750	6Ag4SYLUGFdnJrCwUIb4mT
 19882	Havana	Kenny G	305721	null
 19883	For You I Will (From "Space Jam")	Monica	311759	2b29qJRy4asbQNFjPO96XC
-19888	I Belong To You (Every Time I See Your Face)	Rome	367941	1nP6feYWJVpbO41aezFtm2
 19890	Weekend Thang	Alfonzo Hunter	278542	69tB9bR5h5Y6KhsAmV9cLQ
 19891	Ghetto Love	Da Brat Featuring T-Boz	300055	5iJkSPVhITJvlYW3U3BxtS
 19896	All By Myself	Celine Dion	298857	null
@@ -821,7 +757,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19935	It's Your Love	Tim McGraw With Faith Hill	null	0C2Uaka1VGbfAiuiTXpplO
 19938	If I Could Change (From "I'm Bout It")	Master P Featuring Steady Mobb'n, Mia X, Mo B. Dick & O'Dell	309928	1Q0l9VIAXlt7fJiL3OQxmv
 19944	If U Stay Ready	Suga Free	280928	6FQBvoFUXXQwAayVk2DCWd
-19945	Do You Know (What It Takes)	Robyn	367042	0idCpkJ2pspfAILbanmERu
 19948	No One But You (From "Baps")	Veronica (Featuring Craig Mack)	null	null
 19952	Who You Wit (From "Sprung")	Jay-Z	304305	3DG2hUPMLKcFptV1Gv32oI
 19953	When I Die	No Mercy	1529901	5e6ff1g6tIqCZALC2iMq79
@@ -833,7 +768,6 @@ id	song_name	display_artist	artist_id	spotify_id
 19968	Get Your Groove On (From "Baps")	Gyrl	303287	4cUjLo7xQ0chvIzkmmEgyw
 19970	Look Into My Eyes (From "Batman	Bone Thugs-N-Harmony	296202	4Ko8agkl6zgG3IhzjShRqa
 19972	It s Your Love	Tim McGraw With Faith Hill	null	null
-19973	Quit Playing Games (With My Heart)	Backstreet Boys	275645	1nRwyxNsqCLeA17qR8Nfxx
 19976	I Don t Want To/I Love Me Some Him	Toni Braxton	430180	null
 19978	Smokin  Me Out	Warren G Featuring Ronald Isley	277837	6e9eFZMPvMfrtraCV6uCis
 19980	That s Right	DJ Taz Featuring Raheem The Dream	300019	1Inq5p7LPUNq1W40hvTD7h
@@ -891,15 +825,12 @@ id	song_name	display_artist	artist_id	spotify_id
 20114	I Do	Lisa Loeb	307502	2NXZJ3qWUbAnoJA2Be1Xlj
 20115	So Good	Davina	300520	null
 20122	All Of My Days	Changing Faces (Featuring Jay-Z)	null	null
-20128	DJ Keep Playin' (Get Your Music On)	Yvette Michele	431731	null
 20131	Kiss You All Over	No Mercy	1529901	1O09h6R0oZivmC3jjFp1xX
 20138	Been Around The World	Puff Daddy & The Family (Feat. The Notorious B.I.G. & Mase)	null	1siDRjAa8MdxNoCHTiiQ7B
 20140	The Memory Remains	Metallica	310639	0QxVrnDN8kC7yi83q0hq9g
 20142	No, No, No	Destiny's Child	300824	5kHgrRO3hMDPehtH9VhYQc
-20144	Don't Be Stupid (You Know I Love You)	Shania Twain	278910	5pl800upghUqfGSCHXk76f
 20149	Get It Wet	Twista	430584	03DrwKCR5YhSyQiAQUqzxK
 20150	A Song For Mama	Boyz II Men	297041	16xiRKYz3neAlPnlznVu4s
-20152	Lollipop (Candyman)	Aqua	279810	5tnqSEWM3EKoEtjSZpmHcH
 20153	Just Clownin'	WC From Westside Connection	null	null
 20155	Tuck Me In	Kimberly Scott	305898	6GaafBUOjkIsVBZYlpMrcX
 20156	What If	Reba McEntire	364742	4hfcVzkvnCxaHhm29DhJdI
@@ -926,7 +857,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20212	Nothin' Move But The Money	Mic Geronimo Featuring DMX & Black Rob	310696	5Q6RB8C28hLmXMC9tJPoCs
 20213	Strawberries	Smooth	279637	null
 20214	Off The Hook	Jody Watley	304786	225pDpISwuz6Cr2rvqeyyH
-20215	So Long (Well, Well, Well)	Phajja	331512	null
 20223	I Want You Back	'N Sync	432017	5AmRtvaQgLmZ7CxOxABq4Y
 20224	The Party Continues	JD Featuring Da Brat	null	null
 20226	Let's Ride	Montell Jordan Feat. Master P & Silkk The Shocker	311778	null
@@ -970,13 +900,10 @@ id	song_name	display_artist	artist_id	spotify_id
 20313	Sweet Honesty	M:G	276844	null
 20314	My All	Mariah Carey	309388	5vaZZXBIPY5AfhSPusfuIa
 20318	That s Why I m Here	Kenny Chesney	305717	3W3ZHm27GvXUzUD7R5vmB8
-20325	Superhero	Daze	300551	5w24xZUicD68LjnZvtougC
-20329	Shorty (You Keep Playin  With My Mind)	Imajin Featuring Keith Murray	303739	5AYqtxKZ5MIbb6BIKGiVLA
 20330	Ninety Nine [Flash The Message]	John Forte	304940	1shRBEykFXAQFgnAF02nZ7
 20331	Hooked On A Feeling (Ooga-Chaka)	Baby Talk	275611	null
 20333	One Heart At A Time	Various Artists	277740	null
 20334	Whatcha Gone Do?	Link	307436	null
-20338	A Man Holdin  On (To A Woman Lettin  Go)	Ty Herndon	430617	7Mdyk9k3tkXTecNg56RxbU
 20339	Still Not A Player	Big Punisher Featuring Joe	281677	7eh1yR9kDcabzha7Kajyq7
 20342	Whatuon	LaTanya Featuring Twista	306565	null
 20347	Freak Out	Nutta Butta Featuring Teddy Riley And Anonymous	312484	null
@@ -984,7 +911,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20349	Come With Me	Puff Daddy Featuring Jimmy Page	355143	null
 20350	Make It Hot	Nicole Featuring Missy "Misdemeanor" Elliott	1496890	74nsOZqzZzyvFVvBy12I7Y
 20351	Ghetto Supastar (That Is What You Are)	Pras Michel Feat. Ol  Dirty Bastard	348482	31bf9SEOppLU6lQ85d8om6
-20353	The Cup Of Life (The Official Song Of The World Cup, France  98)	Ricky Martin	365051	null
 20360	Money Ain t A Thang	JD Featuring Jay-Z	276582	null
 20362	How Do I Say I m Sorry	Tami Davis	281471	null
 20364	Nobody Does It Better	Nate Dogg Featuring Warren G	312034	5uxz0LMOJ6u1cUaUgnL4XY
@@ -1004,15 +930,12 @@ id	song_name	display_artist	artist_id	spotify_id
 20396	Touch It	Monifah	311762	3upCmUgdchN3u0vkedbC5S
 20397	Delicious	Pure Sugar	356358	null
 20400	Lookin' At Me	Mase Featuring Puff Daddy	309877	2dieHErJLwG7fOzD8WAtFO
-20408	Shorty (You Keep Playin' With My Mind)	Imajin Featuring Keith Murray	303739	5AYqtxKZ5MIbb6BIKGiVLA
 20409	Goodbye To My Homies	Master P Featuring Silkk The Shocker, Sons Of Funk And Mo B. Dick	309928	6tvyV4j2sAoetLwByIWiK1
 20410	Money Ain't A Thang	JD Featuring Jay-Z	276582	null
 20412	Paper	Queen Latifah Featuring Apache	277243	1wFiq9y3RdqJnBeeg3C4XQ
 20413	What I Didn't Know	Athenaeum	280153	00rGtsA6s1ymgW70p1LzlM
 20414	Movin' On	Mya Featuring Silkk The Shocker	311986	0Z7cJizY93V2SGCpNKYV2j
 20415	How Do I Say I'm Sorry	Tami Davis	281471	null
-20417	The Cup Of Life (The Official Song Of The World Cup, France '98)	Ricky Martin	365051	null
-20422	Stand By Me	4 The Cause	431945	0yFYiy1eAcaEZOutP2GZOv
 20423	I Wasn t With It	Jesse Powell	304537	44QuZzg32iEcKSNlijFyP8
 20430	I Should Cheat On You	J Son	276527	null
 20438	Touch Me	Solo	1539504	2wwigvqN8mhEt0EZlrW1S8
@@ -1021,11 +944,9 @@ id	song_name	display_artist	artist_id	spotify_id
 20443	'98 Thug Paradise	Tragedy, Capone, Infinite	null	null
 20446	How's It Goin' Down	DMX Featuring Faith Evans	300046	343xt5q01Q73Yw6uL0jGVD
 20447	Invasion Of The Flat Booty B*****s	Too Short	430262	null
-20452	Jackie's Strength	Tori Amos	430284	1sYQyKzFlFc8j1AhmERs3L
 20454	Lost In Love	Nastyboy Klick	277000	1nHHbeFTpQXZPbyTsio6NV
 20456	I Ain't Havin' That	Heltah Skeltah Featuring Starang Wondah Of O.G.C. & Doc Holiday	303432	3LnEuINmOiF70JqAcV2bcS
 20458	How Deep Is Your Love	Dru Hill Featuring Redman	301337	60NvAO9lx0KmBNAVHIlWN6
-20462	Jackie s Strength	Tori Amos	430284	1sYQyKzFlFc8j1AhmERs3L
 20464	How s It Goin  Down	DMX Featuring Faith Evans	300046	343xt5q01Q73Yw6uL0jGVD
 20468	98 Thug Paradise	Tragedy, Capone, Infinite	null	null
 20469	Deadly Zone	Bounty Killer Featuring Mobb Deep	297012	3YC0Qlh3vDVkMhvU1Ajat1
@@ -1040,7 +961,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20488	Trippin	Total Featuring Missy Elliott	430293	5QfobfsCZuyPnCzXHKGs9r
 20490	Money s Just A Touch Away	Mack 10 Featuring Gerald Levert	276912	7aSxhMIWO0oeGbAqb9vve1
 20493	If I Can t Have You	L.F.O. (Lyte Funky Ones) (Featuring Kayo)	null	null
-20494	Doo Wop (That Thing)	Lauryn Hill	306682	41Vs28E6Es3QdxIRqDnBv1
 20496	Trippin'	Total Featuring Missy Elliott	430293	5QfobfsCZuyPnCzXHKGs9r
 20497	Pushin' Weight	Ice Cube Featuring Mr. Short Khop	276477	4tzStSrQFCWoNU82ozFBhs
 20499	Money's Just A Touch Away	Mack 10 Featuring Gerald Levert	276912	7aSxhMIWO0oeGbAqb9vve1
@@ -1057,11 +977,9 @@ id	song_name	display_artist	artist_id	spotify_id
 20539	We Really Shouldn t Be Doing This	George Strait	302752	null
 20541	When You Believe	Whitney Houston	431329	null
 20547	Tearin  Up My Heart	N Sync	null	6JvTQWuYRmUkcFtIijDnxS
-20548	(God Must Have Spent) A Little More Time On You	N Sync	null	72otaqywVqwyXaCjk75JKm
 20549	Wrong Again	Martina McBride	309763	1MFPoVy2VHnb87APFZqzqc
 20551	Angel	Sarah McLachlan	278215	3xZMPZQYETEn4hjor3TR1A
 20559	Home Alone	R. Kelly Featuring Keith Murray	277270	4UDQEazTqhCICqssWtMZEO
-20560	Pretty Fly (For A White Guy)	The Offspring	418755	15HadeuRG9THazDGzLH8ZU
 20567	Lean On Me	Kirk Franklin Feat. Mary J. Blige, Bono, R. Kelly, Crystal Lewis	305956	null
 20573	Never There	Cake	275801	7aKWgpecgLEqisWcXPElDl
 20575	Hold Me	Brian McKnight Featuring Tone	297206	5yT3QbItSK6HPKHnA0rWlA
@@ -1077,12 +995,10 @@ id	song_name	display_artist	artist_id	spotify_id
 20626	You	Jesse Powell	304537	0hcW7qPqWWJc8189OaqQvX
 20628	What s So Different	Ginuwine	302859	7jgZiwNyTH08evb3bDLfIy
 20640	It Ain't My Fault 1	Silkk The Shocker Featuring Mystikal	279318	null
-20644	If You (Lovin  Me)	Silk	279311	null
 20648	What s It Gonna Be?!	Busta Rhymes Featuring Janet	298558	null
 20649	Girlfriend/Boyfriend	BLACKstreet With Janet	289417	null
 20655	Nann	Trick Daddy Featuring Trina	430432	7d9I42jF759n5HuUeoulzR
 20661	Life	K-Ci	1496746	2LuubKHueqlJbx0ylKGFmy
-20662	Everybody s Free (To Wear Sunscreen)	Baz Luhrmann	280803	null
 20675	What d You Come Here For?	Trina	null	null
 20678	Maria	Blondie	290749	3ILgP3zxjMIFCz5rzrYVpu
 20680	Why Don t You Get A Job?	The Offspring	418755	5JzF2iymNwCyFz9MTmojd0
@@ -1109,10 +1025,7 @@ id	song_name	display_artist	artist_id	spotify_id
 20776	All N My Grill	Missy "Misdemeanor" Elliott Featuring Big Boi	311506	null
 20777	Smooth	Santana Featuring Rob Thomas	278142	3i3GeK0qLQybu4ah42YmCY
 20780	It s Your Thing	Mercedes Featuring Master P	310551	29cNo1Fw5Ar4XOHqxrD3pl
-20784	I Do (Cherish You)	98 Degrees	6890626	5it4Zopso9OdoirmTqGZA4
-20786	(Now You See Me) Now You Don t	Lee Ann Womack	306816	2i4tmbKkAhRnnojsmnPof1
 20788	It s All About You (Not About Me)	Tracie Spencer	430332	22vuK9Gpwap7C2hH2GmYIi
-20797	Mambo No. 5 (A Little Bit Of...)	Lou Bega	308245	7jQBORjiir0pNSKGaHevq9
 20802	Southern Gul	Erykah Badu Featuring Rahzel	301014	null
 20804	Heartbreaker	Mariah Carey Featuring Jay-Z	309388	0jsANwwkkHyyeNyuTFq2XO
 20805	Music Of My Heart	N Sync	null	null
@@ -1127,7 +1040,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20840	Missing You	Brooks	null	null
 20846	He Didn t Have To Be	Brad Paisley	297053	1LONTBZZRxDVx4wEvdcCLd
 20847	Got Your Money	Ol  Dirty Bastard Featuring Kelis	277100	5fsjS6L83RSJBqRJKL0BTY
-20848	U Don t Know Me (Like U Used To)	Brandy	297075	null
 20853	Will 2K	Will Smith Featuring K-Ci	431377	59xpdlaIK1l5hiYP1KsBxK
 20857	4, 5, 6	Sole Featuring JT Money	279767	3SsO5zbbDfcU95HD0ygg7c
 20858	What Do You Say	Reba	364741	6vow3qR7UmNXxpIHcMVb0R
@@ -1151,7 +1063,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20903	We Can't Be Friends	Deborah Cox With R.L.	null	5DgfKcbzW0cyEAur0e9N68
 20905	Left & Right	D'Angelo Featuring Method Man And Redman	275903	0nElzVRcJKKeC1RueSm60W
 20907	Smile	Lonestar	307789	6qTspNsEd3fjEuwWJ2SKyY
-20912	No More Rain (In This Cloud)	Angie Stone	279319	6mZI2vbLv1UvlclwDQ4uvc
 20919	I Wanna Know	Joe	1496519	6ctr1K7KzKErxbfGAynL8A
 20922	G d Up	Snoop Dogg Presents Tha Eastsidaz	null	1zIXpzuCC7FM4kECt2eEzu
 20924	Love Is Blind	Eve Featuring Faith Evans	301945	6aLVv2NbwkBGxcaVTlMXXC
@@ -1167,8 +1078,6 @@ id	song_name	display_artist	artist_id	spotify_id
 20954	Best Friend	Puff Daddy Featuring Mario Winans	null	7Gfzoer3tsu6AVTce0TwSM
 20955	Otherside	Red Hot Chili Peppers	364771	4XVof6b8iRlZfnxtfFpfIr
 20968	Anything	Jay-Z	304305	20HaMaNES3lw0EWJXS1Fb6
-20970	Baby Don t Cry (Keep Ya Head Up II)	2Pac + Outlawz	431886	3y5pef5Z472KoYxaSdig9I
-20971	Party Up (Up In Here)	DMX	300046	4XSgaQfGgJ9FDCcvmOe404
 20972	That s What I m Looking For	Da Brat	300055	3hVNySmPHrzsrpwxL3j6vT
 20974	There You Go	Pink	338855	4ykxCRFvISQEClEClJIjnK
 20982	Private Emotion	Ricky Martin Featuring Meja	365051	null
@@ -1180,7 +1089,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21001	If You Don t Wanna Love Me	Tamar	null	null
 21002	Be With You	Enrique Iglesias	301773	1lZ4j5WBURBwZ0M5TT46wP
 21003	Where You Are	Jessica Simpson Featuring Nick Lachey	304557	5u5YZpr7Ccrgw2RnYNzwjl
-21018	Graduation (Friends Forever)	Vitamin C	431018	1TAp8Bz2h7QEbzgS9ZI4ck
 21027	It s So Hard	Big Punisher Featuring Donell Jones	281677	5Fqk9TyFwQAg2fzNnfAEbO
 21037	It s Gonna Be Me	N Sync	null	2AW37v0bDyuOzGP3XnmFuA
 21047	I ll Be	Reba McEntire	364742	3cJNDQGaYptpN1FO0zCf8C
@@ -1203,14 +1111,12 @@ id	song_name	display_artist	artist_id	spotify_id
 21107	I Will...But	SheDaisy	277384	null
 21113	Californication	Red Hot Chili Peppers	364771	34KTEhpPjq6IAgQg2yzJAL
 21116	Callin  Me	Lil  Zane Featuring 112	307335	null
-21118	Come On Over Baby (All I Want Is You)	Christina Aguilera	299251	65GZzBP1qyk4zH7c8RIJYD
 21119	Don t Think I m Not	Kandi	276697	487Dyzs7Xbbk4hIWYyYT80
 21124	Cherchez LaGhost	Ghostface Killah	302806	5OsVXAWDMK7v37MwKEDjcD
 21129	Let s Make Love	Faith Hill With Tim McGraw	null	null
 21130	Most Girls	Pink	338855	null
 21133	Imagine That	LL Cool J	276751	2h2J06UFc4C2g5tnSgFZ5u
 21135	Bounce With Me	Lil Bow Wow Featuring Xscape	307281	3aVGAg0RKYzGuJeLu9bvCw
-21149	The Hardest Part Of Breaking Up (Is Getting Back Your Stuff)	2Gether	431888	1hVUDzhWm9Uok4iKvzaNLx
 21152	There You Are	Martina McBride	309763	1MdhH5wlGMrdL62L3vsqQz
 21156	Bad Boyz	Shyne Featuring Barrington Levy	279241	2MNQMtZbOb7rBWli3TSok0
 21160	Between Me And You	Ja Rule Featuring Christina Milian	276599	4wEp2IgdHR6GkBMkHZxT6N
@@ -1220,10 +1126,8 @@ id	song_name	display_artist	artist_id	spotify_id
 21171	What s Your Fantasy	Ludacris Featuring Shawna	308504	2PfrWOPGSxVyp3lnQaw79G
 21173	She Bangs	Ricky Martin	365051	1uPrIHgYztXSkkcts9jet8
 21176	911	Wyclef Jean Featuring Mary J. Blige	431541	66BV25RPuW7pbLN7SgMJMv
-21191	Hemorrhage (In My Hands)	Fuel	302533	3E8eSqBoqLs8ELbrK3NJHs
 21193	Toca s Miracle	Fragma	302334	6EnIcPCcNdszEsG6f4pKnO
 21194	It Wasn t Me	Shaggy Featuring Ricardo "RikRok" Ducent	278838	null
-21200	No More (Baby I ma Do Right)	3LW	431923	5zn1hpm9N0ylKB7kOtpCw2
 21203	Do You	Funkmaster Flex Featuring DMX	302561	null
 21205	Where I Wanna Be	Damizza Presents Shade Sheist Featuring Nate Dogg	null	3wQ8RcbLwNRH53FelAVCkX
 21209	Souljas	Master P	309928	1mtUwv8L4nhMRfbP2pa36V
@@ -1237,7 +1141,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21233	Could It Be	Jaheim	304040	556km3BelncJTpFbO9HpLR
 21234	It Wasn't Me	Shaggy Featuring Ricardo "RikRok" Ducent	278838	0OaunKfsxkgBvPv68jBbmm
 21235	This I Promise You	'N Sync	432017	46n2EGFnPC3tzWCN1Aqe26
-21245	No More (Baby I'ma Do Right)	3LW	431923	5zn1hpm9N0ylKB7kOtpCw2
 21248	It's Over Now	112	431840	null
 21257	Put It On Me	Ja Rule Featuring Lil' Mo And Vita	276599	5gqLrmlLQBxTPUITaF1Jz3
 21258	All Good?	De La Soul Featuring Chaka Khan	300556	79P7oiTCUliF8AQTzUiK24
@@ -1245,10 +1148,8 @@ id	song_name	display_artist	artist_id	spotify_id
 21264	Angel	Shaggy Featuring Rayvon	278838	2W31oMmNa2wHNyavreExkH
 21266	I Know	Sunday	280966	1BtRgeV2ai8BKdkpouTRXu
 21267	Where Are You Christmas?	Faith Hill	276160	1msuiw6pnXYfxZ7Edyit9U
-21272	Lady (Hear Me Tonight)	Modjo	311635	0McxHaik4BI1z0cN6fUW5W
 21274	Most Girls	P!nk	277117	null
 21276	You Make Me Sick	P!nk	277117	7AgIl75BWgYvkeqEhy6sUt
-21279	Bouncing Off The Ceiling (Upside Down)	A*Teens	275214	null
 21281	By Your Side	Sade	277414	6KfjgbXONOyQ94mYTsBtWY
 21283	One More Day	Diamond Rio	300864	5mcWdITson4DJcYtH5xo0f
 21287	I Did It	Dave Matthews Band	302752	4u1WFYkW7pFmFvyUqUKP16
@@ -1261,7 +1162,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21328	Take It To Da House	Trick Daddy Featuring The SNS Express	430432	1wLhwzPAtze5JT8qqXlqaO
 21329	All For You	Janet	304191	0UdqZQEbRWTkNXlh5kl2L8
 21334	Drops Of Jupiter (Tell Me)	Train	430350	0bj6fsWQQg7DoYepGjIbbx
-21335	Lucky 4 You (Tonight I'm Just Me)	SheDaisy	277384	7dncCmOFDM0WWIhXVDqtyA
 21337	Get Ur Freak On	Missy "Misdemeanor" Elliott	311506	6zsk6uF3MxfIeHPlubKBvR
 21338	Lay Low	Snoop Dogg Featuring Master P, Nate Dogg, Butch Cassidy & Tha Eastsidaz	279664	4QNJd8ma02Oy9PBenHErs1
 21340	What Would You Do?	City High	299356	1tJkic0TURTCXw3rBhYgWu
@@ -1274,7 +1174,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21377	This Is Me	Dream	301297	1s8MNZEUhMRlCJiFzHCkTY
 21380	Everybody Doesn't	Amanda	278797	4IWCqcLq1AlO7hXDTQLZAe
 21382	Superwoman Pt. II	Lil' Mo Featuring Fabolous	307315	3xYwc8Jjv47NbtnYGn8Bvt
-21386	Let's Get Dirty (I Can't Get In Da Club)	Redman Featuring DJ Kool	364794	5BlLqiaTwttKiqzLhBrN1v
 21387	There You'll Be	Faith Hill	276160	1s2khOWzC99udpUaPICLJI
 21388	More Than That	Backstreet Boys	275645	null
 21389	Wait A Minute	Ray J Featuring Lil' Kim	364678	2Nc7IN8hd1G9zGiuWv2HLG
@@ -1295,7 +1194,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21429	Area Codes	Ludacris Featuring Nate Dogg	308504	4PvuRNH2k5wZt1kSqiIbEj
 21430	Miss California	Dante Thomas Featuring Pras	300268	null
 21437	Can't Deny It	Fabolous Featuring Nate Dogg	276136	7K4Aq4awgYvDKEJdEvvl4j
-21439	Izzo (H.O.V.A.)	Jay-Z	304305	16rzBmxDZY8ZGGK2lWTPtf
 21441	Be Like That	3 Doors Down	431895	3PbHle8KhJp6GuO1jLdEmQ
 21445	Differences	Ginuwine	302859	0O5b1927V6FbLsZRtf7idi
 21449	I'll Fly With You (L'amour Toujours)	Gigi D'Agostino	302828	06KpQPgrISJm8s5dHYeqXv
@@ -1322,14 +1220,11 @@ id	song_name	display_artist	artist_id	spotify_id
 21522	We Thuggin'	Fat Joe Featuring R. Kelly	302021	2EcW94ak7kYH4mDMvI7iWg
 21523	Diddy	P. Diddy Featuring The Neptunes	null	6EtkH6EfTfNLjUHKDylEym
 21527	Fatty Girl	Ludacris, LL Cool J & Keith Murray	null	null
-21531	Roll Out (My Business)	Ludacris	308504	null
 21532	From Her Mama (Mama Got A**)	Juvenile	1493176	null
 21538	Always On Time	Ja Rule Featuring Ashanti	276599	4YA7nxDtAVE2R1Eryx7uRu
-21539	Where Were You (When The World Stopped Turning)	Alan Jackson	278315	3eSwvMfSA0Fyku6Ak5JEw0
 21540	Son Of A Gun	Janet Featuring Missy Elliott, P. Diddy & Carly Simon	null	7iBjvDLhfBrXxsVEUjENOu
 21545	Hey Baby	No Doubt Featuring Bounty Killer	312357	0ySdXfvOy7zCc59yz2Dx8q
 21547	Take Away	Missy "Misdemeanor" Elliott Featuring Ginuwine & Tweet	null	null
-21548	Bouncin' Back (Bumpin' Me Against The Wall)	Mystikal	312008	7LdaPYlRo4pq6CBt44To2H
 21551	Round & Round	Jonell & Method Man	null	20c7Bngwfg0osDXaWmbqes
 21556	The Long Goodbye	Brooks & Dunn	297731	550bzTUwGQIhotK33gVvEg
 21557	Part II	Method Man & Redman	310649	null
@@ -1339,7 +1234,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21571	Thank You	Lil Bow Wow Featuring Jagged Edge & Fundisha	307281	6WCPl01gxSAALfBNLDWKFs
 21578	Burn	Mobb Deep Featuring Vita & Noyd	311598	20ccLIFUpfzgX5kSbDakH4
 21579	What About Us?	Brandy	297075	0eekSctODhz1mYa5zatZ7f
-21581	Hey Luv (Anything)	Mobb Deep Featuring 112	311598	4zKmKUes1vLQJqrC9l0Wbm
 21582	Jigga	Jay-Z	304305	4pnFRnCOfaETea25g0YSvG
 21587	I'm Movin' On	Rascal Flatts	362685	0XZqDws4aiAVYQ0qc7G6b4
 21589	I Miss You	DMX Featuring Faith Evans	300046	3DwoQNhaFD3mCKh93w2MHH
@@ -1351,11 +1245,9 @@ id	song_name	display_artist	artist_id	spotify_id
 21612	For You	Staind	280292	1dRAq8O1tvv7SDur3W3aue
 21620	Knoc	Knoc-Turn'Al With Dr. Dre & Missy "Misdemeanor" Elliott	null	0EK24txkGSt51YBfVzN7qB
 21621	Girlfriend	'N Sync Featuring Nelly	432017	6u5flhVFxKZrl9AApvf2SL
-21624	I Need A Girl (Part One)	P. Diddy Featuring Usher & Loon	null	null
 21627	Too Bad	Nickelback	312256	2cCWbBmadLbKvr9xddC79R
 21628	I Should Be Sleeping	Emerson Drive	301700	28CnmZkM5CFp0ObTRQJeCw
 21635	Rainy Dayz	Mary J. Blige Featuring Ja Rule	309851	1F1XjwRzMh8KT2BvH6ISkG
-21640	I Don't Have To Be Me ('Til Monday)	Steve Azar	280577	5v1bA7NmQcQHvH9IDkeeF4
 21647	Down A** Chick	Ja Rule Featuring Charli "Chuck" Baltimore	276599	null
 21651	Oh Boy	Cam'Ron Featuring Juelz Santana	275868	4gdQ8QShlC3toP9Mkc8DwB
 21653	Tell Me What's It Gonna Be	Brian McKnight Featuring Jermaine Dupri	297206	null
@@ -1369,11 +1261,9 @@ id	song_name	display_artist	artist_id	spotify_id
 21686	Sugarhigh	Jade Anderson	304025	null
 21693	Guess?	Scarface Featuring Jay-Z & Beanie Sigel	278349	43dtVVfeBWkiXKfFqBi4Qz
 21695	I Need A Girl (Part Two)	P. Diddy & Ginuwine Featuring Loon, Mario Winans & Tammy Ruggieri	null	null
-21699	Courtesy Of The Red, White And Blue (The Angry American)	Toby Keith	430048	0M7mWKqwTIaVjYyxfZmtTa
 21700	Move B***h	Ludacris Featuring Mystikal & Infamous 2.0	308504	null
 21703	By The Way	Red Hot Chili Peppers	364771	2t0ZYmVXMR36fchq1Egs2d
 21708	If I Could Go!	Angie Martinez Featuring Lil' Mo & Sacario	279315	623M2eiRUKVIDJGTuKsvut
-21711	Black Suits Comin' (Nod Ya Head)	Will Smith Featuring Tra-Knox	431377	6pOLM6G96mIDx6ApaUaayn
 21719	Dilemma	Nelly Featuring Kelly Rowland	312110	3vpG3owZ2gsZm5nkZnBtsN
 21720	Gangsta Lovin'	Eve Featuring Alicia Keys	301945	0WgLpgUdThEpA5L5K0SKq7
 21722	Two Wrongs	Wyclef Jean Featuring Claudette Ortiz	431541	632GESqggMN84rS3sRXy0K
@@ -1384,7 +1274,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21733	Where Do We Go From Here	Filter	302128	05NCQz6oqduUipGoWjpncI
 21734	The Rising	Bruce Springsteen	298448	3FSLzr6mZakBTd10nSiWKj
 21736	Feel It Boy	Beenie Man Featuring Janet	281097	0bQRIkulAImsvK3LOx615N
-21740	I Do (Wanna Get Close To You)	3LW Featuring P. Diddy & Loon	431923	0fCPWDsSyIhcp7CjRdx958
 21744	Don't Mess With My Man	Nivea Featuring Brian & Brandon Casey	312346	39YovPslPCXbFYhlYjsZ2Y
 21745	Burnin' Up	Faith Evans Featuring Missy "Misdemeanor" Elliott	276159	2ynwBOV4CsVxyapauFh8mK
 21746	Aerials	System Of A Down	281380	4e9eGQYsOiBcftrWXwsVco
@@ -1393,10 +1282,8 @@ id	song_name	display_artist	artist_id	spotify_id
 21758	Blue Jeans	Yasmeen Featuring Ghostface Killah	431593	713DjChfL2RflBcl5cavQT
 21759	Hey Ma	Cam'ron Featuring Juelz Santana, Freekey Zekey & Toya	275868	null
 21762	Cry	Faith Hill	276160	6mJMvtuCMZt4XXNs5zw1zx
-21765	Objection (Tango)	Shakira	278867	36YNa8joLwu9yor2TkZbIY
 21772	Work It	Missy "Misdemeanor" Elliott	311506	4E5J1e3TFInbO6B35rCscQ
 21778	Dirrty	Christina Aguilera	299251	null
-21783	Electrical Storm	U2	277577	3gkijt6bxk8ts6S2RCEu4n
 21786	The Streets	WC Featuring Nate Dogg	null	1w9QuE82GTtADusjV8LM3m
 21789	The Game Of Love	Santana Featuring Michelle Branch	278142	56hSJsDC7xZSC3QZ2xaCcf
 21790	These Days	Rascal Flatts	362685	5nWgEBtaRwVrCMjer1RtLm
@@ -1422,9 +1309,7 @@ id	song_name	display_artist	artist_id	spotify_id
 21863	All I Have	Jennifer Lopez Featuring LL Cool J	304444	3kgutGd839IOYRl6ekeq6V
 21864	Mesmerize	Ja Rule Featuring Ashanti	276599	4R6OANdWnhMM9Asu3zjxK6
 21867	Gossip Folks	Missy "Misdemeanor" Elliott Featuring Ludacris	311506	null
-21871	Tell Me (What's Goin' On)	Smilez & Southstar	279622	null
 21874	All The Things She Said	t.A.T.u.	430679	17cExzx2rqRpfcWdLMTkLL
-21875	Blowin' Me Up (With Her Love)	JC Chasez	276581	5nOMJVZ4rsY5PpYiKD15BS
 21878	B R Right	Trina Featuring Ludacris	430452	7iKXO3oCFiiZRniwAJaGa4
 21883	Take You Home	Angie Martinez Featuring Kelis	279315	76HwNiaQIPdiKkPr9rIblr
 21888	Up!	Shania Twain	278910	568RGxYYivq9OgkO6cGSoT
@@ -1435,7 +1320,6 @@ id	song_name	display_artist	artist_id	spotify_id
 21899	A.D.I.D.A.S.	Killer Mike Featuring Big Boi	305859	4Ol9JFw2Icl79oTqH1sG4t
 21900	What Happened To That Boy	Baby Featuring Clipse	275560	20Sp7dNLM3NjIu3TInDqjq
 21902	Ma, I Don't Love Her	Clipse Featuring Faith Evans	299443	3VbPE4nMEkIB9PWWquCSGB
-21910	Chrome	Trace Adkins	430324	26ycbqowYZ01xEqdtfr0EW
 21913	I Know What You Want	Busta Rhymes & Mariah Carey Featuring The Flipmode Squad	null	440JHgcmlgu65MbKBg20ba
 21915	Can't Let You Go	Fabolous Featuring Mike Shorey & Lil' Mo	276136	6lrRIfQDcikJ5y5DtyZPuJ
 21918	Choppa Style	Choppa Featuring Master P	299162	73oaAjfHAtUJDtul0QFlfs
@@ -1451,13 +1335,10 @@ id	song_name	display_artist	artist_id	spotify_id
 21967	So Gone	Monica	311759	6BIcjFZIVDZxNAcofRFPx4
 21968	Snake	R. Kelly Featuring Big Tigger	277270	3XhCHPfPDafMQx014Sblfy
 21974	Like A Pimp	David Banner Featuring Lil' Flip	300400	289MmJCmxYMxC54ZHcd9G0
-21978	The Remedy (I Won't Worry)	Jason Mraz	304259	4tK4ARuilOrBzwVQK73E0Y
 21980	I Wish I Wasn't	Heather Headley	303379	4xVTo97ZBwlT8ai9Wj8zw4
 21981	Roll Wit M.V.P.	Stagga Lee	280290	null
 21983	Get Low	Lil Jon & The East Side Boyz Featuring Ying Yang Twins	307237	2HJB0UGH3wzPivgZjnohQG
-21984	Rock Wit U (Awww Baby)	Ashanti	280057	6pWzCKTrKrwbUPzY8RLCoP
 21986	P***ycat	Missy "Misdemeanor" Elliott	311506	null
-21990	Step Daddy	Hitman Sammy Sam	303540	1TKRumlRMXv2SEKPhueya0
 21992	How You Want That	Loon Featuring Kelis	1496831	0EEYgsFx2xUQcFcQrwwEV3
 21993	Crazy In Love	Beyonce Featuring Jay-Z	281569	5IVuqXILoxVWvWEPm82Jxr
 22003	Are You Happy Now?	Michelle Branch	310965	5B7XIcS5T76NJZFOHX30Io
@@ -1486,9 +1367,7 @@ id	song_name	display_artist	artist_id	spotify_id
 22075	Cop That Sh#!	Timbaland & Magoo Featuring Missy Elliott	429956	1n9gRlQoxpBxeZVV8nfRF2
 22081	Rain On Me	Ashanti	280057	4cj3K119pTNI8cH7TgNwIz
 22086	Clubbin	Marques Houston Featuring Joe Budden & Pied Piper	309665	1UmI1kV6HpC56GtcMtV22b
-22090	Simply Being Loved (Somnambulist)	BT	275530	null
 22091	Holidae In	Chingy Featuring Ludacris & Snoop Dogg	299137	0FmCLEHfINGqwlyzvklNqy
-22095	(There's Gotta Be) More To Life	Stacie Orrico	280269	2x5qF66rFO6DERBMNkQAqn
 22103	Naggin	Ying Yang Twins	431622	4QEoAZj6fVeSHj9ti2JpN8
 22106	If I Can't	50 Cent	431969	7JeKXMQKm6GoLGTkNy2jZ0
 22107	Honesty (Write Me A List)	Rodney Atkins	367148	031dDlXJVmmxNd54hkT9p0
@@ -1538,10 +1417,8 @@ id	song_name	display_artist	artist_id	spotify_id
 22245	Love Me Right (Oh Sheila)	Angel City Featuring Lara McAllen	6921665	6qCw1FGT0E6b3e44IKS8Om
 22247	Game Over (Flip)	Lil' Flip	307297	79lmvU7Qmc8QpXilbSk37z
 22249	Naughty Girl	Beyonce	281569	0YGQ3hZcRLC5YX7o0hdmHg
-22261	F.U.R.B. (F U Right Back)	Frankee	302391	1ME5P9cCGlUDKGRn1sXP0H
 22263	Let's Be Us Again	Lonestar	307789	6OXZ9FnrHiy6htOPgkxGGu
 22264	That's What She Gets For Loving Me	Brooks & Dunn	297731	1BsW6G8T2QhG5RYykq58AF
-22268	Leave (Get Out)	JoJo	304749	12lONNhG7TQH6AL2MB2v58
 22273	Culo	Pitbull Featuring Lil Jon	1490081	4tAru66VGVLWYjg90UV4vJ
 22274	Dip It Low	Christina Milian	299254	4L55p6txv9vuCWhpNnY6eY
 22275	Tear It Up	Yung Wun Featuring DMX, Lil' Flip & David Banner	431722	7tSFBes4JG1eMBukE9ZJPs
@@ -1588,11 +1465,8 @@ id	song_name	display_artist	artist_id	spotify_id
 22429	Westside Story	The Game Featuring 50 Cent	1490221	61GzG81BTR3pxEPOX24I1i
 22439	1, 2 Step	Ciara Featuring Missy Elliott	299324	3x9LFpV6tzq0qWaBMvY2UT
 22444	What U Gon' Do	Lil Jon & The East Side Boyz Featuring Lil Scrappy	307237	null
-22445	(Reach Up For The) Sunrise	Duran Duran	301386	16LctI8Cnwk0vQWqnDStLg
-22449	So Sexy Chapter II (Like This)	Twista Featuring R. Kelly	430584	null
 22451	Encore	Eminem Featuring Dr. Dre & 50 Cent	301722	null
 22452	Only U	Ashanti	280057	3sckKKIx96cjPXtiqPHCTB
-22457	Vitamin R (Leading Us Along)	Chevelle	299091	04NGX0b5Tgs7VsErfn5OA1
 22458	Bridging The Gap	Nas Featuring Olu Dara	276998	786p71HzCJ6qMYhM9dYEcC
 22459	Lovers And Friends	Lil Jon & The East Side Boyz Featuring Usher & Ludacris	307237	5AIAG7J8iyxCrVyqSpeTUQ
 22460	Soldier	Destiny's Child Featuring T.I. & Lil Wayne	300824	2rtBy1uuf8ktw8dtzJs9D1
@@ -1611,13 +1485,11 @@ id	song_name	display_artist	artist_id	spotify_id
 22514	Hope	Twista Featuring Faith Evans	430584	7IP8IvUuHshugIKiHmhdD2
 22524	Goin Crazy	Natalie	277009	6HBMri6KIqh0vY1NaEGPPl
 22527	Hate It Or Love It	The Game Featuring 50 Cent	1490221	2wGSgTmgSF3xjRrHkTc25R
-22528	I'm Not Okay (I Promise)	My Chemical Romance	311975	null
 22531	You And Me	Lifehouse	307174	4T2SmVJPtDdugk5j5xV1d5
 22537	Goin' Crazy	Natalie	277009	6HBMri6KIqh0vY1NaEGPPl
 22539	Signs	Snoop Dogg Featuring Charlie Wilson & Justin Timberlake	279664	4HSAJpNocVNJbwbQvtCMdO
 22541	Down And Out	Cam'ron Featuring Kanye West & Syleena Johnson	275868	5mEwhCsqadBZIE7SSrv1gC
 22547	Honky Tonk U	Toby Keith	430048	5bS3tVEOQ62Tn6ilUlJ2dB
-22548	Wait (The Whisper Song)	Ying Yang Twins	431622	5Y78yINSOCW6xbOfGWNBg4
 22550	Baby I'm Back	Baby Bash Featuring Akon	275566	3VBLBcal4M8BP8XV3l8QDD
 22552	Across The Universe	Various Artists	277740	3PFn1unLOqLcCm8sWYo04G
 22557	In The Kitchen	R. Kelly	277270	1bn8fjxuCLfnAaXZDx1tof
@@ -1631,12 +1503,9 @@ id	song_name	display_artist	artist_id	spotify_id
 22578	Cry Baby/Piece Of My Heart	Melissa Etheridge & Joss Stone	null	null
 22579	Bitches Ain't S**t	Ben Folds	281188	null
 22588	Holiday	Green Day	303108	0MsrWnxQZxPAcov7c74sSo
-22593	Grind With Me	Pretty Rickie	null	3B7i9OKRRmIsSBHEbJz58Y
-22597	Do Somethin'	Britney Spears	297529	01ACsk2knUnsfWeZp63nqa
 22604	Hello Tomorrow	Squeak E. Clean Featuring Karen O.	null	6YU50PnvwrjNjPE20GzTNk
 22605	MVP	Mary J. Blige Featuring The Game & 50 Cent	null	3r5aERXF5u9R31yy4nWeLB
 22606	Happy?	Mudvayne	311927	0INUE1K7cEiE8VH63Rv5RJ
-22610	Class Reunion (That Used To Be Us)	Lonestar	307789	35YiIUIo3a5f0qk0xhHgx9
 22611	Free Yourself	Fantasia	1496871	7ANroj1yWw0YEGcLf7HO3Q
 22613	When You Tell Me That You Love Me	American Idol Finalists Season 4	null	null
 22616	All Because Of You	Marques Houston	309665	7g52qjkEfZTz8E85KaVdSz
@@ -1669,7 +1538,6 @@ id	song_name	display_artist	artist_id	spotify_id
 22701	I'm A King	P$C Featuring T.I. & Lil Scrappy	277118	5h21AlYy4mgHfQp9jUAUGi
 22702	Charlie Last Name: Wilson	Charlie Wilson	299001	null
 22708	Gotta Make It	Trey Songz Featuring Twista	430421	4xONUhRpKk1UIBsCSdviQo
-22710	Stay With Me (Brass Bed)	Josh Gracin	305236	null
 22716	Girl	Beck	281071	3DgNj1aYbSRVoVO8yX7DRt
 22719	Run It!	Chris Brown	1486846	6SPD3JwwRejBhCDiQAQ4he
 22721	Sittin' Sidewayz	Paul Wall Featuring Big Pokey	328415	0ZVPhYF4fPq4U3bMAx4szQ
@@ -1684,7 +1552,6 @@ id	song_name	display_artist	artist_id	spotify_id
 22751	Who Did You Think I Was	John Mayer Trio	304975	00gvX9sFwh19OH88f4v4jW
 22753	I'm Feeling You	Santana Featuring Michelle Branch & The Wreckers	278142	0n3hdlinZYNly8NqAtvJHu
 22760	Here We Go	Trina Featuring Kelly Rowland	430452	15sJZaf5FgWNDss5E5Rs7s
-22766	There It Go! (The Whistle Song)	Juelz Santana	305349	50UkypyQJbSQLaXHke5Yep
 22770	I Don't Care	Ricky Martin Featuring Fat Joe & Amerie	365051	3vTqPhv0H8A00sOOJCdjfS
 22780	Only	Nine Inch Nails	312326	0m1DJ5Jkv3kdnGrcZsJFmC
 22782	And I	Ciara	299324	1Jp9n1uHB72CfK31j4mEPh
@@ -1698,8 +1565,6 @@ id	song_name	display_artist	artist_id	spotify_id
 22803	Grillz	Nelly Featuring Paul Wall, Ali & Gipp	312110	5tXEx6JhF9FkP1fBlgFlCl
 22807	When I'm Gone	Eminem	301722	42YNobZ4HN3tRVEA47wLT6
 22808	Kryptonite (I'm On It)	Purple Ribbon All-Stars	356608	null
-22813	Just Might (Make Me Believe)	Sugarland	280944	4MSnF5Ajr8P0LqC4Zd66DH
-22816	(I Never Promised You A) Rose Garden	Martina McBride	309763	6goA1BGYQSSricr7oV8r8m
 22817	Unpredictable	Jamie Foxx Featuring Ludacris	304140	3UNrtRxBBlWE70SjxnOo02
 22823	Everytime We Touch	Cascada	298770	6vQKdpwPdn7aTdzBIKD1b6
 22824	Nasty Girl	The Notorious B.I.G. Featuring Diddy, Nelly, Jagged Edge & Avery Storm	null	4GIsskMpViPkt0uzPJTJSp
@@ -1709,7 +1574,6 @@ id	song_name	display_artist	artist_id	spotify_id
 22831	Fresh Azimiz	Bow Wow Featuring J-Kwon & Jermaine Dupri	297014	null
 22836	Georgia	Ludacris & Field Mob Featuring Jamie Foxx	null	null
 22838	I'm N Luv (Wit A Stripper)	T-Pain Featuring Mike Jones	277474	1lih9AUGlOI2qbAkptdBsr
-22839	Yo (Excuse Me Miss)	Chris Brown	1486846	1zpu1PZ8ecmcX525Z3X8cl
 22859	Breaking Free	Zac Efron & Vanessa Anne Hudgens	null	null
 22861	Beep	The Pussycat Dolls Featuring will.i.am	418902	5TXNLJ2EENAt3Tf9MX4kT2
 22864	Start Of Something New	Zac Efron & Vanessa Anne Hudgens	null	null
@@ -1726,19 +1590,14 @@ id	song_name	display_artist	artist_id	spotify_id
 22891	Ridin'	Chamillionaire Featuring Krayzie Bone	298913	2cq69jrDBC5gqKh6HvzwUG
 22894	Tell Me When To Go	E-40 Featuring Keak Da Sneak	276018	7eJ5kRpMNPAk7ccCDKywjH
 22895	Black Sweat	Prince	351039	2AvwfFCs5EHKGQejkNaCv4
-22896	Sorry	Madonna	308786	6TrLJzbFF1ynWWBipAlf0g
 22898	Control Myself	LL Cool J Featuring Jennifer Lopez	276751	6881CFKuD6dtmbIEDH5obe
 22899	Wings Of A Butterfly	him	303494	null
 22900	Always On Your Side	Sheryl Crow & Sting	null	3F3fJkWPzg4fx1ONrC9xDO
 22901	What You Know	T.I.	277486	6A71EmfdTryZxflaVpuXy6
 22907	When You're Mad	Ne-Yo	312075	5FXOEdfNW7nYQrBWtW49Cl
-22908	In The Deep	Bird York	285891	5JiFBL8ty9N5Zyy8hiV0Qg
-22914	World Wide Suicide	Pearl Jam	328459	4mWYx9wadNBVrgcTRzHSkB
 22915	Hips Don't Lie	Shakira Featuring Wyclef Jean	278867	0G2Y2OA5jv093bMMg3dJ80
-22918	Conceited (There's Something About Remy)	Remy Ma	364848	2R4KCSHfWuYiCMSu9f0nuc
 22926	Llame Pa' Verte	Wisin & Yandel	431485	5SgN4mSGVEZ8TZQ5YSsKKb
 22928	Back Like That	Ghostface Killah Featuring Ne-Yo	302806	5BpSkQX8evaOZATpl9bFoe
-22930	Speak	Godsmack	302982	6RfDLynqmspMOKA57mXyQI
 22934	Say I	Christina Milian Featuring Young Jeezy	299254	4VLU5fhOXObWyc6LpZ7pJr
 22938	Every Day Is Exactly The Same	Nine Inch Nails	312326	7ebC30VzEik9J632wCi6BI
 22939	Gimme That	Chris Brown Featuring Lil' Wayne	1486846	null
@@ -1756,7 +1615,6 @@ id	song_name	display_artist	artist_id	spotify_id
 22979	Me And My Gang	Rascal Flatts	362685	435sp9O64WY2P9DLMuBDCU
 22980	U And Dat	E-40 Featuring T-Pain & Kandi Girl	276018	7g7M96UGiA7OR79H86gV4m
 22985	I Am Not My Hair	India.Arie	303778	7rha7gubXd3NJmBYGOAkeO
-22986	Snow (Hey Oh)	Red Hot Chili Peppers	364771	4W3Bkljqflf1SD5l2VEtfl
 22994	Give It Up To Me	Sean Paul	1490159	null
 22995	I Love My B****	Busta Rhymes Featuring will.i.am & Kelis	298558	3oSvnVnypxfxRHVHawpwQu
 22998	One	Mary J. Blige And U2	null	0Y8o2jU3ATJsIuatAhTG5Y
@@ -1767,13 +1625,11 @@ id	song_name	display_artist	artist_id	spotify_id
 23008	Crowded	Jeannie Ortega Featuring Papoose	304363	3zmBBq2RwdHzqUXZlzNeeq
 23010	Angelito	Don Omar	301133	7zo8XAMYBG6nGpqGiIudBc
 23014	Pullin' Me Back	Chingy Featuring Tyrese	299137	5hF2LnbkpnXCkksMSeWcxZ
-23015	Ghetto Story	Cham	298911	2aRnHWdrhWMXTCOVPiYOdi
 23017	Stars Are Blind	Paris Hilton	325488	2BI7BmpfN2mbDXsbzNQjBF
 23018	Call On Me	Janet Duet With Nelly	null	null
 23020	Is It Any Wonder?	Keane	305617	3RyuWd7xlLJdLddH6Kt2o6
 23027	I Know You See It	Yung Joc Featuring Brandy 'Ms. B.' Hambrick	431719	6giYNaycmjkbf7UmZ6RGtL
 23035	(When You Gonna) Give It Up To Me	Sean Paul Featuring Keyshia Cole	null	6k8uthjEbttfWXcGaNTQGD
-23048	The Kill (Bury Me)	30 Seconds To Mars	431915	2GFOGIVCsUGWJ4KdSzfQ0G
 23049	Building Bridges	Brooks & Dunn With Sheryl Crow & Vince Gill	null	1mLStmTgqH0nBzds3S4jkJ
 23050	Who Said	Hannah Montana	276390	7jg5JfizOZSEipnTR6d4Nt
 23053	Number One	Pharrell Featuring Kanye West	null	2qWcrWsESaXMsA6G8MPpVF
@@ -1784,12 +1640,10 @@ id	song_name	display_artist	artist_id	spotify_id
 23060	About Us	Brooke Hogan Featuring Paul Wall	297654	6sDlDyjqLnvcvAYazJdkBW
 23065	(When You Gonna) Give It Up To Me	Sean Paul Feat. Keyshia Cole	1490159	null
 23072	That Girl	Frankie J Featuring Mannie Fresh & Chamillionaire	302401	0K46fg1qHY1Y5E7q23zSTG
-23077	It's Okay (One Blood)	The Game Featuring Junior Reid	1490221	1AMcZgdrQ8RakJVq2Ca66j
 23080	Strut	The Cheetah Girls	392698	1g1Jor1zrllXn2ogj8KGAH
 23086	Morris Brown	OutKast Featuring Scar & Sleepy Brown	321442	2pbWRWWcDD1NwMCbjshDLF
 23090	Hands Up	Lloyd Banks Featuring 50 Cent	307702	4vLsvkuiarfgZN4NeWAENI
 23093	Come To Me	Diddy Featuring Nicole Scherzinger	300902	6yuvC80FcnVJNvC0DbXN9e
-23096	Idlewild Blue (Don'tchu Worry 'Bout Me)	OutKast	321442	0xJZfG2a13gxcZ7fVDqEIU
 23097	Ring The Alarm	Beyonce	281569	5BkHkyO9PFXs1m7vSMnXp4
 23099	Tim McGraw	Taylor Swift	371422	0Om9WAB5RS09L80DyOfTNa
 23101	My Love	Justin Timberlake Featuring T.I.	1490153	13X42np3KJr0o2LkK1MG76
@@ -1802,7 +1656,6 @@ id	song_name	display_artist	artist_id	spotify_id
 23124	I Wanna Love You	Akon Featuring Snoop Dogg	278247	4xAk8Lw82G3YoVSOdVAsBx
 23128	Shortie Like Mine	Bow Wow Featuring Chris Brown & Johnta Austin	297014	4F55RCGuM477OjznpYGhYz
 23129	Canadian Idiot	Weird Al Yankovic	431263	1gloYGAZI6eHp6MEPjLuL3
-23133	Walk Away (Remember Me)	Paula DeAnda Featuring The DEY	328431	0Sc9UwBpChiRKRF8DKvWKZ
 23135	Love Me Or Hate Me (F**k You!!!!)	Lady Sovereign	306357	null
 23139	Tell Me	Diddy Featuring Christina Aguilera	300902	7aRNccA1RsVl7lD7steC5N
 23140	The Pick Of Destiny	Tenacious D	374409	62ZQaNo7N6hf6U1myRbXcP
@@ -1815,7 +1668,6 @@ id	song_name	display_artist	artist_id	spotify_id
 23151	Just Like You	Hannah Montana	276390	1qsN5cpqU6quWtL9lgyA1v
 23157	Upgrade U	Beyonce Featuring Jay-Z	281569	0GLUBbX4daHJkT3RQHEOia
 23158	Dem Jeans	Chingy Featuring Jermaine Dupri	299137	1inngHbMTDMmGOjH1WjkcV
-23161	Here (In Your Arms)	Hellogoodbye	303425	4z1gmF4S1YsTj1pxiU47Qx
 23165	Wait A Minute	The Pussycat Dolls Featuring Timbaland	418902	6LDasBOWaNQEGgpDLaKDnJ
 23167	You	Lloyd Featuring Lil' Wayne	1496550	null
 23170	Let's Ride	The Game	1490221	4JKwW0A2OQeAUpYZd99Lfo
@@ -1823,20 +1675,17 @@ id	song_name	display_artist	artist_id	spotify_id
 23173	When Your Heart Stops Beating	(+44)	432018	1VpTwecl7EbQiGyVsvwFQE
 23174	Runaway Love	Ludacris Featuring Mary J. Blige	308504	0VPTq1UBP8fcWKYgLAtesN
 23176	It's Not Over	Daughtry	300354	0wIhWLNLIOmzQ89B3rtTd3
-23178	Snow ((Hey Oh))	Red Hot Chili Peppers	364771	4W3Bkljqflf1SD5l2VEtfl
 23179	Break It Off	Rihanna & Sean Paul	null	null
 23185	Zoom	Lil' Boosie Featuring Yung Joc	307274	null
 23189	Dangerous	Ying Yang Twins Featuring Wyclef	431622	7HhR1L61r3Z3PMWRRJSDHe
 23193	You Don't Know	Eminem, 50 Cent, Lloyd Banks & Cashis	null	null
 23194	That's That	Snoop Dogg Featuring R. Kelly	279664	3J58iVk8OXYAGG4YvOKG8u
 23196	What Goes Around...	Justin Timberlake	1490153	3pD0f7hSJg2XdQ6udw5Tey
-23207	Happy Xmas (War Is Over)	The Fray	409015	null
 23210	The Sweet Escape	Gwen Stefani Featuring Akon	null	1q9siR3OqGFnTeqFxwzN1S
 23213	The Way I Live	Baby Boy Da Prince Featuring Lil Boosie	null	68Zq7PMcPIQE8ol1x3gAqw
 23214	Listen	Beyonce	281569	1q6tVwU90PoRpPDD7hABBD
 23219	King Kong	Jibbs Featuring Chamillionaire	304599	3FY0HrfhcG75h0UCTGpg4S
 23223	Cupid's Chokehold	Gym Class Heroes Featuring Patrick Stump	303282	null
-23227	Mr. Jones	Mike Jones	311188	3LU66Soe9kT5saRxI4wTj6
 23228	My, Oh My	The Wreckers	419455	0fGIhWOJecR9u9Bo9UOTKC
 23229	Glamorous	Fergie Featuring Ludacris	302083	5u64yplSNUDHsCHNviHgpx
 23234	Go Getta	Young Jeezy Featuring R. Kelly	431677	03b1NUHnoavfpLLKcEMfIb
@@ -1850,47 +1699,37 @@ id	song_name	display_artist	artist_id	spotify_id
 23254	Wouldn't Get Far	The Game Featuring Kanye West	1490221	39yRhjDdSTP4A7VehxBXDb
 23256	Be Good To Me	Ashley Tisdale	280082	0lT3XBJR53shkiJErWkMO5
 23262	Give It To Me	Timbaland Featuring Nelly Furtado & Justin Timberlake	429956	0wbDgMuAoy7O7pL3a69uZx
-23263	1st Time	Yung Joc Featuring Marques Houston & Trey Songz	431719	0NNo17O7gamZqOwj42Jax0
 23265	Rock Yo Hips	Crime Mob Featuring Lil Scrappy	299759	2FCrjpcEh2cMrqPWD5SNxp
 23270	I'm A Flirt	Bow Wow Or R. Kelly (Featuring T.I. & T-Pain)	null	null
 23272	Stand	Rascal Flatts	362685	0xhiQVCz22skOX51jsrfyE
-23274	Buy U A Drank (Shawty Snappin')	T-Pain Featuring Yung Joc	277474	2aIdVb8v9KTpEZnftkz2mD
 23277	Pop Lock And Drop It	Huey	303676	6vs9xToxh23nXF8sucqnfP
 23282	Outta My System	Bow Wow Featuring T-Pain & Johnta Austin	297014	1cb7x6ypOTkoY9naUUddYQ
 23285	Because Of You	Ne-Yo	312075	6CFPFnS9EcLs2I0nWqtWci
 23286	Freak On A Leash (Unplugged)	Korn Featuring Amy Lee	306042	null
 23287	Look After You	The Fray	409015	5l6hpyTGBK0LAAxgPnqTQL
-23289	Last Dollar (Fly Away)	Tim McGraw	429939	2xMOrEkDo7JCkCkNRS1l6s
 23293	Please Don't Go	Tank	281539	5ZMuqGyjA91B4WLEh0gfwa
 23298	Rehab	Amy Winehouse	278975	1EXAqr4fceDPYlL6XeMi2g
 23300	Like This	Kelly Rowland Featuring Eve	305688	3sfydNh0QQAdnIAtDVG16H
 23301	Everything	Michael Buble	310724	4T6HLdP6OcAtqC6tGnQelG
-23304	Tell Me 'Bout It	Joss Stone	305262	7GmELLCacoDxgw74xfeUE4
 23308	We Takin' Over	DJ Khaled Featuring T.I. Akon, Rick Ross, Fat Joe. Lil' Wayne, Baby	299939	null
 23311	I Tried	Bone Thugs-N-Harmony Featuring Akon	296202	2elA6JLRaQ6iB7hxiuTKN4
-23314	Love Today	MIKA	311138	6ZBJFWDYJSTQg54eDsqnkJ
 23320	Diamonds	Fabolous Featuring Young Jeezy	276136	1Er1bKbIKelwFYev9kpJ4M
 23321	Makes Me Wonder	Maroon5	309663	7FfRF16SWU2h6tfB4lOqtA
 23322	Release	Timbaland Featuring Justin Timberlake	429956	6psdUDK8ojdMj563fniLfm
 23324	Apologize	Timbaland Featuring One Republic	429956	6ucR4KfvsBFWCMVFDvyKKl
 23325	When I See U	Fantasia	1496871	4iuNZTcvT9diFySSzVsnVS
-23328	The Story	Brandi Carlile	297066	null
-23329	Earth Intruders	Bjork	286810	null
 23331	Umbrella	Rihanna Featuring Jay-Z	365068	49FYlytm3dAAraYgpoJZux
 23332	I'm Throwed	Paul Wall Featuring Jermaine Dupri	328415	3n5rIcC04MiNx4T2GOS06g
 23348	Up To The Mountain	Kelly Clarkson Featuring Jeff Beck	null	null
 23354	Wipe Me Down	Lil Boosie Featuring Foxx & Webbie	307274	6D1CstH1YvzNN8cPd9ay9Q
-23356	(You Want To) Make A Memory	Bon Jovi	296092	2hgYX65FK5uSe1BWQfHH7a
 23358	Do It Just Like A Rockstar	Freak Nasty Featuring Crazy Mike	null	null
 23362	Anonymous	Bobby Valentino Featuring Timbaland	null	4vgOzZhcvNMWrpIRCRqFPQ
 23365	Same Girl	R. Kelly Duet With Usher	null	6OSmeoh8kXhCfz9WqvzDoJ
 23369	teachme	Musiq Soulchild	311959	0ODFPypnJLE6hKgahiuSzn
 23371	Impacto	Daddy Yankee Featuring Fergie	300083	6VG4J6um7lMrO5a0jW88FS
 23372	Get Me Bodied	Beyonce	281569	3W1mdCYUHWewrVXnRsPntM
-23373	All Good Things (Come To An End)	Nelly Furtado	312112	5jdX88klIpgftq5dVjxYkJ
 23374	Do You Know? (The Ping Pong Song)/Dimelo	Enrique Iglesias	301773	2z0z5ddJS3K7qvhp4PH0Aa
 23381	Big Things Poppin' (Do It)	T.I.	277486	7HS6itAEkzdEIFPfqneenx
-23383	A Broken Wing	Jordin Sparks	305200	null
 23388	Make Me Better	Fabolous Featuring Ne-Yo	276136	0YkJU6TjjwzsVXUPRIO0DB
 23389	Time Of The Season	Blake Lewis	289779	null
 23393	Whine Up	Kat Deluna Featuring Elephant Man	305534	7L1zJMkc9Ho7Ox0uSFC9TL
@@ -1899,29 +1738,23 @@ id	song_name	display_artist	artist_id	spotify_id
 23398	Nobody's Perfect	Hannah Montana	276390	1GBknQ67DCfKTPms1dw9EW
 23406	Shawty	Plies Featuring T-Pain	342441	6olIWF9LZgO0Eij4CeORQV
 23410	Let It Go	Keyshia Cole Featuring Missy Elliott & Lil Kim	305806	2RqZFOLOnzVmHUX7ZMcaES
-23412	Doomsday Clock	The Smashing Pumpkins	279618	77B1ojCsreBC8BO49QXjJD
 23413	Life's What You Make It	Hannah Montana	276390	1pEc2SNzgGvbmvcapQ566n
-23415	G.N.O. (Girl's Night Out)	Miley Cyrus	311278	32sdJuk9CoZgSe9bTSyC98
 23416	Make Some Noise	Hannah Montana	276390	4OCwbVkarjtTqkYZUP10lQ
 23417	Easy	Paula DeAnda Featuring Bow Wow	328431	4VeIf4ZyGkipbaJYXjPGUn
 23419	True Friend	Hannah Montana	276390	322E3pHVE4THhniKjNLTY9
 23420	You Know What It Is	T.I. Featuring Wyclef Jean	277486	0OXwH691zTwTJZS4zuOHFR
 23421	LoveStoned	Justin Timberlake	1490153	5iyE2d4U3Vc5cqY9mPTlpy
-23427	Guys Like Me	Eric Church	301808	2FNYp8WnWlqkI4J0Zgea7a
-23428	Crank That (Soulja Boy)	Soulja Boy	279964	4iNkk2qPPXC1MAZdVUq810
 23433	You Can't Stop The Beat	Cast Of Hairspray	null	null
 23435	Can't Leave 'Em Alone	Ciara Featuring 50 Cent	299324	78CTv7ypHvXQlEjXYst2n9
 23439	Cyclone	Baby Bash Featuring T-Pain	275566	27mhCGdAA8gM7b33KIiB3k
 23441	Take Me There	Rascal Flatts	362685	6xRMwzjtb7bEbDFYP97jQB
 23442	Proud Of The House We Built	Brooks & Dunn	297731	7jASbeMQoosldSA9XoVfG3
 23444	Hood Figga	Gorilla Zoe	303028	1OeTY85K4i1I7kNnvESfeb
-23453	Int'l Players Anthem (I Choose You)	UGK Featuring OutKast	277582	0WANZVN6yCkSn1TZ1kDglP
 23457	You Are The Music In Me	Zac Efron And Vanessa Anne Hudgens	null	null
 23458	Clothes Off!!	Gym Class Heroes	303282	6miqdoICzUXCL5UHCuucjK
 23459	Gotta Go My Own Way	Zac Efron And Vanessa Anne Hudgens	null	null
 23460	Bet On It	Zac Efron	431746	null
 23462	Everyday	Zac Efron And Vanessa Anne Hudgens	null	19ywWxxWxe48o6wrSbGC6B
-23463	All For One	High School Musical 2 Cast	303504	null
 23465	Fabulous	Ashley Tisdale And Lucas Grabeel	280082	null
 23474	Hate That I Love You	Rihanna Featuring Ne-Yo	365068	7iu0WYLdo4yksKf3seaxzI
 23478	I Don't Wanna Be In Love (Dance Floor Anthem)	Good Charlotte	303007	6RmlLT3nJpJhWf3zkO1ums
@@ -1934,23 +1767,18 @@ id	song_name	display_artist	artist_id	spotify_id
 23502	Hypnotized	Plies Featuring Akon	342441	3LN41NUdHkyNqQhi9gExMm
 23507	Into The Night	Santana Featuring Chad Kroeger	278142	5l4dbukQCZsmRuowPH4kD2
 23510	1234	Feist	302065	2CzWeyC9zlDpIOZPUUKrBW
-23516	Shadowplay	The Killers	418396	6HbTF52swZiGSJ2cvAJ7PU
 23517	Love Like This	Natasha Bedingfield Featuring Sean Kingston	312028	49ppqF73rOz5Nyt1paRxIF
 23521	Low	Flo Rida Featuring T-Pain	302239	0CAfXk7DXMnon4gLudAp7J
 23523	I'm Like A Lawyer...(Me & You)	Fall Out Boy	276170	null
 23529	Girlfriend	Bow Wow & Omarion	297016	4P4kKLdS854BsDIEr3CWvt
-23530	Roc Boys (And The Winner Is)...	Jay-Z	304305	0vucbmqvThKxrQBaqC5h3B
 23534	From Where You Are	Lifehouse	307174	5ef3mAxAAjk93V6IpriOrz
-23537	Headlines (Friendship Never Ends)	Spice Girls	280149	2WQlUzeuI61UvGl7IptTEo
 23551	Independent	Webbie, Lil' Phat & Lil' Boosie	null	65D95SmygxGCQGiI64eaZf
-23552	Cleaning This Gun (Come On In Boy)	Rodney Atkins	367148	0idM8NsQeEbJHEuhXCe3jF
 23555	Say	John Mayer	304974	6wZI4mdT8JwXgkGURnBQiq
 23558	Still Will	50 Cent Featuring Akon	431969	36t4bbh478ZyXbCFhaRCqR
 23559	Crying Out For Me	Mario	429939	4HI3DoFb19j9fw8oa08YcP
 23561	Hero/Heroine	Boys Like Girls	297036	1AnesEZjtNHT7Nr2Y4BuNR
 23564	Never	Jaheim	304040	7c60CSqNjLRzUYnUVFhuKq
 23566	Superstar	Lupe Fiasco Featuring Matthew Santos	308591	7dltD9eEX7X1zk8JJ9BS0e
-23571	The Chipmunk Song (Christmas Don't Be Late) (2007)	Alvin And The Chipmunks	278753	null
 23574	The Anthem	Pitbull Featuring Lil Jon	1490081	6TVhP2a7ESba4pR5ePflRw
 23576	What Is It	Baby Bash Featuring Sean Kingston	275566	371GoHoueVN53jY8MoWufq
 23577	Witch Doctor (2007)	Alvin And The Chipmunks Featuring Chris Classic	278753	null
@@ -1959,7 +1787,6 @@ id	song_name	display_artist	artist_id	spotify_id
 23590	No Air	Jordin Sparks Duet With Chris Brown	null	519tXYJVcrpEMqV2BMbh6E
 23591	Citizen/Soldier	3 Doors Down	431895	7fKsaiVDwKe6VVsiGk48YG
 23594	Falsetto	The-Dream	419475	2P1e3xpjDhYFqOFeu8IWzS
-23596	Suspicions	Tim McGraw	429939	7BTA8noDxCDn1u5UdO8Tel
 23598	What Hurts The Most	Cascada	298770	6i8Zmfk7wCdOfhPcTY87vB
 23604	God Must Be Busy	Brooks & Dunn	297731	6ScrVCHKcvIc0D9WprKSvl
 23613	Sexy Can I	Ray J & Yung Berg	null	null
@@ -1980,7 +1807,6 @@ id	song_name	display_artist	artist_id	spotify_id
 23660	4 Minutes	Madonna Featuring Justin Timberlake	308786	null
 23662	Going On	Gnarls Barkley	302958	6N7YkCy1oSMRsaZSoz5VlS
 23664	Beat It	Fall Out Boy Featuring John Mayer	276170	4OMsAnt8JSBctSJQIMNAy1
-23666	Bust It Baby (Part 2)	Plies Featuring Ne-Yo	342441	4pkyUUoPFqsZHtWe6nkEG0
 23668	Got Me Going	DAY26	300542	6Qqp1NCiy8Ps6EtOL1yjeb
 23672	Supernatural Superserious	R.E.M.	277275	5b4AhhuU2fOe3zkbXReUxx
 23676	Trying To Stop Your Leaving	Dierks Bentley	300932	2CJH3yYjnqhkwsrhT4oJjj
@@ -2003,10 +1829,7 @@ id	song_name	display_artist	artist_id	spotify_id
 23729	Lolli Lolli (Pop That Body)	Three 6 Mafia Featuring Project Pat, Young D & Superpower	419565	0FzNsTG8naVP0O4HTnM7Bp
 23730	Lucky	Jason Mraz Featuring Colbie Caillat	304259	null
 23732	Dream Big	David Cook	300419	null
-23734	The World I Know	David Cook	300419	null
 23735	Love In This Club Part II	Usher Featuring Beyonce & Lil Wayne	null	2bppvcuQhuMcJZHtM9So7r
-23736	Imagine	David Archuleta	300395	null
-23739	Don't Let The Sun Go Down On Me	David Archuleta	300395	null
 23741	Always Be My Baby	David Cook	300419	null
 23742	Hello	David Cook	300419	null
 23743	The Music Of The Night	David Cook	300419	null
@@ -2042,15 +1865,12 @@ id	song_name	display_artist	artist_id	spotify_id
 23836	BB Good	Jonas Brothers	305153	18JpZ9YxMiIQgZpaLX33Je
 23837	Real	Goo Goo Dolls	411330	5gWnJbOpNKAcOZw7snskjK
 23838	Cry For You	September	278654	4s3CHmungRHAI5ho2edqXb
-23840	Something Special	Colbie Caillat	299505	null
 23841	So What	Pink	338855	5sxuGTzFibBLYInWJ3yDuo
 23843	American Boy	Studio All-Stars	null	null
 23846	What Them Girls Like	Ludacris Co-Starring Chris Brown & Sean Garrett	null	3CsosCIphxRveIXD0829le
 23850	Let It Rock	Kevin Rudolf Featuring Lil Wayne	305797	2vVc2G9w2JteBgxpSUVwX5
 23852	So Fly	Slim Featuring Yung Joc	1496888	6nqscDOWhTkD1tfpTNrh5A
 23857	Now Or Never	High School Musical 3 Cast	303505	null
-23866	Right Here (Departed)	Brandy	297075	06G1SCVVYRSDCFGMSnDvpv
-23877	Right Now (Na Na Na)	Akon	278247	1ARJhjuI6TNYZCxYygFQ4F
 23879	Krazy	Pitbull Featuring Lil Jon	1490081	5fngnkVw7i77dqLO346hsr
 23884	On The Line	Demi Lovato Featuring Jonas Brothers	300744	42HmE5WxtyljQoV0aCi8Yq
 23889	Dead And Gone	T.I. Featuring Justin Timberlake	277486	1k2NovMHKHhgGsHxg0aYAS
@@ -2063,24 +1883,18 @@ id	song_name	display_artist	artist_id	spotify_id
 23907	Freeze	T-Pain Featuring Chris Brown	277474	54ESO6P1monoUtN6PBqINp
 23908	Get Up	50 Cent	431969	4lyphUu7lt4KKuf8jZKjjh
 23909	Start A Band	Brad Paisley Duet With Keith Urban	null	0GneFCOVzvi6ok0oRC7Kfu
-23910	Single Ladies (Put A Ring On It)	Beyonce	281569	5R9a4t5t5O0IsznsrKPVro
 23911	Chopped 'N' Skrewed	T-Pain Featuring Ludacris	277474	2ceNFvUD0EpCbGPPZNOBuE
 23912	Cuddy Buddy	Mike Jones Featuring Trey Songz, Lil Wayne & Twista	311188	null
-23915	Be OK	Ingrid Michaelson	303814	2qESkHBZ2VThboOnosYFBk
 23916	I Don't Care	Apocalyptica Featuring Adam Gontier	279782	0t9Jd84JnsV8HRMaQzHUom
 23918	Pop Champagne	Jim Jones & Ron Browz Featuring Juelz Santana	null	6ZULTiMcrmGeuj6GilRgod
 23921	Don't	Billy Currington	283473	3kMEEDhGG7zVyGfMhol9E3
-23922	Lloro Por Ti	Enrique Iglesias	301773	null
 23926	Can I Have This Dance	Zac Efron & Vanessa Hudgens	431746	null
 23932	Dont Trust Me	3OH!3	431924	null
-23937	Spaceman	The Killers	418396	5ubUprLRov5UPDCS2UP4cb
 23940	My President	Young Jeezy Featuring Nas	431677	4Onlx3t98YDeu8bM7wRS5K
 23941	Too Drunk...	Buckcherry	298480	1dktkvl6E5mqGUGmPGXlq6
 23947	Forever & Always	Taylor Swift	371422	46HGgtwmmuEB8mvDCyjyAc
-23949	The Way I Loved You	Taylor Swift	371422	77VotUUL79U10TAnYdqwvr
 23952	Cowgirls Don't Cry	Brooks & Dunn Featuring Reba McEntire	297731	2yDXBzm5X8V2SGe33TYGvr
 23953	Breathe	Taylor Swift	371422	6S9G7J3EB1ZY0rrZPwsBg5
-23955	Hey Stephen	Taylor Swift	371422	6wcFdMmiDscAhZJrcVFumx
 23956	Troublemaker	Akon & Sweet Rush	278247	null
 23958	You Found Me	The Fray	409015	4IoYz8XqqdowINzfRrFnhi
 23962	Ride	Ace Hood Featuring Trey Songz	277937	53zJNZS5D9gcQW2Ru0Aypy
@@ -2088,7 +1902,6 @@ id	song_name	display_artist	artist_id	spotify_id
 23964	IfULeave	Musiq Soulchild Featuring Mary J. Blige	null	4GhbRPmkVfAZmSQZqdifrn
 23971	Amazing	Kanye West Featuring Young Jeezy	276709	7tsgm8M8uO6W1HmBAmHFGv
 23974	Beautiful	Akon Featuring Colby O'Donis & Kardinal Offishall	278247	7rv0UuxMX7CpUUwEE1jVrd
-23975	Shattered Glass	Britney Spears	297529	0JIOI98h3eaifxXnEkBO2C
 23976	Down The Road	Kenny Chesney With Mac McAnally	null	51z3II8ZUCj4KGaUk9DKUg
 23977	If U Seek Amy	Britney Spears	297529	0f0lWRAs9kdAFZu8mAI9K2
 23983	Just Like Me	Jamie Foxx Featuring T.I.	304140	6Gm1DPTZmMEB8U1db5oVyh
@@ -2104,9 +1917,7 @@ id	song_name	display_artist	artist_id	spotify_id
 24011	Blame It	Jamie Foxx Featuring T-Pain	304140	08uGhvS5MfBk7crUCpnjva
 24014	At Last	Beyonce	281569	0h87GbMRuU8ENP8LmdeA22
 24016	Halo	Beyonce	281569	4JehYebiI9JE8sR8MisGVb
-24017	Move (If You 'W'anna)	Mims	276877	null
 24023	Ain't I	Yung L.A. Featuring Young Dro & T.I.	431720	6cnufgF6qLJGZT2PRFZBr1
-24024	Absolute	The Fray	409015	6sSDEFMeyf16WRDLRCXwTc
 24029	How Do You Sleep?	Jesse McCartney Featuring Ludacris	304536	3jkdQNkDTxxXtjSO4l0o1H
 24030	Working On A Dream	Bruce Springsteen	298448	42018wYITuJjhwtwfV9xSG
 24033	Lost!	Coldplay With Jay-Z	null	4SwVcoBjjawbnexIiUDLc5
@@ -2119,7 +1930,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24058	I'm In Miami Trick	LMFAO	276754	2vJVTVxLUZHjxan5UtBe1V
 24060	My Love	The-Dream Featuring Mariah Carey	419475	4ZXvpc8EJwsEUOZnbcFNPQ
 24063	You Can Get It All	Bow Wow Featuring Johnta Austin	297014	2r8JyfxLyQg3IhnxKro4j8
-24065	Candle (Sick And Tired)	The White Tie Affair	419423	7L2njnxdaRRvDMNLuP1ZcD
 24069	Marry For Money	Trace Adkins	430324	5WHjU4AtVwvUcEemV5ENmn
 24075	Love Sex Magic	Ciara Featuring Justin Timberlake	299324	0upQ8bgqXGhFsBgvchxbGm
 24077	Want It, Need It	Plies Featuring Ashanti	342441	2cvrqWPrVUampcQP46MMdV
@@ -2148,11 +1958,9 @@ id	song_name	display_artist	artist_id	spotify_id
 24175	Ego	Beyonce	281569	6GcuA4J9ruyClBizBd4m5E
 24180	On The Ocean	K'Jon	276617	5tRna9FSqMrh2LJwqIykHA
 24183	Make Her Say	Kid Cudi Featuring Kanye West & Common	305822	5bkhrGvabAPrugPUm7DvsD
-24190	Damned If I Do Ya (Damned If I Don't)	All Time Low	278659	1Syt5ha5JwmITVoQxEh1gm
 24191	Fly With Me	Jonas Brothers	305153	6zdgTKh8O7rYugDRRGSSa0
 24192	Break Up	Mario Featuring Gucci Mane & Sean Garrett	429939	4UP5HP7IAnNdxD01g1lzQp
 24193	When Love Takes Over	David Guetta Featuring Kelly Rowland	300445	0gqLairXmwf8MLIWmPYqhn
-24194	D.O.A. (Death Of Auto-Tune)	Jay-Z	304305	1rlsUf1hdCGf1ML0MJJczY
 24199	Trust	Keyshia Cole Duet With Monica	null	null
 24201	Barefoot And Crazy	Jack Ingram	276615	743UzZj0Yzh9IYJEzH2f5H
 24202	Falling For You	Colbie Caillat	299505	null
@@ -2161,13 +1969,10 @@ id	song_name	display_artist	artist_id	spotify_id
 24207	God In Me	Mary Mary Featuring Kierra "KiKi" Sheard	309858	1ZxwWrMNukjS8sb9TZ0HjU
 24209	He Could Be The One	Hannah Montana	276390	07HPV6hzecJmMJwsIX8YVU
 24212	I Wanna Know You	Hannah Montana Featuring David Archuleta	276390	6ftcAmQPmGbk7Gkr5MJe4T
-24213	Ice Cream Freeze (Let's Chill)	Hannah Montana	276390	3FRuUuqmFDk3BYHaDzAjTI
 24214	Shining Down	Lupe Fiasco Featuring Matthew Santos	308591	0hkRONsyMGzkhJGc56L5v0
 24217	Come Home	OneRepublic With Sara Bareilles	null	0bJfgUyjfPJYqRgUxb12Eh
 24218	Successful	Drake Featuring Trey Songz	301284	null
 24222	The One	Mary J. Blige Featuring Drake	null	0z1wYL8FalelcThBPnwTps
-24223	Say Hey (I Love You)	Michael Franti & Spearhead	310757	null
-24227	Imma Star (Everywhere We Are)	Jeremih	304467	1QOxGqu6VTjx58nslWBFVW
 24228	Sweet Dreams	Beyonce	281569	1FKxKGONukVFXWVJxAKmlz
 24230	Remember Me	T.I. Featuring Mary J. Blige	277486	3KysI5xBjESoRGwwdhp2Vl
 24237	I Just Call You Mine	Martina McBride	309763	0Vx5HrgZHaXz03iu6eQP4g
@@ -2176,7 +1981,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24246	Send It On	Disney's Friends For Change	301010	null
 24254	I'm Alive	Kenny Chesney With Dave Matthews	null	3yrB7tHePKpCJgiiOiUhsH
 24255	Starstrukk	3OH!3	431924	1hBM2D1ULT3aeKuddSwPsK
-24263	(If You're Wondering If I Want You To) I Want You To	Weezer	431262	5VBuNc5ZzLxiZCFHpPPhLu
 24267	Number One	R. Kelly Featuring Keri Hilson	277270	3ESxS1yCFwtYMSjE01hwMS
 24271	LOL :-)	Trey Songz Featuring Gucci Mane & Soulja Boy Tell'em	430421	7H2rO0shNOiEzaUP3cIkv4
 24273	Body Language	Jesse McCartney Featuring T-Pain	304536	7lT9KJpfzMTNi9702WuNI8
@@ -2194,7 +1998,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24323	Money To Blow	Birdman Featuring Lil Wayne & Drake	286105	4gaz3uvhKgO078XcdzyPsl
 24327	Nobody	Wonder Girls	431510	4RQzR7QbL1q4ypEvh5RsIF
 24332	Tie Me Down	New Boyz Featuring Ray J	312160	4faiJXyBflUVVOOE9fxbeg
-24334	Notion	Kings Of Leon	305936	40e9kU9Wd4vbedqSA7Io4n
 24336	Time For Miracles	Adam Lambert	278006	4Czm9ZRnUzQJZn9y5QYwxf
 24344	History In The Making	Darius Rucker	300293	1J4HTEFSDx9DWyJVH5uv1b
 24353	Love Me	Justin Bieber	305459	0pwYLVXVknPSGUQb39cePC
@@ -2214,13 +2017,8 @@ id	song_name	display_artist	artist_id	spotify_id
 24403	Shut It Down	Pitbull Featuring Akon	1490081	6r9uMZ7NBaMO1ovylcJZI4
 24407	If We Ever Meet Again	Timbaland Featuring Katy Perry	429956	2IZMonkTNxZuL04YWj3sKX
 24409	How Low	Ludacris	308504	1WtTLtofvcjQM3sXSMkDdX
-24410	My Life Would Suck Without You	Glee Cast Featuring Lea Michele, Cory Monteith, Jenna Ushkowitz & Amber Riley	null	null
-24411	Don't Rain On My Parade	Glee Cast Featuring Lea Michele	null	null
 24414	I Am	Mary J. Blige	309851	0a4HnQAiD08Yg8z30yfPhI
-24415	You Can't Always Get What You Want	Glee Cast Featuring Lea Michele, Cory Monteith, Kevin McHale & Amber Riley	null	null
-24416	This Is War	Thirty Seconds To Mars	431915	null
 24418	What I Do	Chris Brown Featuring Plies	1486846	1PQzybyGX1ylPrEU7t2scf
-24419	And I Am Telling You I'm Not Going	Glee Cast Featuring Amber Riley	null	null
 24421	Twang	George Strait	302752	10Jl8nC5i4idX63nUk3mRj
 24422	BedRock	Young Money Featuring Lloyd	431686	3iL2l5gUqyPS6vDwJFgJTR
 24424	Empire State Of Mind (Part II) Broken Down	Alicia Keys	278600	5sra5UY6sD658OabHL3QtI
@@ -2240,7 +2038,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24456	Nothin' On You	B.o.B Featuring Bruno Mars	275499	59dLtGBS26x7kc0rHbaPrq
 24463	Knockout	Lil Wayne Featuring Nicki Minaj	307264	5VSp0XbyCq5IzNcfPL5X0t
 24464	You And Me	Dave Matthews Band	302752	1qHXpsRP2gwteJCPUrc9wA
-24465	I Made It (Cash Money Heroes)	Kevin Rudolf Featuring Birdman, Jay Sean, & Lil Wayne	305797	6H2wnX7ytNeCKERIVqCwgs
 24467	F**k Today	Lil Wayne Featuring Gudda	null	null
 24468	American Star	Lil Wayne Featuring Shanell AKA SNL	307264	6x4m0Q6kqRnhslFRoGO3mA
 24470	Major Tom	Shiny Toy Guns	279128	1eXZWTd9cWpaaay2PQyY3b
@@ -2264,15 +2061,12 @@ id	song_name	display_artist	artist_id	spotify_id
 24530	Billionaire	Travie McCoy Featuring Bruno Mars	430380	2M9ULmQwTaTGmAdXaXpfz5
 24532	She Won't Be Lonely Long	Clay Walker	299416	0XkY1KxEFOg3PDZCAhhjMt
 24534	Winner	Jamie Foxx Featuring Justin Timberlake & T .I.	304140	53RmnO2xlpRzDu5OIOdVMZ
-24538	Un-Thinkable (I'm Ready)	Alicia Keys	278600	4JOP8ELK6AaeySe7sKe996
 24541	Airplanes	B.o.B Featuring Hayley Williams Of Paramore	275499	null
 24546	Hello, I Love You	Glee Cast	null	0tcdQZ9FvxZ2Uk0S7QN7yK
 24550	Bet I	B.o.B Featuring T.I. & Playboy Tre	275499	2ZMDfZ2VB5J1SVKEBP9ryH
-24556	Still	Tim McGraw	429939	0GHQjsiligq44QGUePXntw
 24557	Ride	Ciara Featuring Ludacris	299324	3RJclnBV8g9mvHPtSzPf7c
 24561	Fire	Glee Cast Featuring Kristin Chenoweth	null	4JYLFuJJHBPMkEAhn1mYgo
 24564	Magic	B.o.B Featuring Rivers Cuomo	275499	5uHYcK0nbEYgRaFTY5BqnP
-24565	Cooler Than Me	Mike Posner Featuring Big Sean	311215	2V4bv1fNWfTcyRJKmej6Sj
 24567	Home	Glee Cast Featuring Kristin Chenoweth	null	2HYYH9z8eQNBLqrD4t6uVi
 24568	Halfway There	Big Time Rush	281692	6L4PjBaEjTxI0sOBGq8OQg
 24569	Gettin' Over You	David Guetta & Chris Willis Featuring Fergie & LMFAO	null	1UocR7OSxTPN5vBgIa2fFX
@@ -2287,7 +2081,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24592	Dream On	Glee Cast Featuring Neil Patrick Harris	null	6cNSOKvw5hYVrOCrLw8joJ
 24593	I Dreamed A Dream	Glee Cast Featuring Idina Menzel	null	4QDo30WQZZJle0Up1mC8ez
 24594	Touchin On My	3OH!3	431924	1LjHre9uHSLMuUrKsl6ppX
-24596	Neutron Star Collision (Love Is Forever)	Muse	311949	4AIazttPmHpd7p7pwJw692
 24597	WooHoo	Christina Aguilera Featuring Nicki Minaj	299251	2JvTsiP9tYLGIOHvXT1yW1
 24604	Hallelujah	Lee DeWyze	306820	null
 24606	Falling Slowly	Lee DeWyze & Crystal Bowersox	null	null
@@ -2295,9 +2088,7 @@ id	song_name	display_artist	artist_id	spotify_id
 24609	The Boxer	Lee DeWyze	306820	null
 24615	Miss Me	Drake Featuring Lil Wayne	301284	1U4mweNwisxNj23ffuC9gO
 24618	Yeah Ya Know (Takers)	T.I.	277486	21mCPKOpNon5xv5XIc8PPb
-24620	Deja Vu	3OH!3	431924	null
 24630	Never Say Never	Justin Bieber Featuring Jaden Smith	305459	5GYbkDveRD2I8M5ZJ14hWn
-24632	Waka Waka (This Time For Africa)	Shakira Featuring Freshlyground	278867	2Cd9iWfcOpGDHLz6tVA3G4
 24636	Hey	Lil Jon Featuring 3OH!3	307236	5l9D0ugfAeQ6cgiYb2ay65
 24639	If It's Love	Train	430350	3RJRx9t2N12E1junX6s7zm
 24641	Woohoo	Christina Aguilera Featuring Nicki Minaj	299251	2JvTsiP9tYLGIOHvXT1yW1
@@ -2314,7 +2105,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24671	We'll Be A Dream	WE the Kings Featuring Demi Lovato	431174	2Ph5ON7knzPFDQgtHM47cP
 24673	Cuando Me Enamoro	Enrique Iglesias Featuring Juan Luis Guerra	301773	79gkHjNTSyGPXEyGkNQ8zH
 24674	I Can Do Anything	3OH!3	431924	1jZ0Oi5qrAjMaZ67XGNi5e
-24678	B.M.F. (Blowin' Money Fast)	Rick Ross Featuring Styles P	365033	35QGdv6aFbIaLM0Ozr3rHt
 24679	Up On The Ridge	Dierks Bentley	300932	6jHKCWp15grCREpx7arDix
 24682	Break My Bank	New Boyz Featuring Iyaz	312160	2yBnsyXPpfE3dKZ5xtqC1y
 24683	La La La	Auburn Featuring Iyaz	280204	null
@@ -2323,8 +2113,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24696	The Crow And The Butterfly	Shinedown	279123	5vMcEd92spophSNC0PfOU0
 24697	Rockstar 101	Rihanna Featuring Slash	365068	5rXDTihGQ3TkYE3pmraAmH
 24700	Letting Go (Dutty Love)	Sean Kingston Featuring Nicki Minaj	278515	0wDbYIl4fN2mccHczCJqEf
-24701	2012 (It Ain"t The End)	Jay Sean Featuring Nicki Minaj	304297	1ERCOXHQcoLSTlgmNTlcrR
-24702	Not Like The Movies	Katy Perry	305595	1EFNEJyZUsctm6yVzGqLl6
 24703	September	Daughtry	300354	21RRhjnMsrvQpeQ10ptSBZ
 24705	Bottoms Up	Trey Songz Featuring Nicki Minaj	430421	2IpGdrWvIZipmaxo1YRxw5
 24706	Circle The Drain	Katy Perry	305595	7s0YfJE6hNNYq9BV26iCw6
@@ -2333,13 +2121,10 @@ id	song_name	display_artist	artist_id	spotify_id
 24714	Right Above It	Lil Wayne Featuring Drake	307264	1kMuU3TNQvHbqvXCWBodmP
 24716	E.T.	Katy Perry	305595	0NwHcjsMMGgolX6CXFDwQT
 24717	Why Wait	Rascal Flatts	362685	3uSeT5T2pOEx5fTdYFJasm
-24718	2012 (It Ain't The End)	Jay Sean Featuring Nicki Minaj	304297	1ERCOXHQcoLSTlgmNTlcrR
-24719	Give A Little More	Maroon 5	309663	2TRuBFYZYw0Q7qIVBhqR1T
 24720	Black Rain	Soundgarden	279997	4wiy6ISMRC3XVGM7AKm0nC
 24721	Erase Me	Kid Cudi Featuring Kanye West	305822	6XkuklKiHYVTlVvWlTgQYP
 24725	F**k You!	Cee Lo Green	298842	null
 24726	Trailerhood	Toby Keith	430048	0ZVfBwPs1X2qYt2TC0EniU
-24727	Holding You Down (Goin In Circles)	Jazmine Sullivan	304318	2tmfz2Dsp6j2PXxyImIKL7
 24729	F**k You (Forget You)	Cee Lo Green	298842	4kM0xItygm9IqLsaRsQM3P
 24735	Hollywood	Michael Buble	310724	2E0DkrdUGgnrBj9MfQtjm1
 24745	All I Want Is You	Miguel Featuring J. Cole	311090	5VA4Ispp52EA1sOqzMz3Av
@@ -2351,7 +2136,6 @@ id	song_name	display_artist	artist_id	spotify_id
 24759	Toxic	Glee Cast	null	5oxioZhKHdASa1PZM65kYT
 24762	What's Wrong With Them	Lil Wayne Featuring Nicki Minaj	307264	1lIVUZkvFCQy4wxSvNF2LE
 24771	Na Na Na (Na Na Na Na Na Na Na Na Na)	My Chemical Romance	311975	5FbMKftNTXCKiBYSf0TQrs
-24773	Hope She Cheats On You (With A Basketball Player)	Marsha Ambrosius	309681	6eyd3UdMl5wek5jG8nHOqm
 24775	Runaway	Kanye West Featuring Pusha T	276709	3DK6m7It6Pw857FcQftMds
 24778	Raise Your Glass	P!nk	277117	12lZTPlXwUtrQuhEty6098
 24780	Papa Can You Hear Me?	Glee Cast	null	3nzv1IqPZfk7nPkmjTr7PE
@@ -2364,13 +2148,11 @@ id	song_name	display_artist	artist_id	spotify_id
 24802	What's My Name?	Rihanna Featuring Drake	365068	5xZtUAVUVfjBtVtMOgMkyy
 24807	Strip Me	Natasha Bedingfield	312028	5dQeHoUqa63RdCxOiQdrgo
 24808	We R Who We R	Ke$ha	305612	5jaz6aiRknA63NIYWdbr2O
-24816	Last Kiss	Taylor Swift	371422	4h0EXpatqJImv4VRgvX6po
 24826	Sleazy	Ke$ha	305612	1zPDgF3K6QXcTopDB3SVg9
 24830	Get Back Up	T.I. Featuring Chris Brown	277486	6yU6xGZ5OZm9e73af51fr9
 24831	Lo Mejor De Mi Vida Eres Tu/The Best Thing About Me Is You	Ricky Martin Featuring Natalia Jimenez	365051	null
 24834	Don't You Wanna Stay	Jason Aldean With Kelly Clarkson	null	2CAf7WlHg8SlMLHmt55pqs
 24836	The Big Bang	RockMafia	null	null
-24842	One Love (People Get Ready)	Glee Cast	null	1M5Mb38gVMh39zcAPSAC7A
 24845	Down On Me	Jeremih Featuring 50 Cent	304467	0x3TibRgnSqzkcwrqBd4iX
 24848	Cannibal	Ke$ha	305612	6bmw3whbG7FBQojQPFk52l
 24850	Make A Movie	Twista Featuring Chris Brown	430584	6rknN7zsDQTEpwAn1tIblS
@@ -2386,52 +2168,39 @@ id	song_name	display_artist	artist_id	spotify_id
 24894	F**kin' Perfect	P!nk	277117	null
 24903	Hit It Again	3OH!3	431924	1ihqTGPvywqk4A7Tk8bKUu
 24905	I Am The Champion	B.o.B	275499	null
-24907	Big Night	Big Time Rush	281692	3mTyzSoSqh6KJj9p88WHaY
 24914	H*A*M	Kanye West & Jay-Z	null	null
 24917	Buzzin'	Mann Featuring 50 Cent	309081	3BJ8SjJ2TeMxmTDPeC8yaZ
 24918	Wildflower	The JaneDear Girls	430685	2pey6ClOaWssXa4tVBGVJP
-24920	Stay The Night	James Blunt	304081	3YYfH8VlmWZWeJuF4HvUBJ
 24923	Help Is On The Way	Rise Against	365081	09jPXOz0LS0kpqmkQRaFPO
 24931	When You're Young	3 Doors Down	431895	6D7uABGh6Cjo2Sx3nZ23e4
 24933	Price Tag	Jessie J Featuring B.o.B	304565	6ezyEFqZDgQUvxpaDv4jKO
-24934	The Ballad Of Mona Lisa	Panic! At The Disco	277193	5rLi8B8qgk6qThwRnKHW2P
 24939	I Do	Colbie Caillat	299505	0xSJx8f3bARd18J3CnwEGO
-24945	P.Y.T. (Pretty Young Thing)	Glee Cast	null	57xW8NlNhWLdW78w25R3tb
 24947	She's Not There	Glee Cast	null	0lxbX5lDQzd10UIF7F9qQN
 24949	Pray	Justin Bieber	305459	3O5zp6tOdGFWi0NdzC0frI
 24953	E.T.	Katy Perry Featuring Kanye West	null	0NwHcjsMMGgolX6CXFDwQT
 24955	Baby	Glee Cast	null	7irY7Ldcf6BFpycGl62vum
-24958	Born To Be Somebody	Justin Bieber	305459	1gWnUzwTMhOv4cWyj1CDxB
 24962	On The Floor	Jennifer Lopez Featuring Pitbull	304444	0Oe49j06Bjrxs8PltuVeaW
 24964	On My Level	Wiz Khalifa Featuring Too $hort	431494	0osPX8TruIebOhKuG6GK8C
-24965	Blame It (On The Alcohol)	Glee Cast	null	7ujNqNkuHOcAzATHKZtKLb
 24971	Welcome To My Hood	DJ Khaled Featuring Rick Ross, Plies, Lil Wayne & T-Pain	299939	2NYYUTe0vuU5Tq4smECz71
 24977	Twisted	Gorilla Zoe Featuring Lil Jon	303028	2BVP9jZHtbpwOhHwenyvHs
 24978	You Lie	The Band Perry	382918	462tT5pBVstoLcOSJsBBKw
 24980	My Last	Big Sean Featuring Chris Brown	281681	2S8rKY8MAVnQ976ELkHli3
 24985	Do You Wanna Touch Me (Oh Yeah)	Glee Cast Featuring Gwyneth Paltrow	null	1jgmLWJ6vlPpE1nWjB61Az
 24991	Boom	Snoop Dogg Featuring T-Pain	279664	7eT08OfoEfetiXGDiYT6uD
-24997	Where You At	Jennifer Hudson	304441	2uPY5dmIXcId7MlMMSaPKS
 25015	Next To You	Chris Brown Featuring Justin Bieber	1486846	2faDo9tBRN57TN4iK2XFWt
 25017	John	Lil Wayne Featuring Rick Ross	307264	7HaggpJGAfEgH8wyMLOIPl
 25021	F**k Him He's A DJ	Ke$ha	305612	null
-25024	The Story	Sara Ramirez	null	null
 25026	Beggin' On Your Knees	Victorious Cast Featuring Victoria Justice	430898	116kG9vvdUtoprjYtToONt
 25031	Old Alabama	Brad Paisley Featuring Alabama	297053	3OMpIoONQH8rSscaZLozFQ
 25032	Somewhere Else	Toby Keith	430048	41vSqn8lbTtooJiT6tWn2d
 25034	Motivation	Kelly Rowland Featuring Lil Wayne	305688	4Cv5dkUBqepa0siwGREihD
 25038	Determinate	Bridgit Mendler, Adam Hicks, Naomi Scott & Hayley Kiyoko	297431	4qEoqyPbLYnLOii6mKlIjI
-25041	Run The World (Girls)	Beyonce	281569	7EdEUnekGCkChJzJyGp6TB
 25044	All By Myself	Glee Cast	null	37JZpX7LIxgUoOLU2umng2
 25045	Breakthrough	Bridgit Mendler, Adam Hicks, Naomi Scott & Hayley Kiyoko	297431	7eAWmk6IDva2iA0q2Wx9Lv
-25046	Somebody	Bridgit Mendler	297431	0KXvGydCYbBgHUlqrDbz3N
-25053	Barbra Streisand	Duck Sauce	301355	1WHx2541uqQd3bDNYwwOaC
 25062	Better With The Lights Off	New Boyz Featuring Chris Brown	312160	0F6byA6sKiVXRzQMTx8ufs
-25064	Not Ready To Die	Avenged Sevenfold	280315	6haHIyPMUnVCZn6pHpyzM8
 25065	I'm Into You	Jennifer Lopez Featuring Lil Wayne	304444	2gSuyFyy1khVIwTc7tJ0hN
 25068	Danza Kuduro	Don Omar & Lucenzo	null	1kAZhbcsXqfUjnVeqPywn2
 25070	Dreams	Glee Cast Featuring Kristin Chenoweth	null	5JBa94s53RNVoHnjxwyrSF
-25071	Closer To The Edge	Thirty Seconds To Mars	431915	null
 25073	Dirty Dancer	Enrique Iglesias Wtih Usher Featuring Lil Wayne	null	null
 25074	Rolling In The Deep	Glee Cast Featuring Jonathan Groff	null	460opww0SOGYK2F4Lcv9gz
 25079	Isn't She Lovely	Glee Cast	null	2Y3jOksd3DVmmznyGvMwzM
@@ -2439,7 +2208,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25086	Ballin'	Young Jeezy Featuring Lil Wayne	431677	79tbwF4mSrYD60Oo41JTXY
 25087	Pure Imagination	Glee Cast	null	2WCeDB0ppNhSVyiBNjPttT
 25089	I'm On One	DJ Khaled Featuring Drake, Rick Ross & Lil Wayne	299939	608a1wIsSd5KzMEqm1O7w3
-25096	Like My Mother Does	Lauren Alaina	306644	7t8oQycrEftd8NuWdCcfQb
 25098	You And I	Lady Gaga	306341	6rkAY9rk1NTFB94QxG3LJR
 25100	1+1	Beyonce	281569	5cYc30W2niwnHTEx4j5Ppw
 25101	For Good	Glee Cast	null	46tWMyBS0MbH8p4EHIJK3O
@@ -2448,14 +2216,12 @@ id	song_name	display_artist	artist_id	spotify_id
 25110	Out Of My Head	Lupe Fiasco Featuring Trey Songz	308591	4Nomj38R7Ds0P8I8orW2Tv
 25111	Every Teardrop Is A Waterfall	Coldplay	299516	3ViG53I02hn2DmNybJXZ1h
 25112	International Love	Pitbull Featuring Chris Brown	1490081	62zFEHfAYl5kdHYOivj4BC
-25114	Iridescent	Linkin Park	307438	5jD4OSpIqFBHAqlHO4a8lR
 25115	Unusual	Trey Songz Featuring Drake	430421	51q0vXgCI2CW9x4K8SdfXS
 25120	Just Fishin'	Trace Adkins	430324	4xIWgRt9IcFed52w7XPdFG
 25122	Remind Me	Brad Paisley Duet With Carrie Underwood	null	4ABua0yuWcpTotImEEJTaw
 25129	Teenage Daughters	Martina McBride	309763	6wxwluMol35MvBMIej6NNl
 25130	Lighters	Bad Meets Evil Featuring Bruno Mars	280449	5zpDHEU12zATwLGvozxPw2
 25131	Angel	Javier Colon	304273	47aV1emel3bW6GCXNw9ypx
-25132	Today Is Your Day	Shania Twain	278910	7qGHAkt0DcvSJNwBPF7e31
 25133	Rain Over Me	Pitbull Featuring Marc Anthony	1490081	2cZrrQMjB63c0iIugYH9zS
 25134	Jolene	Vicci Martinez	430827	7dF3kimGzXQVk1ZKx9k4sm
 25135	Stereo Hearts	Gym Class Heroes Featuring Adam Levine	303282	0qOnSQQF0yzuPWsXrQ9paz
@@ -2476,14 +2242,11 @@ id	song_name	display_artist	artist_id	spotify_id
 25161	Pretty Girls	Iyaz	303959	null
 25162	High	Big Sean Featuring Wiz Khalifa	281681	5VKsvhjnjQ3IAspPjGiNPf
 25165	I Wouldn't Be A Man	Josh Turner	305248	3ga3cmO4mb9dMhysyJUEaH
-25170	Booty Wurk (One Cheek At A Time)	T-Pain Featuring Joey Galaxy	null	null
 25172	You Make Me Feel...	Cobra Starship Featuring Sabi	299483	5FeuH4LtGxDWkSkhRG47QT
 25173	What If	Colbie Caillat	299505	5qP1EhyVCDgyjqEMoJPUWA
 25178	Otis	Jay-Z & Kanye West Featuring Otis Redding	null	6aGNg25mRJdqd318f9X6Wn
-25180	Outlaw	50 Cent	431969	75Mf2hYXJI5pVV0qDYUBoj
 25181	Marvin & Chardonnay	Big Sean Featuring Kanye West & Roscoe Dash	281681	5xpmdbQcfIOsE1hACcC3UK
 25186	Easy	Rascal Flatts Featuring Natasha Bedingfield	362685	7jkWXm5j2er2KfsCRPwWfy
-25187	Cheers (Drink To That)	Rihanna	365068	46MDLc0Yip6xCMSsdePOAU
 25192	One More Drinkin' Song	Jerrod Niemann	304483	1HYKv0B6bYycqpxWHydKy9
 25193	Under And Over It	Five Finger Death Punch	302183	0GbN4lapADSramCU7SdunV
 25196	In The Dark	Dev	300833	1pbHy9VBpSyZh56xuujZz0
@@ -2512,15 +2275,12 @@ id	song_name	display_artist	artist_id	spotify_id
 25257	Y.U. MAD	Birdman Featuring Nicki Minaj & Lil Wayne	286105	2STxkZwoTQeZ5jxtgXsy9y
 25263	Strange Clouds	B.o.B Featuring Lil Wayne	275499	4cgZ2dCVqZyMWo0zubW6Vb
 25266	5 O'Clock	T-Pain Featuring Wiz Khalifa & Lily Allen	277474	6j236RwzFFj4wqH2tWJNBD
-25268	Dedication To My Ex (Miss That)	Lloyd Featuring Andre 3000 & Lil Wayne	1496550	0jmdMkRc7bmnmF9TNRfxF5
 25269	Fight For You	Jason Derulo	304245	2X42KFgnOSaxOHMG0nDOdj
-25270	After Midnight	Blink-182	298592	1oRXq9KvTvZQ0yXvO6OBXE
 25275	I Like It Like That	Hot Chelle Rae Featuring New Boyz	303616	6eFahAdQgABBj1XOM99cBG
 25276	Fix You	Glee Cast	null	3STe6wgb3CfS7HmYX6NRlG
 25277	Hangover	Taio Cruz Featuring Flo Rida	277535	23TrBtndcavtlYBQg5GoR8
 25278	I'm Flexin'	T.I. Featuring Big K.R.I.T.	277486	5rHhKF6OTsm2ye5lFK86Kn
 25279	I Like How It Feels	Enrique Iglesias Featuring Pitbull & The WAV.s	301773	3sLBdi6Wa1qHLANpVOGiZO
-25281	Dance (A$$)	Big Sean	281681	3OVLPcUPS0HbMeAeMP0jZ4
 25282	Party	Beyonce Featuring Andre 3000	281569	5rJsYzKWZpdZwrS4Yj7U9A
 25283	Young, Wild & Free	Snoop Dogg & Wiz Khalifa Featuring Bruno Mars	null	null
 25285	Countdown	Beyonce	281569	7nAeBxnvQYT01pzDnsiL3p
@@ -2533,7 +2293,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25298	Focused	Wale Featuring Kid Cudi	277789	4w27lZ9zcceZp6rumzGCBx
 25299	Princess Of China	Coldplay Featuring Rihanna	299516	4HXOBjwv2RnLpGG4xWOO6N
 25301	Sweat	Bow Wow Featuring Lil Wayne	297014	5aJDXbAN2TSctGEDFdaKhc
-25302	Christmas Song (Chestnuts Roasting On An Open Fire)	Justin Bieber Featuring Usher	305459	3eYnKe0LhQA1B5HEkQaRTP
 25303	What Doesn't Kill You (Stronger)	Kelly Clarkson	305681	6D60klaHqbCl9ySc8VcRss
 25305	Lotus Flower Bomb	Wale Featuring Miguel	277789	3MAgQuClHcAV8E9CbeBS6f
 25310	Party On Fifth Ave.	Mac Miller	276901	2i0RvY0gh7Bor0fGj04IVz
@@ -2541,50 +2300,34 @@ id	song_name	display_artist	artist_id	spotify_id
 25317	Drummer Boy	Justin Bieber Featuring Busta Rhymes	305459	0Pd4lsvSDPkcNCxbcz0UeV
 25320	Ours	Taylor Swift	371422	2ArkKHUFaoKVMTkNXHtRoN
 25323	Smile Back	Mac Miller	276901	2ZGBhrxA4ghKqoOMBdn966
-25324	Footloose	Blake Shelton	289793	4shPfi6RsJiwQtso2XFGiL
 25328	Come Home	Faith Hill	276160	7IALMJlkjCSc0brxaQnCbV
 25329	Take Care	Drake Featuring Rihanna	301284	4wTMBYRE6xVTIUQ6fEudsJ
 25331	The Motto	Drake Featuring Lil Wayne	301284	null
 25332	Levels	Avicii	280336	5QjJgPU8AJeickx34f7on6
-25333	Hate Sleeping Alone	Drake	301284	null
 25334	You And  I / You And I	Glee Cast	null	null
 25335	I Can't Go For That / You Make My Dreams	Glee Cast	null	5JBa94s53RNVoHnjxwyrSF
 25336	Hit Me With Your Best Shot / One Way Or Another	Glee Cast	null	6xO86b70NTyLm6C9nKA9IH
-25337	We'll Be Fine	Drake Featuring Birdman	301284	4WmcBHCMydSBMNr34yRI6W
 25338	HYFR (Hell Yeah F*****g Right)	Drake Featuring Lil Wayne	301284	null
 25339	Shot For Me	Drake	301284	6k7b4mcxLP5HPo6hNoXoM6
 25340	Talk That Talk	Rihanna Featuring Jay-Z	365068	57mKcbEq7nMqtJ4gqJvWcp
 25341	T.H.E. (The Hardest Ever)	will.i.am Featuring Mick Jagger & Jennifer Lopez	null	5sn8kTcYEFZ0QcnYKEi9Qc
 25342	Where Have You Been	Rihanna	365068	3tyPOhuVnt5zd5kGfxbCyL
 25343	Strip	Chris Brown Featuring Kevin McCall	1486846	2i8hWheuwDUwyPrZynCLEF
-25344	Lullaby	Nickelback	312256	2vBiZ7nBe0OqTZKWGP0s4K
-25347	El Verdadero Amor Perdona	Mana Featuring Prince Royce	309132	5GAW7f4CGEPC2I7oNjwB9G
-25348	Perfect	Glee Cast	null	1vNsUypIe8RR7K58P1QWyk
-25349	Girls Just Want To Have Fun	Glee Cast	null	5s89Qq5A61IQqKNjlyaVZG
-25350	Roman In Moscow	Nicki Minaj	312259	6snTyt6Vld2R0SbKl5fZIY
 25351	I Kissed A Girl	Glee Cast	null	4XKyXEKaq2ynQC1otjAKg9
 25353	Can't Get Enough	J. Cole Featuring Trey Songz	276541	20wR5XQpaL1uvVY8gmc4uY
 25354	I'm The Only One	Glee Cast	null	6lILpLJ9sSAQmIFYy2vxgt
-25355	Constant Craving	Glee Cast	null	2tRQSSpgHBGzAHJnhP6HiO
-25356	It's Beginning To Look A Lot Like Christmas	Michael Buble	310724	0lLdorYw7lVrJydTINhWdI
 25359	Bang Bang Pow Pow	T-Pain Featuring Lil Wayne	277474	5974upRH7uHuhRkstgEhHu
 25360	Survivor / I Will Survive	Glee Cast	null	77arwHFzLS7EPSmUIsN6h2
 25361	We Are Young	Fun. Featuring Janelle Monae	302552	7a86XRg84qjasly9f6bPSD
-25362	ABC	Glee Cast	null	73o83gUyd4hdmGdYNYcTJp
-25365	Red Solo Cup	Glee Cast	null	1p4t76Y2XreMC6uECFLvmn
-25366	I'll Be Home For Christmas	Kelly Clarkson	305681	4QWF3bHEb7y5WPvDjXHfPw
 25369	Sleazy Remix 2.0 Get Sleazier	Ke$ha Featuring Lil Wayne, Wiz Khalifa, T.I. & Andre 3000	null	1zPDgF3K6QXcTopDB3SVg9
 25371	Do They Know It's Christmas?	Glee Cast	null	2wolVp6ZmJjHGwUaFm99Hz
-25373	All I Want For Christmas Is You	Michael Buble	310724	0xPaZrF25ltzvz1a2Pm5DQ
 25374	Ass Back Home	Gym Class Heroes Featuring Neon Hitch	303282	3bfqkspKABT4pPicm6wC9F
 25375	Safe & Sound	Taylor Swift Featuring The Civil Wars	371422	0z9UVN8VBHJ9HdfYsOuuNf
 25376	Wild Ones	Flo Rida Featuring Sia	302239	5Z7ygHQo02SUrFmcgpwsKW
 25377	I Do	Young Jeezy Featuring Jay-Z & Andre 3000	431677	7kbgzSYR7X9FkzIeUFkviQ
 25384	T.H.E (The Hardest Ever)	will.i.am Featuring Mick Jagger & Jennifer Lopez	null	5sn8kTcYEFZ0QcnYKEi9Qc
 25385	Play The Guitar	B.o.B Featuring Andre 3000	275499	4QTbvU8LSI5p43PEcpP3fe
-25387	Stronger (What Doesn't Kill You)	Kelly Clarkson	305681	6D60klaHqbCl9ySc8VcRss
 25388	Kyoto	Skrillex Featuring Sirah	279545	3FUZpoj9VV0sgc8RqbS3xQ
-25389	Set You Free	3OH!3	431924	6aIlQ4EVeyKzGS4lS6GNLY
 25399	Wild Boy	MGK Featuring Waka Flocka Flame	276871	6vO90gbxZCq7fw2e0pSRkw
 25400	Faded	Tyga Featuring Lil Wayne	430631	0a8uknDuoiWLuACnaLPlgr
 25404	Mr. Wrong	Mary J. Blige Featuring Drake	null	3PC17YHD5FbZZz4TT32IJO
@@ -2592,32 +2335,25 @@ id	song_name	display_artist	artist_id	spotify_id
 25409	Do It Like You	Diggy Featuring Jeremih	300938	7aqpPVvXOBdChXju0loeya
 25410	Give Me All Your Luvin'	Madonna Featuring Nicki Minaj & M.I.A.	308786	66G6rwvTVGLCaxadWrupg1
 25418	Ima Boss	Meek Mill Featuring T.I., Birdman Lil Wayne, DJ Khaled, Rick Ross & Swizz Beatz	310352	7sjwaBQ6M3aVigYfBjm1sL
-25419	Say Aah	Lindsey Pavao	307429	3V6yeEPgGq5YLgepKsxvnE
 25425	Snitches Ain't...	YG Featuring Tyga, Snoopd Dogg & Nipsey Hussle	null	null
 25431	Banjo	Rascal Flatts	362685	12aB7rJIwjLVxvgZlkZuqG
 25433	I Can Only Imagine	David Guetta Featuring Chris Brown & Lil Wayne	300445	3dvynJHFt37j6R8CIIEZh5
-25434	Stereo Hearts	Glee Cast	null	4y3HmDkg2Hpuu4E48nlU3w
 25435	Bangarang	Skrillex Featuring Sirah	279545	6VRhkROS2SZHGlp0pxndbJ
 25437	So Good	B.o.B	275499	38lqyHftH5FWStAHjd664Q
 25441	Some Nights	fun.	302552	6t6oULCRS6hnI7rm0h5gwl
 25442	Birthday Cake	Rihanna Featuring Chris Brown	365068	4EfN6bixdOOgoLYR5C4cWo
-25444	What Doesn't Kill You (Stronger)	Glee Cast	null	379NxsaOdaBZQsAwfsb4QW
 25446	Mutha***** Up	Tyga Featuring Nicki Minaj	430631	673AitlQq6SZOpamDTzlPV
 25452	Live My Life	Far*East Movement Featuring Justin Bieber	null	null
 25453	Roman Reloaded	Nicki Minaj Featuring Lil Wayne	312259	6lsz1J2DNwWpjb6PZ7pGap
 25455	Ayy Ladies	Travis Porter Featuring Tyga	430388	163ExVYtJrtdE86Qd5Fw2N
 25456	UP!	LoveRance Featuring IamSu & Skipper or 50 Cent	308374	48zmVAYyyhoWfTDe5pGynC
 25457	Magic	Future Featuring T.I.	302577	0FgrFRzcFLC5rbrbedPzRk
-25458	Thank You	Estelle	301898	5EbN9xKU8ag6pqTnH5zgVu
 25464	Changed	Rascal Flatts	362685	7ClZTubD4KudpEuBysLMUI
 25468	Leave You Alone	Young Jeezy Featuring Ne-Yo	431677	5GOqOUVv7vk0jWDdNToHtA
-25469	TTYLXOX	Bella Thorne	281154	1nIDYHvLaZnD5lEf66SH80
 25472	Come Away To The Water	Maroon 5 Featuring Rozzi Crane	309663	7A4KjSFDx0BL75up2eK0OF
-25474	Bully	Shinedown	279123	7hj2dEEcBL2gfra1Vq3ejh
 25476	Crew Love	Drake Featuring The Weekend	301284	null
 25477	Boyfriend	Justin Bieber	305459	0V1bCU82tmXL8Z11JoRvyg
 25478	I Dont Really Care	Waka Flocka Flame Featuring Trey Songz	277783	null
-25480	She Doesn't Mind	Sean Paul	1490159	1CmmRxVeqXDdqbSoPy1XgV
 25485	Naked	Dev & Enrique Iglesias	null	null
 25486	Dance Again	Jennifer Lopez Featuring Pitbull	304444	4d2hD63oUGU3s7L66JD0BE
 25487	Mercy	Kanye West, Big Sean, Pusha T, 2 Chainz	null	null
@@ -2626,13 +2362,11 @@ id	song_name	display_artist	artist_id	spotify_id
 25492	Beez In The Trap	Nicki Minaj Featuring 2 Chainz	312259	4It00tEYLwpjQtAhqnjCPC
 25494	Love This Life	T.I.	277486	3tuoGlPsvRp1GyrcXkop63
 25495	Another Round	Fat Joe Featuring Chris Brown	302021	3Rh3zDYanZFHaeXFT4Asps
-25498	(Kissed You) Good Night	Gloriana	302950	null
 25499	Is Anybody Out There?	K'Naan Featuring Nelly Furtado	276619	7oMSBpXN7gLSYeMUkAZnQ0
 25501	Cashin Out	Ca$hOut	275741	1POAx4NMLOBPVKZUSsBh92
 25503	Think Like A Man	Jennifer Hudson & Ne-Yo Featuring Rick Ross	null	2N5r4BvX03A7ihPh38p670
 25505	Payphone	Maroon 5 Featuring Wiz Khalifa	309663	5IWmU2PNimgYuTLddU2DRo
 25508	Stay Schemin	Rick Ross Featuring Drake & French Montana	365033	0nq6sfr8z1R5KJ4XUk396e
-25510	Sweet Love	Chris Brown	1486846	07G7QChlEGW0d4goT0AvXU
 25511	Beers Ago	Toby Keith	430048	73hlXep4OHLx28ewDZXexh
 25513	Tonight (Best You Ever Had)	John Legend Featuring Ludacris	304963	17zF2ISrDrQdaULA8cxReK
 25518	Scream	Usher	430708	5sAlmL7Qp9N9BJTADkwEt9
@@ -2642,13 +2376,11 @@ id	song_name	display_artist	artist_id	spotify_id
 25528	No Lie	2 Chainz Featuring Drake	431852	4TyY4vah59nsckspWdSGPn
 25529	Cashin' Out	Ca$h Out	275741	1POAx4NMLOBPVKZUSsBh92
 25530	99 Problems	Tony Lucca	430220	7c006NljFWgcF08rk3VtDE
-25531	Turn To You (Mother's Day Dedication)	Justin Bieber	305459	0cZmqpfp5qvYFgM72hZAdg
 25534	The Prayer	Christina Aguilera & Chris Mann	null	4PBjokreMKhfe4yCIBu4mX
 25536	Lemme See	Usher Featuring Rick Ross	430708	0drVeoGy7njENU29Z3lPEy
 25537	Come Over	Kenny Chesney	305717	6BCrbWBpb8d6KWmEqZ41tr
 25539	The Fighter	Gym Class Heroes Featuring Ryan Tedder	null	77ZdAoTHYoF6Umo76HFD4m
 25545	Around My Way (Freedom Ain't Free)	Lupe Fiasco	308591	2Vba5MBCdGqcE57GSiOstv
-25547	Undefeated	Jason Derulo	304245	5jAgU2QzailYWu02FzkxsT
 25551	I'm All Yours	Jay Sean Featuring Pitbull	304297	4RP3afrf3AVFV1rTO0hFZh
 25553	For You	Keith Urban	305660	64bWFjtzBRVSllQz9H2RAY
 25554	All Around The World	Justin Bieber Featuring Ludacris	305459	1Mg8vLBYwizu7AuhYQO64V
@@ -2663,7 +2395,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25575	Wipe Your Eyes	Maroon 5	309663	2ygB9l6eFTozBp9GTVYReN
 25577	Bag Of Money	Wale Featuring Rick Ross, Meek Mill, & T-Pain	277789	3fXYcpFvBCsfyZAtOWoPXz
 25579	Windows Down	BTR	null	null
-25581	Blow Me (One Last Kiss)	P!nk	277117	4k80K0b6KZ2QjAYkXON7q6
 25583	I Wish You Would	DJ Khaled Featuring Kanye West & Rick Ross	299939	1YXMYUu7sEykUrbdy7KcA7
 25584	2 Reasons	Trey Songz Featuring T.I.	430421	3ZwCiJr65RovmNkjj62IOi
 25585	Get It Started	Pitbull Featuring Shakira	1490081	3JNqJPbbS1KhVzStLyxw1h
@@ -2674,7 +2405,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25598	Birthday Song	2 Chainz Featuring Kanye West	431852	5qkWTBmDmZjogwIvbKtJQv
 25605	Diced Pineapples	Rick Ross Featuring Wale & Drake	365033	27mF2eUbhExYWiOT0y9cuc
 25607	Enough Of No Love	Keyshia Cole Featuring Lil Wayne	305806	7xgLdGUoubHmCT53seZUPV
-25608	Let Me Love You (Until You Learn To Love Yourself)	Ne-Yo	312075	68PHBS4CsrBK8QnRmeGqup
 25615	Yuck!	2 Chainz Featuring Lil Wayne	431852	0332p5aiaQ6vyomilcGSy4
 25617	Put It Down	Brandy Featuring Chris Brown	297075	1TjNQSl1Pc5Cqrn14B4gfL
 25619	Madness	Muse	311949	0c4IEciLCDdXEhhKxj4ThA
@@ -2690,7 +2420,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25637	No Worries	Lil Wayne Featuring Detail	307264	7dVHOqCffbYh40RXcX9c7P
 25638	Dance For You	Beyonce	281569	7cvkXf3AwPGT041PyOi5VX
 25640	Between The Raindrops	Lifehouse Featuring Natasha Bedingfield	307174	396epax77NIKgJQltQHJgU
-25641	This Kiss	Carly Rae Jepsen	298709	7cWLl1E5iMvqIVhpmtUp6k
 25642	Finally Found You	Enrique Iglesias Featuring Sammy Adams	301773	35nI1AQT4er6Z2BQlyNd6j
 25644	Heart Skips A Beat	Olly Murs Featuring Chiddy Bang	312520	7n1rlCbUebjGfgV2BycDnh
 25646	Clique	Kanye West, Jay-Z, Big Sean	276709	7eW9cHOAHmYqphs5tWXETw
@@ -2700,10 +2429,8 @@ id	song_name	display_artist	artist_id	spotify_id
 25651	Celebration	Game Featuring Chris Brown, Tyga, Wiz Khalifa & Lil Wayne	1490221	2vFlcPghbk9D4omnCgKnxP
 25652	Beautiful	Carly Rae Jepsen Featuring Justin Bieber	298709	52PiyZoav11ZSAoHPqSlzh
 25657	Die Young	Ke$ha	305612	6mnjcTmK8TewHfyOp3fC9C
-25661	Lover's Eyes	Mumford & Sons	311935	null
 25670	Southern Comfort Zone	Brad Paisley	297053	2cHyXcvbK1d4Gu2FxNNMSa
 25671	Just What I Am	Kid Cudi Featuring King Chip	305822	null
-25672	Every Storm (Runs Out Of Rain)	Gary Allan	302600	6hIS1u7nuJmFE12rXAPMxm
 25674	Lover Of The Light	Mumford & Sons	311935	3n9c1mgu8asYVUMXmiL8Fa
 25675	My Moment	DJ Drama, 2 Chainz, Meek Mill, Jeremih	303052	null
 25681	State Of Grace	Taylor Swift	371422	null
@@ -2718,9 +2445,7 @@ id	song_name	display_artist	artist_id	spotify_id
 25704	The Only Way I Know	Jason Aldean With Luke Bryan & Eric Church	304236	3zsoPM1JcTORBOUdFfzIEf
 25705	I Found You	The Wanted	419401	7qIXzpT6ynuXccTN4uwlLV
 25709	Just A Fool	Christina Aguilera With Blake Shelton	null	6nS1vMV1zs8c0Lk6mud78D
-25712	Over You	Cassadee Pope	298789	null
 25714	Give It All We Got Tonight	George Strait	302752	0T1c1pBur0LxaZ7rVBqjPK
-25715	Stars	Grace Potter & The Nocturnals	303049	6s7sq2Quh4TxHRfdk6eFxk
 25716	Stars	Amanda Brown	1482449	null
 25717	Remember You	Wiz Khalifa Featuring The Weeknd	431494	19EgqewYa61aZwRtXfxbew
 25719	Scream & Shout	will.i.am Featuring Britney Spears	431547	null
@@ -2744,7 +2469,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25754	Riff Off: Mickey / Like A Virgin / Hit Me With Your Best Shot...	The Barden Bellas, The Treblemakers & The BU Harmonics	1490146	null
 25755	On My Own	Samantha Barks	null	null
 25756	Carry On	fun.	302552	7gpy7sfWPNuOKmUNs3XQYE
-25758	The Moment I Knew	Taylor Swift	371422	null
 25759	If I Lose Myself	OneRepublic	314580	5zHQQRFcanQoXqfeEKunCm
 25760	Suit & Tie	Justin Timberlake Featuring Jay Z	1490153	4DIWRIrMWDFdtSIeEo1gou
 25761	We Still In This B****	B.o.B Featuring T.I. & Juicy J	275499	5BPT6t9RRyR7OKvsWt1Om1
@@ -2758,21 +2482,18 @@ id	song_name	display_artist	artist_id	spotify_id
 25777	YOLO	The Lonely Island Featuring Adam Levine & Kendrick Lamar	418536	1PqUoAoFZzgsQejdnCOJ5T
 25778	I Love It	Icona Pop Featuring Charli XCX	1539459	3VZQshi4COChhXaz7cLP02
 25780	Can't Hold Us	Macklemore & Ryan Lewis Featuring Ray Dalton	1490130	3bidbhpOYeV4knp8AIu8Xn
-25781	As Long As You Love Me (Acoustic)	Justin Bieber	305459	1kN9UiyOSRVCrSc49ft0lp
 25782	Same Love	Macklemore & Ryan Lewis Featuring Mary Lambert	1490130	01uqI4H13Gsd8Lyl1EYd8H
 25783	Loveeeeeee Song	Rihanna Featuring Future	365068	0v1PchQ8hFSQO8scf9llpc
 25786	Stay	Rihanna Featuring Mikky Ekko	365068	5rvSPYxUGL3Bu8BWtLj5Yw
 25787	Highway Don't Care	Tim McGraw & Taylor Swift	429939	5o4YTpD56HtYx3X0QIoJft
 25790	R.I.P.	Young Jeezy Featuring 2 Chainz	431677	2JJ5h2I1S0UR4tyD0U1I7K
 25792	Bad	Wale Featuring Tiara Thomas	277789	64Nbnw22f8adeMuLd1nSBD
-25795	One Way Or Another (Teenage Kicks)	One Direction	314021	3jZomvOBa5qfTo5HkqI1p5
 25796	Bugatti	Ace Hood Featuring Future & Rick Ross	277937	0TRvzhQIe3v6Jpcw8DBSte
 25797	Just Give Me A Reason	P!nk Featuring Nate Ruess	277117	1qHaLcG3LOeh6ZB8vii5ZZ
 25798	Power Trip	J. Cole Featuring Miguel	276541	1EbWiEra7ovNsMq3DeLSDy
 25799	She Don't Put It Down	Joe Budden Featuring Lil Wayne & Tank	304797	3bWYui3ElpPYeOGM8Gmws2
 25803	As Your Friend	Afrojack Featuring Chris Brown	278126	4rr56nO72rnpQvIv9K48ey
 25806	Karate Chop (Remix)	Future Featuring Lil Wayne	302577	0OUhWrcEoUVZPQ4VuQGQQg
-25809	It's A Beautiful Day	Michael Buble	310724	41Sclxx2cfIu4wIUOUStQW
 25815	Show Out	Juicy J Featuring Big Sean And Young Jeezy	305353	59TtuXFr3D84eemuLaM08F
 25817	Freaks	French Montana Featuring Nicki Minaj	302488	2goZVLXSXmFeFUVBzZGfuj
 25819	So Many Girls	DJ Drama Featuring Wale, Tyga & Roscoe Dash	303052	5hNhvOYtE1rgHa9Viftir1
@@ -2796,12 +2517,10 @@ id	song_name	display_artist	artist_id	spotify_id
 25856	Beat It	Sean Kingston Featuring Chris Brown & Wiz Khalifa	278515	4OjmCvRsvo2lAiB9O8KLxe
 25858	No New Friends	DJ Khaled Featuring Drake, Rick Ross & Lil Wayne	299939	1jZi8HvWkfWIQcmlxmqber
 25861	Memories Back Then	Hustle Gang Featuring T.I., B.o.B, Kendrick Lamar & Kris Stephens	1561611	0A2lJqfi04TKDTJYoKBxa9
-25865	Sexy People (The Fiat Song)	Arianna Featuring Pitbull	1562255	4X06LeyOO0NZoqOowDmp3a
 25867	#Beautiful	Mariah Carey Featuring Miguel	309388	3zt5ApnBLg9odHEDOd24IM
 25868	Live It Up	Jennifer Lopez Featuring Pitbull	304444	4WVhv7DuK29A1o6zCGdjQK
 25869	Can't Shake You	Gloriana	302950	1lNl7zRexUwxQ20OKONF3A
 25874	Tapout	Rich Gang Featuring Lil Wayne, Birdman, Future, Mack Maine, Nicki Minaj	1563209	2kEDuZRwYUoQLIYKpQfKWa
-25876	A Little Party Never Killed Nobody (All We Got)	Fergie, Q-Tip & GoonRock	302083	1mz9ZrRYu3EPVg9ZHFtjjf
 25879	Really Don't Care	Demi Lovato Featuring Cher Lloyd	300744	0hPuF2Z5fZjnuwYPvIdPC1
 25881	Clouds	Zach Sobiech	1566556	1ihKr614f14PoXrw8sekg5
 25883	We Own It (Fast & Furious)	2 Chainz & Wiz Khalifa	431852	5DD9jE8Z3LvpVn2TxknJyX
@@ -2812,7 +2531,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25888	Wit Me	T.I. Featuring Lil Wayne	277486	4FMtPpDo4l4AJitaFxvaMV
 25890	Work	A$AP Ferg	5679878	54oACFHRfeOa7VD0FTQSkJ
 25891	Crazy Kids	Ke$ha Featuring will.i.am or Juicy J	305612	19vqpjwWDbPmizICIUFinw
-25892	Grandpa (Tell Me 'Bout The Good Old Days)	Danielle Bradberry	null	4tzjgEap9II2Z1okcaiRRO
 25898	I Knew You Were Trouble	Michelle Chamuel	1567247	21K6jcmZPktm7MftqfLfLg
 25900	No New Friends (SFTB Remix)	DJ Khaled Featuring Drake, Rick Ross & Lil Wayne	299939	1jZi8HvWkfWIQcmlxmqber
 25901	Danny's Song	The Swon Brothers	1568925	5mnvqisoDJilY0uCEdT8rG
@@ -2826,7 +2544,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25918	Right Now	Rihanna Featuring David Guetta	365068	1dtHifsnHKETU1itb6AogI
 25920	Why	Michelle Chamuel	1567247	1S9EUrYtt3KgJP76nXmX9v
 25922	One	Usher & Michelle Chamuel	430708	64Ret7Tf2M8pDE4aqbW2tX
-25923	I Can't Tell You Why	The Swon Brothers	1568925	2faXZWArAmr7tpXTcLwyAM
 25925	Wake Me Up!	Avicii	280336	4QRZirU4s1f30iDHzuKncj
 25926	Don't Think They Know	Chris Brown Featuring Aaliyah	1486846	0O0EjYBFPRB9QtrpJXjV9E
 25929	Beware	Big Sean Featuring Lil Wayne & Jhene Aiko	281681	6W4T4QXWdDXPHWFYvZHXZK
@@ -2845,7 +2562,6 @@ id	song_name	display_artist	artist_id	spotify_id
 25961	Love More	Chris Brown Featuring Nicki Minaj	1486846	5xGIqIiGr1do6RRpIviwGG
 25962	Gas Pedal	Sage The Gemini Featuring IamSu	2549565	0Nf3vtVBfiayZL7c8r4KBO
 25963	Cruisin' For A Bruisin'	Ross Lynch, Grace Phipps And Jason Evigan	369121	5e3UWcbvTaF5CJWu81MqlQ
-25966	Chloe (You're The One I Want)	Emblem3	5638694	5o0oypIQQ2PgGde8wLjbhx
 25969	True Love	P!nk Featuring Lily Allen	277117	1QNqrsNQ1JVLEwncov3lEY
 25970	Let Her Go	Passenger	326708	7DFNE7NO0raLIUbgzY2rzm
 25972	Hold On, We're Going Home	Drake Featuring Majid Jordan	301284	6jdOi5U5LBzQrc4c1VT983
@@ -2862,7 +2578,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26003	Act Right	Yo Gotti Featuring Jeezy & YG	431628	5mssvkX1kJD61BmDotmDaC
 26004	23	Mike Will Made It Featuring Miley Cyrus, Wiz Khalifa & Juicy J	null	4if4AqzRQgEtTF1xXddmoc
 26007	We Were Us	Keith Urban And Miranda Lambert	305660	5Net7uzpcqkJtOwR22onye
-26008	Wu-Tang Forever	Drake	301284	5LAKjqbB5uurPpxFEicd9S
 26009	I Do It	2 Chainz Featuring Drake & Lil Wayne	431852	1DRRWz7CF55lysOeyCFEdh
 26011	Could It Be	Charlie Worsham	5694412	6fRKgExSY24i2whGdAJUnM
 26012	Reflektor	Arcade Fire	279841	0UjGKszZwvDrxl0WlAU7Wc
@@ -2878,9 +2593,7 @@ id	song_name	display_artist	artist_id	spotify_id
 26032	Pound Cake / Paris Morton Music 2	Drake Featuring Jay Z	301284	1HDaPtZuixue2q6VGNRdVO
 26033	From Time	Drake	301284	10VBBaul4zVD0reteuIHM2
 26034	Own It	Drake	301284	3EJ9ZuqkL1kwgouugqsLu8
-26035	Tuscan Leather	Drake	301284	69gz9onZQNVw55cMQsaYii
 26036	Stay The Night	Zedd Featuring Hayley Williams	431777	2qq7sHFIexFKEvlNghevsj
-26037	Come Thru	Drake	301284	5CDy1I6rSt6vXdqIb87A6f
 26040	Gone	Kanye West Featuring Cam'ron & Consequence	276709	5RjbFGeWVsCpw8EcE8OrvZ
 26042	My Hitta	YG X Jeezy X Rich Homie Quan	5862674	5G47DlluL671zo0k3OhoSm
 26045	Heartbreaker	Justin Bieber	305459	2c37unpDxvQveB8xoa4ESI
@@ -2904,7 +2617,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26097	All Bad	Justin Bieber	305459	2ZdENURnPr8ZkOetmD2I0A
 26099	Up All Night	Jon Pardi	305142	3yYTDppf1ycYtpPuX46xQh
 26102	PYD	Justin Bieber Featuring R. Kelly	305459	1FWpaiAz7ZVrfzkYlnY6W0
-26106	Up Down (Do This All Day)	T-Pain Featuring B.o.B	277474	1uH1Nd8vet2uoZSDFSDwbh
 26110	This Is How We Roll	Florida Georgia Line Featuring Luke Bryan	302251	2TR7A4ulH9R1PNwMyd8o8U
 26111	At Last	Will Champlin	5819919	1hXIdXjAI4nWz4qnJ28iO2
 26117	Change Me	Justin Bieber	305459	5c9OA8t3cgLSQmI6VKImhL
@@ -2912,12 +2624,9 @@ id	song_name	display_artist	artist_id	spotify_id
 26119	Who You Love	John Mayer Featuring Katy Perry	5856209	7IByJvSqRFltGyiiIiL4wn
 26120	I. Crawl	Childish Gambino	299122	5fHzVJznA1QZolCrc7aNV8
 26123	Old School Love	Lupe Fiasco Featuring Ed Sheeran	308591	72FdcAg79So8xaAHs2mbrB
-26124	All The Way Home	Tamar Braxton	1484327	6rvKqjSuVP02HzGiV4G4iq
 26125	Do I Wanna Know?	Arctic Monkeys	279862	49h0RYK3yzWkfbVyNJjJ01
 26126	Confident	Justin Bieber Featuring Chance The Rapper	305459	65xGo48KiS0ONsGo9KrI66
 26127	Saturday	Rebecca Black & Dave Days	5847590	7F4szzhfJYIfK8fdKSJj9C
-26128	Bridge Over Troubled Water	Tessanne Chin	5852255	5LFtkeNjLpZAey3Arj3h4M
-26129	Cannonball	Lea Michele	1521123	0knqVSsgD7C8yu5yNmQFbA
 26131	Angel	Jacquie Lee	null	3xZMPZQYETEn4hjor3TR1A
 26132	My Story	R. Kelly Featuring 2 Chainz	null	0e7kvG2c60HIfwzaiKt9XW
 26133	V. 3005	Childish Gambino	299122	7wwifjNAb172PtDpKK3CoR
@@ -2939,7 +2648,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26162	Rewind	Rascal Flatts	362685	3gz4UBairZaiIRTti4AqSm
 26164	Thinking About You	Calvin Harris Featuring Ayah Marar	275856	1KtD0xaLAikgIt5tPbteZQ
 26165	Take Me Home	Cash Cash Featuring Bebe Rexha	298779	7iT98FhZ7BAE8xdCxBlw55
-26167	Oceans (Where Feet May Fail)	Hillsong UNITED	303522	5Mw9bXG1dLNhbjofkVS2oR
 26168	Mmm Yeah	Austin Mahone Featuring Pitbull	280264	1EzaEQ1hUWj7NWphY5Allw
 26170	El Perdedor	Enrique Iglesias Featuring Marco Antonio Solis	null	7xMm4E8NctQ1VxktZBhfX5
 26174	They Don't Know	Rico Love	5695034	4tzrdaXrV7FQMLoM0FvXdZ
@@ -2947,7 +2655,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26178	A Man Who Was Gonna Die Young	Eric Church	301808	null
 26183	Beat Of The Music	Brett Eldredge	297124	3un2KQUaQ2brEpd8dK93wI
 26184	Everything Is AWESOME!!!	Tegan And Sara Featuring The Lonely Island	373137	3BaEKTqmjehu2qMDcv4UGk
-26188	You're Mine (Eternal)	Mariah Carey	309388	0IM0MYcHMH7PhjqeaCbHzP
 26192	La La La	Naughty Boy Featuring Sam Smith	312065	52gvlDnre9craz9dKGObp8
 26195	#SELFIE	The Chainsmokers	5794072	0zkiQH567SDLqfWNBaU3hv
 26197	Wild Wild Love	Pitbull Featuring G.R.L.	1490081	6DcDdDevI94Dh4vc5anXBE
@@ -2956,10 +2663,8 @@ id	song_name	display_artist	artist_id	spotify_id
 26205	The Devil Is A Lie	Rick Ross Featuring JAY Z	365033	3tyMU1dWR7s7IC4tnNG1R5
 26206	Fancy	Iggy Azalea Featuring Charli XCX	5694588	2OR6U0ofkWeQgNCyaHxwoc
 26207	Adrenalina	Wisin Featuring Jennifer Lopez & Ricky Martin	431484	6IeOjDTDvPs3Yd0JI6HZKS
-26208	We Might Be Dead By Tomorrow	Soko	279725	3wriDAN59yRNx8FqynZnnb
 26210	Who Do You Love?	YG Featuring Drake	5862674	3DvXCbvkyzyfRYiWOJKWEr
 26212	Headlights	Eminem Featuring Nate Ruess	301722	222dTwr5XeEgAzEtsrQA0R
-26213	Slow Me Down	Sara Evans	278164	0oUEOkj6Ob6oBIU93bfDOp
 26214	Or Nah	Ty Dolla $ign Featuring Wiz Khalifa & DJ Mustard	5779670	2LX9coJz8pfFHb8AaoVhXS
 26216	I Luh Ya Papi	Jennifer Lopez Featuring French Montana	304444	1J6Lsb4mWc0ipWeHuNOb0y
 26217	Move That Doh	Future Featuring Pharrell, Pusha T & Casino	302577	5Sn6Sn0L2bD9ihdz5pbUed
@@ -2986,13 +2691,9 @@ id	song_name	display_artist	artist_id	spotify_id
 26269	I Can't Make You Love Me	Josh Kaufman	6070415	69uJi5QsBtqlYkGURTBli8
 26274	Bailando	Enrique Iglesias Featuring Descemer Bueno & Gente de Zona	301773	3Y9xtYyVyF13po6xePV5Cp
 26276	2 On	Tinashe Featuring ScHoolboy Q	6084983	3jVtllWS5CFFWLQng8sKsr
-26279	Where It's At (Yep, Yep)	Dustin Lynch	301390	4iiJ57RTsBw4hLZi3sCXBS
 26282	Main Chick	Kid Ink Featuring Chris Brown	305824	1vS1Rd10oLbmggo9GwOswt
 26284	Somethin' Bad	Miranda Lambert Duet With Carrie Underwood	311432	3RfKoVKnHNJEEKNZdWTTMz
-26291	Dare (La La La)	Shakira	278867	47VueTChrhOjNaJTOzaskN
-26292	Good Girls	5 Seconds Of Summer	5778308	4TGoRhkJQMJjr29yJeNyhU
 26293	Believe Me	Lil Wayne Featuring Drake	307264	1l3JsYIACtqHi4LDiB7c4l
-26294	Habits (Stay High)	Tove Lo	5934571	18AJRdgUoO9EYn11N7xzaT
 26298	I Got A Car	George Strait	302752	4Fpq4QkR06QRDkujBUk0JY
 26305	Studio	ScHoolboy Q Featuring BJ The Chicago Kid	278330	7eEnPyL9iD9GGf7bRgfe8Y
 26306	Wasted	Tiesto Featuring Matthew Koma	null	1EavLSmwRWtmkKEmlCfFzT
@@ -3001,25 +2702,18 @@ id	song_name	display_artist	artist_id	spotify_id
 26311	Wasted	Tiesto Featuring Matthew Koma	300022	1EavLSmwRWtmkKEmlCfFzT
 26313	Rather Be	Clean Bandit Featuring Jess Glynne	5870483	3s4U7OHV7gnj42VV72eSZ6
 26315	Jungle	Jamie N Commons & X Ambassadors	1551835	73oWICabIZixznNKWGWWrg
-26317	Kiss Me Kiss Me	5 Seconds Of Summer	5778308	3LQO04OGrtcDzpJJJl5vHH
 26319	No Mediocre	T.I. Featuring Iggy Azalea	277486	38aECKrbMv2F5FsYYCewCQ
 26320	American Kids	Kenny Chesney	305717	1dgWTMoHwTUnQhOQ8SR5fV
-26322	Life Of The Party	Shawn Mendes	6143288	6L6ra9mTlyQPmh7zGw58y1
-26323	Get Her Back	Robin Thicke	367025	1yAXEjvYED6s6tgKDH5ZTz
 26324	Don't Tell 'Em	Jeremih Featuring YG	304467	1eN27pPLzE59zuFbY8SsiT
 26328	Break Free	Ariana Grande Featuring Zedd	304565	3emCzvUm5FsQnofdNQL73a
 26331	New Flame	Chris Brown Featuring Usher & Rick Ross	1486846	46xsmPKKb3zxHkXwRqxNVL
 26332	Calm Down	Busta Rhymes Featuring Eminem	298558	72DuDVv06ZtKDceAlq40f2
 26333	Black Widow	Iggy Azalea Featuring Rita Ora	5694588	7pNC5ZIKtwUK0ReSpM3P9f
-26337	You & I (Nobody In The World)	John Legend	304963	55nlbqqFVnSsArIeYSQlqx
 26342	Dust	Eli Young Band	301617	7DcdGMGCcuaOIJkGYOGcrp
-26344	Everything I Didn't Say	5 Seconds Of Summer	5778308	1fp5JWXd8RbJDnKrFXxYP0
 26347	Lifestyle	Rich Gang Featuring Young Thug & Rich Homie Quan	1563209	5hmQ76WSXsot6JQV3NdaCV
 26350	0 To 100 / The Catch Up	Drake	301284	0mkjekH9rwp4Fg5PxzUTrd
-26351	Happy Little Pill	Troye Sivan	null	1oszxWJ3DiAICVbcjhOLF9
 26353	Bang Bang	Jessie J, Ariana Grande & Nicki Minaj	304565	6TCfmi6rb2T5KBG3ctEjYE
 26355	Girl In A Country Song	Maddie & Tae	6157984	7lhau82zi5WIDy1tpMzB0D
-26359	No Flex Zone!!	Rae Sremmurd	6140339	6gmhFrUjNhwWIAWMYw2qmb
 26363	Fireball	Pitbull Featuring John Ryan	1490081	49eplIHvgCLY8HAgcaWrUb
 26366	About The Money	T.I. Featuring Young Thug	277486	1hzJQIkgXwZevaKsc7iA6D
 26367	Best Mistake	Ariana Grande Featuring Big Sean	304565	null
@@ -3037,7 +2731,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26388	Hold You Down	DJ Khaled Featuring Chris Brown, August Alsina, Future, & Jeremih	299939	7L0RQZao9Pks74PzRvaxzC
 26389	Look At You	Big & Rich	281600	36vHC0fHnFd1m7bLKJP8mD
 26391	Blame	Calvin Harris Featuring John Newman	275856	7EYWEwJyai7udNmqvRPsZM
-26392	Two Night Town	Jason Aldean	304236	1m0a9bBxT0E0WDJmk3Xw5q
 26395	Bend Ova	Lil Jon Featuring Tyga	307236	3lmPir3OKcuqteoR6ue79H
 26397	Booty	Jennifer Lopez Featuring Iggy Azalea Or Pitbull	304444	3QLvla1BUyJ7ghKma2jsoC
 26399	No Love	August Alsina	1562258	7ewfvLrlI0VNht4vEnoTMh
@@ -3052,11 +2745,9 @@ id	song_name	display_artist	artist_id	spotify_id
 26422	EW!	Jimmy Fallon Featuring will.i.am	304687	35FnQZ744zWYal6qHlnMSI
 26425	The Days	Avicii	280336	4th1RQAelzqgY7wL53UGQt
 26426	Love Me Harder	Ariana Grande & The Weeknd	304565	0e5q6Z47J4oU5S0gvfjKpi
-26429	L.A.LOVE (la la)	Fergie	302083	2y7JA3IuVLkO0U4wxsXWtZ
 26430	Errrbody	Yo Gotti	431628	3ndumr5hw721OmT5opZ5Zl
 26431	Body Language	Kid Ink Featuring Usher & Tinashe	305824	38VErEiTizjEE6BjsmroFx
 26434	Burnin' Up	Jessie J Featuring 2 Chainz	304565	5O9WkrcIngJ6l3il6WrfbG
-26440	Welcome To New York	Taylor Swift	371422	null
 26441	Outside	Calvin Harris Featuring Ellie Goulding	275856	7MmG8p0F9N3C4AXdK6o6Eb
 26442	G.D.F.R.	Flo Rida Featuring Sage The Gemini & Lookas	302239	6N9ZOtguCnnrvwH7zD82WJ
 26443	Talladega	Eric Church	301808	1TKlBK9cSrM5u4CiL4SETS
@@ -3072,18 +2763,13 @@ id	song_name	display_artist	artist_id	spotify_id
 26462	Ready To Run	One Direction	314021	7GtGeeChOx4NS77bqK8SUx
 26463	Something Big	Shawn Mendes	6143288	5sXGGB76yexYIyTRM1iQhR
 26467	Uptown Funk!	Mark Ronson Featuring Bruno Mars	309564	57n3qOwXcoRMyGFjeqC1Rh
-26468	18	One Direction	314021	3JjnGLK8IxkNLvo8Lb3KOM
 26472	She Knows	Ne-Yo Featuring Juicy J	312075	0YfA79zrPI3JTmpVBbACt2
 26473	Mary, Did You Know?	Pentatonix	1490043	6PfQuBnKZPjt7cB7fRUuLi
 26475	Do They Know It's Christmas? (2014)	Band Aid 30	6327882	4UHflIcEc1VkfJthJpSTNJ
 26476	Bed Of Lies	Nicki Minaj Featruing Skylar Grey	312259	5Erjuic0CApoiDsFxiElKT
-26479	Take Me To Church	Matt McAndrew	null	null
 26480	I Don't Mind	Usher Featuring Juicy J	430708	7aXuop4Qambx5Oi3ynsKQr
-26481	Stockholm Syndrome	One Direction	314021	6AzCBeiDuUXGXjznBufswB
 26483	7/11	Beyonce	281569	null
 26489	Time Of Our Lives	Pitbull & Ne-Yo	1490081	2bJvI42r8EF3wxjOuDav4r
-26490	Make It Rain	Ed Sheeran	276089	50p9gmJMwsz3zyAwoF0FEv
-26491	The Blower's Daughter	Matt McAndrew	6334934	7tdXvaCZmWZJOrZE9zFXpr
 26492	Prayer In C	Lillywood & Robin Schulz	6739903	4MteadAdoJXNnuBIa0Q1ZK
 26494	Lonely Tonight	Blake Shelton Featuring Ashley Monroe	289793	1zbcFS5hS92oXNL3UZDfY0
 26495	Like A Cowboy	Randy Houser	360710	6FS45yY6JKwMvAqN6vJD50
@@ -3109,7 +2795,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26530	Throw Sum Mo	Rae Sremmurd Featuring Nicki Minaj & Young Thug	6140339	5uqphUYsR45kPYplrYSAQh
 26536	I Mean It	G-Eazy Featuring Remo	1493192	3r3IydiFlCmsgY9B9L3o6Y
 26538	Ayo	Chris Brown & Tyga	1486846	1N1yRlgw2AgZeVndoGRFIk
-26541	Best Friends	Sophia Grace	6436821	4zj1DEHmzKdZ859fFtBmSx
 26542	Blank Space	I Prevail	1531297	3qnUqdzB7fjJOKrooVPX4k
 26543	Not For Long	B.o.B Featuring Trey Songz	275499	6H75Ki32BRrJFQeDNR05s1
 26544	Post To Be	Omarion Featuring Chris Brown & Jhene Aiko	312656	6p5abLu89ZSSpRQnbK9Wqs
@@ -3127,12 +2812,9 @@ id	song_name	display_artist	artist_id	spotify_id
 26576	Preach	Drake Featuring PARTYNEXTDOOR	301284	7n4Kv0ArEyRh8p4wO5fG78
 26579	Used To	Drake Featuring Lil Wayne	301284	31LIXek4OCRgKJn4RWg5Yb
 26583	Keep Your Money	Empire Cast Featuring Jussie Smollett	6438154	3iZ79tg6mJNPqJC9WOrqbW
-26585	Wonderland	Taylor Swift	371422	null
 26586	Know Yourself	Drake	301284	2WzpOMkCaakq1T3luPCjLH
-26588	6 God	Drake	301284	0GQKP2WgHvBA8Nzb4xZu36
 26589	Now & Forever	Drake	301284	3ougl2AEOsSN6AX5MiFOxx
 26592	I Want You To Know	Zedd Featuring Selena Gomez	431777	1qx8bj4quT6XuP5P9Eu12Z
-26593	First Kiss	Kid Rock	305827	5rxZHy9BW9sgjOQ67Zod7n
 26594	You're So Beautiful	Empire Cast Featuring Jussie Smollett & Yazz	6438154	1PfdoFMSel0SdK2V0SdQWZ
 26595	All Your Fault	Big Sean Featuring Kanye West	281681	30CZcZ0NpTXjVJJa5X5nwf
 26596	You Are In Love	Taylor Swift	371422	null
@@ -3140,7 +2822,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26601	Paradise	Big Sean	281681	null
 26602	All Day	Kanye West Featuring Theophilus London, Allan Kingdom & Paul McCartney	276709	1YD3Dg7Olipi5FGVDLHWAu
 26603	Conqueror	Empire Cast Featuring Estelle & Jussie Smollett	6438154	0XdXCURenDTxvcIop4X4ul
-26605	New Romantics	Taylor Swift	371422	null
 26607	Don't It	Billy Currington	283473	5v7Sazp36VxCp7E0uHzfZM
 26608	Adore	Cashmere Cat Featuring Ariana Grande	5908562	3gR9QL5O6D84caWGvqHJCX
 26609	She Don't Love You	Eric Paslay	5770421	7t9mMhYpFUNsKqU2JSHZFe
@@ -3165,17 +2846,13 @@ id	song_name	display_artist	artist_id	spotify_id
 26645	Goodbye	Who Is Fancy	6480665	1oU4QiAXB0mW8aWx1tsfco
 26647	Lean On	Major Lazer X DJ Snake Featuring M0	308937	4KcVVhAaHxqtX2ANt4b3tc
 26652	Be Real	Kid Ink Featuring DeJ Loaf	305824	32tBNiuuQtkUG5eBWpC0oQ
-26653	Imagine	Sawyer Fredericks	6489732	5fKbkAwQqPNF7Us0UUFNJK
 26658	Nasty	Bandit Gang Marco Featuring Dro	6159106	6PNfomMFjL2FnwWXe0qN7I
 26659	Make It Rain	Koryn Hawthorne	null	1DH1DGQzth0K6YouejlNLY
-26661	Flex (Ooh Ooh Ooh)	Rich Homie Quan	5245566	4T0ScSPdQKmGvruK7pavNP
 26662	I Don't Get Tired (#IDGT)	Kevin Gates Featuring August Alsina	5645437	6HMHgBHdLBQ0QYIaOp2gse
 26663	Iris	Sawyer Fredericks	6489732	7hJgVpoFFU1gJDAbYPYF2l
-26664	Simple Man	Sawyer Fredericks	6489732	0T72I759rYATKkzQzZGyWs
 26670	Pretty Girls	Britney Spears & Iggy Azalea	297529	null
 26672	I Need Your Love	Shaggy Featuring Mohombi, Faydee, Costi	278838	74Xdx4ezYQQlg8wKswq25T
 26673	Classic Man	Jidenna Featuring Roman GianArthur	6591068	3G7XYAwtxtoGK7fAm4IlD9
-26675	Shine On	Sawyer Fredericks	6489732	7pa2J8FSpn0Jg0FLKj9NV1
 26678	This Summer's Gonna Hurt...	Maroon 5	309663	73h73Cm8SZRyyoyEsnd9SP
 26680	Fun	Pitbull Featuring Chris Brown	null	6Zo3wgDE076K2AuiGZF3CS
 26683	A Thousand Years	Sawyer Fredericks	6489732	1xbtFabmTCcxN0gozYj2AZ
@@ -3191,7 +2868,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26705	Everyday	A$AP Rocky Featuring Rod Stewart x Miguel x Mark Ronson	275210	2N3U8uTYhjX2KwGT0pf5x0
 26706	Hood Go Crazy	Tech N9Ne Featuring 2 Chainz & B.o.B	371716	0kIHfcHGFGm5xb0dSlKEdp
 26707	Hell Of A Night	Dustin Lynch	301390	30wEpY339lJXMEP7gDTypY
-26709	3500	Travi$ Scott Featuring Future & 2 Chainz	1561929	49SrrLoFCJgy3zHMq3COto
 26715	B**** I'm Madonna	Madonna Featuring Nicki Minaj	308786	3Ik6ZVvOgr2Pu5cnI8Gsu0
 26716	Marvin Gaye	Charlie Puth Featuring Meghan Trainor	6473237	6ukMqDxnOPOgoHdak7Kyp3
 26719	Good For You	Selena Gomez Featuring A$AP Rocky	278617	2LcB304HDrCx8WVDEQn7CK
@@ -3203,7 +2879,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26730	Play No Games	Big Sean Featuring Chris Brown & Ty Dolla $ign	281681	3rsOs39rDAYxIOrDTHAgR9
 26731	Do It Again	Pia Mia Featuring Chris Brown & Tyga	6530595	1PTqbs9FV8hSJCS7OOF5OC
 26732	Bad For You	Meek Mill Featuring Nicki Minaj	310352	0HVba4HUwHnGlkHNitXMEL
-26735	Love Is Your Name	Steven Tyler	280697	4Dodrz2x6Sqg6ar2POouAD
 26737	Jump Out The Face	Meek Mill Featuring Future	310352	17AS0y6FnHdYImAPUydAJg
 26738	Like I'm Gonna Lose You	Meghan Trainor Featuring John Legend	6155878	2YlZnw2ikdb837oKMKjBkW
 26743	Fly	Maddie & Tae	6157984	75UZ6xdsai2UYl0ayRra9C
@@ -3216,7 +2891,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26762	100	The Game Featuring Drake	1490221	3RG3Juyt2Jz2sKtzkj7IRX
 26770	Nothin' Like You	Dan + Shay	5812473	4W38RXuQNuoTSwVsQA1OGC
 26777	The Fix	Nelly Featuring Jeremih	312110	33QRsLBBdWDYgCZfWEZqR6
-26778	Fly Away	5 Seconds Of Summer	5778308	08N1v3HwtbhYzYRUhnsvJh
 26786	What Do You Mean?	Justin Bieber	305459	1ds2QsfhAAfRiaFMGDzrdb
 26787	Prisoner	The Weeknd Featuring Lana Del Rey	419413	2PUQu6RlN3DDJOoJ26JW8u
 26793	Losers	The Weeknd Featuring Labrinth	419413	1RM7XdyfDnksC1ukt4y67n
@@ -3234,7 +2908,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26824	I'm The Plug	Drake & Future	301284	null
 26825	Runnin' (Lose It All)	Naughty Boy Featuring Beyonce & Arrow Benjamin	312065	0H2BuFu2MuJfnF1yHKjBcp
 26828	Hold Each Other	A Great Big World Featuring FUTURISTIC	5885925	4hkAO5HepzonUEJkXUT6e5
-26829	Alive	Sia	279248	05cXQMJcrM9msUYu11mOrs
 26831	Plastic Bag	Drake & Future	301284	null
 26832	Change Locations	Drake & Future	301284	null
 26837	Lay It All On Me	Rudimental Featuring Ed Sheeran	369260	3853uIOwh2L9F8TkDd1F49
@@ -3246,8 +2919,6 @@ id	song_name	display_artist	artist_id	spotify_id
 26856	I Love This Life	LoCash	6605928	1kneRrMfS08JwuqKwnX4fl
 26860	I'll Show You	Justin Bieber	305459	048thBsGA2IfiubeNWC0v2
 26861	Me, Myself & I	G-Eazy x Bebe Rexha	1493192	0KMYgSe9JWHloFeEVBU6qq
-26864	We Went	Randy Houser	360710	4kYlMWhSOvrg4U6c0RqgEP
-26866	Bet You Can't Do It Like Me	DLOW	6762678	1NM1XuictEIvPuscutKMZV
 26869	Halo	Jordan Smith	6770499	7DThz7qoNx3WWQJgEipP7W
 26870	WTF (Where They From)	Missy Elliott Featuring Pharrell Williams	311508	7IAa7vUJ11STN7le8XaxsH
 26873	Love Yourself	Justin Bieber	305459	3hB5DgAiMAQ4DzYbsMq1IT
@@ -3258,16 +2929,12 @@ id	song_name	display_artist	artist_id	spotify_id
 26882	Children	Justin Bieber	305459	6O8I0ffpEtyMQmMYo0bj4N
 26883	Been You	Justin Bieber	305459	3mIf8Zk2cy7ITwvvNkC0l2
 26886	We Are	Justin Bieber Featuring Nas	305459	7isWH8NT7djPZw5HWlbiun
-26887	Get Used To Me	Justin Bieber	305459	1T3iEhgmmfzLOs6sZzBlNU
 26890	I Know What You Did Last Summer	Shawn Mendes & Camila Cabello	6143288	null
 26891	Trust	Justin Bieber	305459	7DzeaRovylET6SbdmVe5In
-26892	Never Enough	One Direction	314021	7rdP71W8x4UbJ0KAKBACbo
-26895	Send My Love (To Your New Lover)	Adele	278035	70uEe3Key95fjdHfcf5ELt
 26897	Home Alone Tonight	Luke Bryan Featuring Karen Fairchild	308556	2phomyGUWSjrHUXzbsYv17
 26900	Hallelujah	Jordan Smith	6770499	3LLYIitFpZSmXY95rQxw0E
 26904	Daddy	PSY Featuring CL	277142	4oHmgneU9dwYoqg0SJSOCf
 26908	Dessert	Dawin	6042321	1tYt8PbpbeTuqsNmprAZYY
-26909	Backroad Song	Granger Smith	1561600	7CsYx98MdSJGNIInlFga2I
 26911	Sorry	Rick Ross Featuring Chris Brown	365033	2MXAf9ZXLinvHIbHJbCNSj
 3288	Summertime	Chris Columbo Quintet	null	null
 3981	I Want To Hold Your Hand	Boston Pops Orchestra  Arthur Fiedler	null	null
