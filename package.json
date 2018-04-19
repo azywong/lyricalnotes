@@ -1,15 +1,17 @@
 {
-  "name": "y",
+  "name": "lyricalnotes",
   "version": "1.0.0",
   "description": "cs 560 final project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "tsv": "^0.2.0"
   }
 }

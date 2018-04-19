@@ -3,6 +3,7 @@ var express = require('express');
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
+var tsv = require('tsv');
 
 var app = express();
 var port = process.env.PORT || 8080;
@@ -199,12 +200,12 @@ app.get('/lyrics/:fileName', function(req, res) {
 app.get('/alllyrics', function(req, res) {
 
 	var startDate = new Date();
-		startDate.setFullYear(2009);
-		startDate.setMonth(2);
+		startDate.setFullYear(2015);
+		startDate.setMonth(3);
 		startDate.setDate(1);
 	var currentDate = startDate;
 	var i = 0;
-	while(currentDate.getFullYear() < 2010) {
+	while(currentDate.getFullYear() < 2016) {
 		// check if its a saturday
 		var day = currentDate.getDay();
 		if (day == 6) {
@@ -246,7 +247,8 @@ app.get('/missinglyrics', function(req, res) {
 	var currentDate = startDate;
 	var i = 0;
 	var ws = fs.createWriteStream("missing.tsv", {flags:'a'});
-	while(currentDate.getFullYear() < 2010) {
+	ws.write("song_id\tsong_name\tdisplay_artist\tartist_id\tspotify_id\n");
+	while(currentDate.getFullYear() < 2016) {
 		// check if its a saturday
 		var day = currentDate.getDay();
 		if (day == 6) {
@@ -278,6 +280,35 @@ app.get('/missinglyrics', function(req, res) {
 	}
 	ws.end();
 });
+
+app.get('/getmissinglyrics', function(req, res) {
+	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
+		if (err) throw err;
+		var data = tsv.parse(data);
+		for (var i = 0; i < data.length; i++) {
+			var songName = encodeURI(data[i].song_name);
+			var artistName = encodeURI(data[i].display_artist);
+			var songfilename = "data/" + data[i].id + "-lyrics.json";
+			var songOptions = {
+				host: 'orion.apiseeds.com',
+				port: 443,
+				path: '/api/music/lyric/' + artistName + "/" + songName + "?apikey=" + config.APISEEDS_KEY,
+					agent: false,
+				method: 'GET'
+			};
+			var songObject = {
+				"song_id": data[i].song_id,
+				"song_name": data[i].song_name,
+				"artist_id": data[i].artist_id,
+				"display_artist": data[i].display_artist,
+				"spotify_id": data[i].spotify_id
+			}
+			waitRequest(i, songOptions, songObject, songfilename);
+		};
+
+	});
+});
+
 
 
 app.listen(port);
