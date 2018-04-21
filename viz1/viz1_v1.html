@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+	<title>Viz Project Line Graph</title>	
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<style>
+		
+		/*keith urban*/
+		.line1 { 
+			fill: none;
+			stroke: rgb(160,82,45);
+			stroke-width: 3;
+			opacity: 0.6;
+		}
+
+		/*kenny chesney*/
+		.line2 {
+			fill: none;
+			stroke: rgb(0,255,0);
+			stroke-width: 3;
+			opacity: 0.6;
+		}
+
+		/*mariah carey*/
+		.line3 {
+			fill: none;
+			stroke: rgb(128,0,128);
+			stroke-width: 3;
+			opacity: 0.6;
+		}
+
+		/*taylor swift*/
+		.line4 {
+			fill: none;
+			stroke: rgb(219,112,147);
+			stroke-width: 3;
+			opacity: 0.6;
+		}
+
+		/*tim mcgraw*/
+		.line5 {
+			fill: none;
+			stroke: rgb(219,0,0);
+			stroke-width: 3;
+			opacity: 0.6;
+		}
+
+	</style>
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+		var margin = {top: 100, right: 200, bottom: 100, left: 100},
+			h = 600 - margin.top - margin.bottom,
+			w = 1000 - margin.right - margin.left;
+
+		var svg = d3.select("body")
+					.append("svg")
+				    .attr("width", w + margin.left + margin.right)
+				    .attr("height", h + margin.top + margin.bottom)
+				  	.append("g")
+
+		var parseDate = d3.timeParse("%d/%m/%y");
+
+		// load in data
+		d3.csv("viz1ArtistsYearly.csv", function(dataset) {
+
+			// console.log(dataset[0])
+
+			dataset.forEach(function (d) {
+				d.date = parseDate(d.date);
+				d.keith = +d.keith;
+				d.kenny = +d.kenny;
+				d.mariah = +d.mariah;
+				d.taylor = +d.taylor;
+				d.tim = +d.tim;
+			});
+
+			console.log(dataset[0]);
+
+			var xScale = d3.scaleTime()
+						   .domain(d3.extent(dataset, function(d) { return d.date; }))
+						   .range([0, w]),
+				yScale = d3.scaleLinear()
+						   .domain([0, 800])
+						   .range([h, 0]);
+
+			var xAxis = d3.axisBottom()
+						  .scale(xScale)
+						  .ticks(d3.timeYear.every(5));
+				yAxis = d3.axisLeft()
+						  .scale(yScale);
+
+			var xPosX = margin.left,
+				xPosY = margin.top + h,
+				yPosX = margin.left,
+				yPosY = margin.top;
+
+			// draw x axis
+			svg.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(" + xPosX + ", " + xPosY + ")")
+				.call(xAxis);
+
+			// draw y axis
+			svg.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(" + 50 + ", " + yPosY + ")")
+				.call(yAxis);
+
+			var line1 = d3.line()
+						  .curve(d3.curveCardinal.tension(0.6))
+					      .x(function(d) { return xScale(d.date); })
+					      .y(function(d) { return yScale(d.keith); });
+
+			var line2 = d3.line()
+						  .curve(d3.curveCardinal.tension(0.6))
+					      .x(function(d) { return xScale(d.date); })
+					      .y(function(d) { return yScale(d.kenny); });
+
+			var line3 = d3.line()
+						  .curve(d3.curveCardinal.tension(0.6))
+					      .x(function(d) { return xScale(d.date); })
+					      .y(function(d) { return yScale(d.mariah); });					      					   
+
+			var line4 = d3.line()
+						  .curve(d3.curveCardinal.tension(0.6))
+					      .x(function(d) { return xScale(d.date); })
+					      .y(function(d) { return yScale(d.taylor); });
+
+			var line5 = d3.line()
+						  .curve(d3.curveCardinal.tension(0.6))
+					      .x(function(d) { return xScale(d.date); })
+					      .y(function(d) { return yScale(d.tim); });
+
+			// draw lines
+			svg.append("path")
+		       .datum(dataset)
+		       .attr("class", "line1")
+		       .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		       .attr("d", line1);
+
+		    svg.append("path")
+		       .datum(dataset)
+		       .attr("class", "line2")
+		       .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		       .attr("d", line2);
+
+		    svg.append("path")
+		       .datum(dataset)
+		       .attr("class", "line3")
+		       .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		       .attr("d", line3);
+
+		    svg.append("path")
+		       .datum(dataset)
+		       .attr("class", "line4")
+		       .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		       .attr("d", line4);
+
+		    svg.append("path")
+		       .datum(dataset)
+		       .attr("class", "line5")
+		       .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		       .attr("d", line5);
+
+		    // archive function here
+			// artist.append("text")
+		 //          .datum(function(d) { 
+		 //        		return {id: d.id, value: d.values[d.values.length - 1]}; 
+		 //          })
+		 //          .attr("transform", function(d) { 
+		 //          	return "translate(" + xScale(d.value.date) + "," + yScale(d.value.count) + ")"; 
+		 //          })
+		 //          .attr("x", 10 + margin.left)
+		 //          .attr("y", margin.top)
+		 //          .text(function(d) { 
+		 //          	return d.id; 
+		 //          })
+		 //          .style("stroke", function(d) { 
+			//       	var col = d.id.substring(0,3).toLowerCase()
+			//       	return colors[col]; 
+			//       })
+		 //          .style("font", "10px sans-serif");
+
+		});
+
+	</script>
+</body>
