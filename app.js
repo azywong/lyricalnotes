@@ -4,6 +4,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs');
 var tsv = require('tsv');
+var csv = require('csv');
 
 var app = express();
 var port = process.env.PORT || 8080;
@@ -306,6 +307,68 @@ app.get('/getmissinglyrics', function(req, res) {
 			waitRequest(i, songOptions, songObject, songfilename);
 		};
 
+	});
+});
+
+app.get('/convertcsv', function(req, res) {
+	fs.readFile('docs/beta/data/viz3_v2.csv', 'utf8', function(err, data) {
+		var keywords = [];
+		var processed_data = []
+		data = data.split("\n");
+		//get keywords
+		for (var i = 1; i < data.length - 1; i++) {
+			var line = data[i];
+			line = line.split(",");
+			if (line.length == 4) {
+				var keyword = line[2].replace(/"/g, "")
+				if (keywords.indexOf(keyword) == -1) {
+					keywords.push(keyword);
+				}
+			}
+		};
+		for (var i = 0; i < keywords.length; i++) {
+			processed_data[i] = {};
+			processed_data[i].id = keywords[i];
+			processed_data[i].values = [];
+		};
+
+		for (var i = 1; i < data.length; i++) {
+			var line = data[i];
+			line = line.split(",");
+			if (line.length == 4) {
+				var year = parseInt(line[1].replace(/"/g, ""));
+				var keyword = line[2].replace(/"/g, "");
+				var count = parseInt(line[3].replace(/"/g, ""));
+				var object = {year: year, count: count}
+				for (var j = 0; j < processed_data.length; j++) {
+					if (processed_data[j].id == keyword) {
+						processed_data[j].values.push(object);
+						break;
+					}
+				};
+			}
+		};
+		var tsv_data = "year\t";
+		for (var i = 0; i < processed_data.length; i++) {
+			tsv_data += processed_data[i].id + "\t"
+		};
+		tsv_data += "\n";
+		for (var i = 1990; i <= 2015; i++) {
+			tsv_data += i + "\t";
+			for (var j = 0; j < processed_data.length; j++) {
+				for (var k = 0; k < processed_data[j].values.length; k++) {
+					if (processed_data[j].values[k].year == i) {
+						tsv_data += processed_data[j].values[k].count + "\t"
+					}
+				};
+			};
+			tsv_data += "\n";
+		};
+		fs.writeFile("docs/beta/data/viz3.tsv", tsv_data, function(err) {
+		    if (err) {
+		        console.log(err);
+		    }
+		});
 	});
 });
 
