@@ -90,7 +90,7 @@
 					.append("svg")
 				    .attr("width", w + margin.left + margin.right)
 				    .attr("height", h + margin.top + margin.bottom)
-				  	.append("g")
+				  	.append("g");
 
 		var t = d3.transition()
 				  .duration(100)
@@ -308,7 +308,67 @@
 			      	var col = d.id.substring(0,3).toLowerCase()
 			      	return colors[col]; 
 			      });
+
+			 // initial text append function
+			// artist.append("text")
+		 //          .datum(function(d) { 
+		 //        		return {id: d.id, value: d.values[d.values.length - 1]}; 
+		 //          })
+		 //          .attr("transform", function(d) { 
+		 //          	return "translate(" + xScale(d.value.date) + "," + yScale(d.value.count) + ")"; 
+		 //          })
+		 //          .attr("x", 10 + margin.left)
+		 //          .attr("y", margin.top)
+		 //          .text(function(d) { 
+		 //          	return d.id; 
+		 //          })
+		 //          .style("stroke", function(d) { 
+			//       	var col = d.id.substring(0,3).toLowerCase()
+			//       	return colors[col]; 
+			//       })
+		 //          .style("font", "10px sans-serif");
 		
+		 	svg.append("rect")
+			   .attr("height", h + margin.bottom + margin.top)
+			   .attr("width", w + margin.left + margin.right)
+			   .style("opacity", 0)
+			   .style("fill", "blue")
+			   .on("click", function (d) {
+			   	if (switcher == 1) {
+			   		killswitch();
+			   		var keys = Object.keys(colors);
+			       		for (index in colors) {
+			       			var dur = 250, del = 0;
+			       			d3.select("path#" + index)
+			       			  .transition()
+			       			  .delay(del)
+			       			  .duration(dur)
+			       			  .ease(d3.easeLinear)
+			         	 	  .style("opacity", "0.7")
+			       			  .style("stroke", function(d) { 
+						      	return colors[index]; 
+						      });
+			       			d3.selectAll(".axis path")
+			       			  .style("opacity", "0")
+			       			  .transition()
+			       			  .delay(del)
+			       			  .duration(dur)
+			       			  .ease(d3.easeLinear)
+			       			  .style("opacity", "0.3");
+						    d3.select(".labels#" + index)
+						      .style("opacity", "0")
+			       			  .transition()
+			       			  .delay(del)
+			       			  .duration(dur)
+			       			  .ease(d3.easeLinear)
+			           		  .style("opacity", "1")
+				      	  	  .style("fill", function(d) { 
+					      		return colors[index]; 
+				   		  	  })
+			       		}
+			   	}
+			   });
+
 			// taylor swift label and interaction
 		 	svg.append("text")
 		 	   .attr("class", "labels")
