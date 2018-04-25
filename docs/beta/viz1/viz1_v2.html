@@ -3,12 +3,12 @@
 <meta charset="utf-8">
 
 <head>
-	<title>Viz Project Line Graph</title>	
+	<title>Viz Project Line Graph</title>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600" rel="stylesheet">
 	<style>
-	
+
 	.labels {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 400;
@@ -81,7 +81,7 @@
 
 <body>
 	<script type="text/javascript">
-		
+
 		var margin = {top: 200, right: 200, bottom: 50, left: 100},
 			h = 600 - margin.top - margin.bottom,
 			w = 1000 - margin.right - margin.left;
@@ -97,7 +97,7 @@
 				  .ease(d3.easeLinear);
 
 		// var imgs = svg.selectAll("image").data([0]);
-        
+
   //       imgs.enter()
   //           .append("svg:image")
   //           .attr("xlink:href", "2000px-Billboard_logo.png")
@@ -180,7 +180,7 @@
 					  "tim":"rgb(20,20,200)"}
 
 		// arrat for plotted date, real-date of observation(rdate) and num weeks on chart for tswift
-		var annoTS = [{date:"23/4/2006", rdate:"23/9/2006", num:1}, 
+		var annoTS = [{date:"23/4/2006", rdate:"23/9/2006", num:1},
 					  {date:"22/11/2008", rdate:"22/11/2008", num:163},
 					  {date:"6/4/2014", rdate:"6/9/2014", num:625},
 					  {date:"26/12/2015", rdate:"26/12/2015", num:789}]
@@ -188,14 +188,14 @@
 			d.date = parseDate2(d.date);
 		})
 
-		var annoKC = [{date:"6/11/1998", rdate:"6/2/1999", num:8}, 
+		var annoKC = [{date:"6/11/1998", rdate:"6/2/1999", num:8},
 					  {date:"20/6/2009", rdate:"20/6/2009", num:491},
 					  {date:"26/12/2015", rdate:"26/12/2015", num:695}]
 		annoKC.forEach(function(d) {
 			d.date = parseDate2(d.date);
 		})
 
-		var annoTM = [{date:"5/1/1994", rdate:"5/3/1994", num:1}, 
+		var annoTM = [{date:"5/1/1994", rdate:"5/3/1994", num:1},
 					  {date:"12/6/2004", rdate:"12/6/2004", num:350},
 					  {date:"15/12/2012", rdate:"15/12/2012", num:611},
 					  {date:"26/12/2015", rdate:"26/12/2015", num:683}]
@@ -203,7 +203,7 @@
 			d.date = parseDate2(d.date);
 		})
 
-		var annoMC = [{date:"27/8/1990", rdate:"27/10/1990", num:22}, 
+		var annoMC = [{date:"27/8/1990", rdate:"27/10/1990", num:22},
 					  {date:"29/11/2004", rdate:"29/1/2005", num:397},
 					  {date:"22/12/2012", rdate:"22/12/2012", num:575},
 					  {date:"26/12/2015", rdate:"26/12/2015", num:587}]
@@ -211,7 +211,7 @@
 			d.date = parseDate2(d.date);
 		})
 
-		var annoKU = [{date:"15/11/2000", rdate:"15/7/2000", num:16}, 
+		var annoKU = [{date:"15/11/2000", rdate:"15/7/2000", num:16},
 					  {date:"23/12/2006", rdate:"23/12/2006", num:250},
 					  {date:"18/4/2009", rdate:"18/4/2009", num:347},
 					  {date:"26/12/2015", rdate:"26/12/2015", num:582}]
@@ -220,7 +220,7 @@
 		})
 
 		// load in data
-		d3.csv("DATA/viz1ArtistsYearly.csv", function(dataset) {
+		d3.csv("viz1ArtistsYearly.csv", function(dataset) {
 
 			dataset.forEach(function (d) {
 				d.date = parseDate(d.date);
@@ -285,7 +285,7 @@
 			             	.data(artists)
 			                .enter()
 			                .append("g")
-			                .attr("class", "artist"); 
+			                .attr("class", "artist");
 
 			var line = d3.line()
 					     .curve(d3.curveBasis)
@@ -297,37 +297,37 @@
 			      .attr("id", function(d) {
 			        return d.id.substring(0,3).toLowerCase();
 			      })
-			      .attr("d", function(d) { 
-			      	return line(d.values); 
+			      .attr("d", function(d) {
+			      	return line(d.values);
 			      })
 			      .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
 			      .style("fill", "none")
 			      .style("stroke-width", "2")
 			      .style("opacity", "0.7")
-			      .style("stroke", function(d) { 
+			      .style("stroke", function(d) {
 			      	var col = d.id.substring(0,3).toLowerCase()
-			      	return colors[col]; 
+			      	return colors[col];
 			      });
 
 			 // initial text append function
 			// artist.append("text")
-		 //          .datum(function(d) { 
-		 //        		return {id: d.id, value: d.values[d.values.length - 1]}; 
+		 //          .datum(function(d) {
+		 //        		return {id: d.id, value: d.values[d.values.length - 1]};
 		 //          })
-		 //          .attr("transform", function(d) { 
-		 //          	return "translate(" + xScale(d.value.date) + "," + yScale(d.value.count) + ")"; 
+		 //          .attr("transform", function(d) {
+		 //          	return "translate(" + xScale(d.value.date) + "," + yScale(d.value.count) + ")";
 		 //          })
 		 //          .attr("x", 10 + margin.left)
 		 //          .attr("y", margin.top)
-		 //          .text(function(d) { 
-		 //          	return d.id; 
+		 //          .text(function(d) {
+		 //          	return d.id;
 		 //          })
-		 //          .style("stroke", function(d) { 
+		 //          .style("stroke", function(d) {
 			//       	var col = d.id.substring(0,3).toLowerCase()
-			//       	return colors[col]; 
+			//       	return colors[col];
 			//       })
 		 //          .style("font", "10px sans-serif");
-		
+
 		 	svg.append("rect")
 			   .attr("height", h + margin.bottom + margin.top)
 			   .attr("width", w + margin.left + margin.right)
@@ -345,8 +345,8 @@
 			       			  .duration(dur)
 			       			  .ease(d3.easeLinear)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0")
@@ -362,8 +362,8 @@
 			       			  .duration(dur)
 			       			  .ease(d3.easeLinear)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 			   	}
@@ -378,13 +378,13 @@
 			        return name.substring(0,3).toLowerCase();
 			   })
 		  	   .attr("y", margin.top + 2)
-		  	   .attr("transform", function(d) { 
-		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].taylor) + ")"; 
+		  	   .attr("transform", function(d) {
+		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].taylor) + ")";
 		       })
 		       .attr("text-anchor", "start")
-		       .style("fill", function(d) { 
+		       .style("fill", function(d) {
 			      	var col = this.id;
-			      	return colors[col]; 
+			      	return colors[col];
 			   })
 		       .text("Taylor Swift")
 		       .on("mouseover", function (d) { // mouseover brushing
@@ -405,7 +405,7 @@
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
 			         	  .style("opacity", "1")
-			           	  .style("stroke", function(d) { 
+			           	  .style("stroke", function(d) {
 				      		var col = this.id;
 				      		return colors[col];
 				      	  });
@@ -413,8 +413,8 @@
 			         	  .transition()
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  })
 			       	}
 		       })
@@ -425,16 +425,16 @@
 			       			d3.select("path#" + index)
 			         	 	  .transition(t)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0.3");
 						    d3.select(".labels#" + index)
 			           		  .transition(t)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 		       		}
@@ -454,15 +454,15 @@
 				      	d3.select(".labels#" + this.id)
 			         	  .transition(t)
 			         	  .style("opacity", "1")
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  });
 				   		var annoCircles = svg.selectAll("annoCircle")
 										   .data(annoTS)
 										   .enter()
 										   .append("circle")
 										   .attr("class", "annoCircle")
-										   .attr("cx", function(d) { 
+										   .attr("cx", function(d) {
 										   		return xScale(d.date) + margin.left;
 										   })
 										   .attr("cy", function(d) {
@@ -537,7 +537,7 @@
 												          y: yScale(annoTS[2].num) + margin.top,
 												          dy: -0.1,
 												          dx: -70
-												        } 
+												        }
 												    ]
 
 				        const makeAnnotations1 = d3.annotation()
@@ -552,7 +552,7 @@
 				          .attr("class", "annotation-group")
 				          .call(makeAnnotations1)
 		       		}
-		       		else { 
+		       		else {
 		       			killswitch();
 		       		}
 		       });
@@ -565,14 +565,14 @@
 		 	   .attr("id", function(d) {
 		 	   		var name = "Kenny Chesney";
 			        return name.substring(0,3).toLowerCase();
-			   })		  	   
-		  	   .attr("transform", function(d) { 
-		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].kenny) + ")"; 
+			   })
+		  	   .attr("transform", function(d) {
+		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].kenny) + ")";
 		       })
 		       .attr("text-anchor", "start")
-		       .style("fill", function(d) { 
+		       .style("fill", function(d) {
 			      	var col = this.id;
-			      	return colors[col]; 
+			      	return colors[col];
 			   })
 		       .text("Kenny Chesney")
 		       .on("mouseover", function (d) { // mouseover brushing
@@ -593,7 +593,7 @@
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
 			         	  .style("opacity", "1")
-			           	  .style("stroke", function(d) { 
+			           	  .style("stroke", function(d) {
 				      		var col = this.id;
 				      		return colors[col];
 				      	  });
@@ -601,8 +601,8 @@
 			         	  .transition()
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  })
 			       	}
 		       })
@@ -613,16 +613,16 @@
 			       			d3.select("path#" + index)
 			         	 	  .transition(t)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0.3");
 						    d3.select(".labels#" + index)
 			           		  .transition(t)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 		       		}
@@ -642,15 +642,15 @@
 				      	d3.select(".labels#" + this.id)
 			         	  .transition(t)
 			         	  .style("opacity", "1")
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  });
 				   		var annoCircles = svg.selectAll("annoCircle")
 										   .data(annoKC)
 										   .enter()
 										   .append("circle")
 										   .attr("class", "annoCircle")
-										   .attr("cx", function(d) { 
+										   .attr("cx", function(d) {
 										   		return xScale(d.date) + margin.left;
 										   })
 										   .attr("cy", function(d) {
@@ -714,7 +714,7 @@
 				          .attr("class", "annotation-group")
 				          .call(makeAnnotations)
 		       		}
-		       		else { 
+		       		else {
 		       			killswitch();
 		       		}
 		       });
@@ -727,14 +727,14 @@
 		 	   .attr("id", function(d) {
 		 	   		var name = "Tim Mcgraw";
 			        return name.substring(0,3).toLowerCase();
-			   })		  	   
-		  	   .attr("transform", function(d) { 
-		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].tim) + ")"; 
+			   })
+		  	   .attr("transform", function(d) {
+		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].tim) + ")";
 		       })
 		       .attr("text-anchor", "start")
-		       .style("fill", function(d) { 
+		       .style("fill", function(d) {
 			      	var col = this.id;
-			      	return colors[col]; 
+			      	return colors[col];
 			   })
 		       .text("Tim McGraw")
 		       .on("mouseover", function (d) { // mouseover brushing
@@ -755,7 +755,7 @@
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
 			         	  .style("opacity", "1")
-			           	  .style("stroke", function(d) { 
+			           	  .style("stroke", function(d) {
 				      		var col = this.id;
 				      		return colors[col];
 				      	  });
@@ -763,8 +763,8 @@
 			         	  .transition()
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  })
 			       	}
 		       })
@@ -775,16 +775,16 @@
 			       			d3.select("path#" + index)
 			         	 	  .transition(t)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0.3");
 						    d3.select(".labels#" + index)
 			           		  .transition(t)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 		       		}
@@ -804,15 +804,15 @@
 				      	d3.select(".labels#" + this.id)
 			         	  .transition(t)
 			         	  .style("opacity", "1")
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  });
 				   		var annoCircles = svg.selectAll("annoCircle")
 										   .data(annoTM)
 										   .enter()
 										   .append("circle")
 										   .attr("class", "annoCircle")
-										   .attr("cx", function(d) { 
+										   .attr("cx", function(d) {
 										   		return xScale(d.date) + margin.left;
 										   })
 										   .attr("cy", function(d) {
@@ -889,7 +889,7 @@
 				          .attr("class", "annotation-group")
 				          .call(makeAnnotations)
 		       		}
-		       		else { 
+		       		else {
 		       			killswitch();
 		       		}
 		       });
@@ -902,14 +902,14 @@
 		 	   .attr("id", function(d) {
 		 	   		var name = "Mariah Carey";
 			        return name.substring(0,3).toLowerCase();
-			   })		  	   
-		  	   .attr("transform", function(d) { 
-		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].mariah) + ")"; 
+			   })
+		  	   .attr("transform", function(d) {
+		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].mariah) + ")";
 		       })
 		       .attr("text-anchor", "start")
-		       .style("fill", function(d) { 
+		       .style("fill", function(d) {
 			      	var col = this.id;
-			      	return colors[col]; 
+			      	return colors[col];
 			   })
 		       .text("Mariah Carey")
 		       .on("mouseover", function (d) { // mouseover brushing
@@ -930,7 +930,7 @@
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
 			         	  .style("opacity", "1")
-			           	  .style("stroke", function(d) { 
+			           	  .style("stroke", function(d) {
 				      		var col = this.id;
 				      		return colors[col];
 				      	  });
@@ -938,8 +938,8 @@
 			         	  .transition()
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  })
 			       	}
 		       })
@@ -950,16 +950,16 @@
 			       			d3.select("path#" + index)
 			         	 	  .transition(t)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0.3");
 						    d3.select(".labels#" + index)
 			           		  .transition(t)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 		       		}
@@ -979,15 +979,15 @@
 				      	d3.select(".labels#" + this.id)
 			         	  .transition(t)
 			         	  .style("opacity", "1")
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  });
 				   		var annoCircles = svg.selectAll("annoCircle")
 										   .data(annoMC)
 										   .enter()
 										   .append("circle")
 										   .attr("class", "annoCircle")
-										   .attr("cx", function(d) { 
+										   .attr("cx", function(d) {
 										   		return xScale(d.date) + margin.left;
 										   })
 										   .attr("cy", function(d) {
@@ -1064,7 +1064,7 @@
 				          .attr("class", "annotation-group")
 				          .call(makeAnnotations)
 		       		}
-		       		else { 
+		       		else {
 		       			killswitch();
 		       		}
 		       });
@@ -1077,14 +1077,14 @@
 		 	   .attr("id", function(d) {
 		 	   		var name = "Keith Urban";
 			        return name.substring(0,3).toLowerCase();
-			   })		  	   
-		  	   .attr("transform", function(d) { 
-		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].keith) + ")"; 
+			   })
+		  	   .attr("transform", function(d) {
+		          	return "translate(" + xScale(dataset[dataset.length - 1].date) + "," + yScale(dataset[dataset.length - 1].keith) + ")";
 		       })
 		       .attr("text-anchor", "start")
-		       .style("fill", function(d) { 
+		       .style("fill", function(d) {
 			      	var col = this.id;
-			      	return colors[col]; 
+			      	return colors[col];
 			   })
 		       .text("Keith Urban")
 		       .on("mouseover", function (d) { // mouseover brushing
@@ -1105,7 +1105,7 @@
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
 			         	  .style("opacity", "1")
-			           	  .style("stroke", function(d) { 
+			           	  .style("stroke", function(d) {
 				      		var col = this.id;
 				      		return colors[col];
 				      	  });
@@ -1113,8 +1113,8 @@
 			         	  .transition()
 			         	  .duration(50)
 			         	  .ease(d3.easeLinear)
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  })
 			       	}
 		       })
@@ -1125,16 +1125,16 @@
 			       			d3.select("path#" + index)
 			         	 	  .transition(t)
 			         	 	  .style("opacity", "0.7")
-			       			  .style("stroke", function(d) { 
-						      	return colors[index]; 
+			       			  .style("stroke", function(d) {
+						      	return colors[index];
 						      });
 			       			d3.selectAll(".axis path")
 			       			  .style("opacity", "0.3");
 						    d3.select(".labels#" + index)
 			           		  .transition(t)
 			           		  .style("opacity", "1")
-				      	  	  .style("fill", function(d) { 
-					      		return colors[index]; 
+				      	  	  .style("fill", function(d) {
+					      		return colors[index];
 				   		  	  })
 			       		}
 		       		}
@@ -1154,15 +1154,15 @@
 				      	d3.select(".labels#" + this.id)
 			         	  .transition(t)
 			         	  .style("opacity", "1")
-				      	  .style("fill", function(d) { 
-					      	return colors[this.id]; 
+				      	  .style("fill", function(d) {
+					      	return colors[this.id];
 				   		  });
 				   		var annoCircles = svg.selectAll("annoCircle")
 										   .data(annoKU)
 										   .enter()
 										   .append("circle")
 										   .attr("class", "annoCircle")
-										   .attr("cx", function(d) { 
+										   .attr("cx", function(d) {
 										   		return xScale(d.date) + margin.left;
 										   })
 										   .attr("cy", function(d) {
@@ -1239,7 +1239,7 @@
 				          .attr("class", "annotation-group")
 				          .call(makeAnnotations)
 		       		}
-		       		else { 
+		       		else {
 		       			killswitch();
 		       		}
 		       });
