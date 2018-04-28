@@ -1,0 +1,75 @@
+	#chart {
+	position: absolute;
+	right: 1rem;
+	left: 35%;
+	top: 25%;
+	-moz-transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	transform: translateY(-50%, -50%);
+}
+	.labels {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		letter-spacing: -0.5px;
+	}
+
+	.axis path {
+		stroke: rgb(220,220,220);
+		opacity: 0.3;
+	}
+
+	.title {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 60px;
+		letter-spacing: -3.5px;
+		transform: scale(1, 1.03);
+	}
+
+	.subtitle {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 15px;
+		transform: scale(1, 1.03);
+	}
+
+	.axisLabels {
+		font-family: 'Poppins', sans-serif;
+		font-size: 12px;
+	}
+
+	.axis text {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.annoNum {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 10px;
+	}
+
+	.annotation-note-title {
+		font-size: 12px;
+		fill: rgb(37,59,79);
+	}
+
+	.annotation-note-label {
+		font-size: 11px;
+		fill: rgb(37,59,79);
+	}
+
+	.annotation-group-outline, .annotation-group {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 11px;
+		fill: rgb(37,59,79);
+	}
+
+	.instruction {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		font-size: 9.5px;
+		fill: rgb(37,59,79);
+	}
