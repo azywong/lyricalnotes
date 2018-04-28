@@ -391,12 +391,12 @@ app.get('/convertcsv', function(req, res) {
 });
 
 app.get('/lgget', function(req, res) {
-	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
+	fs.readFile('missing-unique-2.tsv', 'utf8', function(err, data) {
 		if (err) throw err;
 		var data = tsv.parse(data);
 		for (var i = 0; i < data.length - 1; i++) {
-			var songName = data[i].song_name;
-			var artistName = data[i].display_artist;
+			var songName = data[i].song_name.replace(/\(.+\)/, "");
+			var artistName = data[i].display_artist.replace(/ Featuring .+/,"");
 			var songfilename = "data/missing/" + data[i].song_id + "-lyrics.json";
 			var songObject = {
 				"song_id": data[i].song_id,
