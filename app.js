@@ -415,10 +415,10 @@ app.get('/lgget', function(req, res) {
 });
 
 app.get('/missingunique', function(req, res) {
-	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
+	fs.readFile('missing-unique-2.tsv', 'utf8', function(err, data) {
 		if (err) throw err;
 		var data = tsv.parse(data);
-		var ws = fs.createWriteStream("missing-unique-2.tsv");
+		var ws = fs.createWriteStream("missing-unique-3.tsv");
 		for (var i = 0; i < data.length - 1; i++) {
 			var songfilename = "data/missing/" + data[i].song_id + "-lyrics.json";
 			if(!fs.existsSync(songfilename)) {
