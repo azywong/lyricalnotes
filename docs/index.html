@@ -5,8 +5,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Scrollama Demo: Sticky CSS</title>
-	<meta name="description" content="Scrollama Demo: Sticky CSS">
+	<title>Lyrical Notes</title>
+	<meta name="description" content="Lyrical Notes">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="vendor/scrollama.css">
@@ -17,7 +17,7 @@
 <body>
 	<section id='intro'>
 		<p class='intro__overline'>
-			<a href='https://github.com/russellgoldenberg/scrollama'>scrollama.js</a>
+			Lyrical Notes
 		</p>
 		<h1 class='intro__hed'>Demo: Sticky Graphic</h1>
 		<p class='intro__dek'>
@@ -60,11 +60,12 @@
 	<script src='https://unpkg.com/intersection-observer'></script>
 	<script src='https://unpkg.com/scrollama'></script>
 	<script src='scripts/viz1.js'></script>
+	<script src='scripts/viz3.js'></script>
 	<script>
 		// using d3 for convenience
 		var container = d3.select('#scroll');
 		var graphic = container.select('.scroll__graphic');
-		var chart = graphic.select('.chart');
+		var chart = graphic.select('#chart');
 		var text = container.select('.scroll__text');
 		var step = text.selectAll('.step');
 
@@ -109,10 +110,15 @@
 			})
 
 			// update graphic based on step
-			d3.select("#chart").select("svg").remove();
-			d3.select("#chart").append("svg");
+			chart.select("svg").remove();
+			chart.append("svg");
 			if (response.index == 0) {
 				loadviz1();
+			} else if (response.index == 2) {
+				loadviz3();
+			} else if (response.index == 3) {
+				chart.append("input");
+				loadviz4();
 			}
 		}
 
