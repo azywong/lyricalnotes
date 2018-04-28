@@ -5,10 +5,28 @@ var https = require('https');
 var fs = require('fs');
 var tsv = require('tsv');
 var csv = require('csv');
+var lg = require("lyric-get");
 
 var app = express();
 var port = process.env.PORT || 8080;
 var APISEEDS_KEY = process.env.APISEEDS_KEY;
+
+var lgget = function(songName, artistName, filename, song, i) {
+	setTimeout(function() {
+		lg.get(artistName, songName, function(err, res){
+		    if(err){
+		        console.log(err);
+		    }
+		    else{
+		        var ws = fs.createWriteStream(filename);
+		        song.lyrics = res;
+				ws.write(JSON.stringify(song));
+				ws.end();
+				console.log(filename);
+		    }
+		});
+	}, 1000 * i);
+}
 
 var waitRequest = function(j, songOptions, song, filename) {
 	setTimeout(function() {
@@ -372,6 +390,27 @@ app.get('/convertcsv', function(req, res) {
 	});
 });
 
+app.get('/lgget', function(req, res) {
+	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
+		if (err) throw err;
+		var data = tsv.parse(data);
+		for (var i = 0; i < data.length - 1; i++) {
+			var songName = data[i].song_name;
+			var artistName = data[i].display_artist;
+			var songfilename = "data/missing/" + data[i].song_id + "-lyrics.json";
+			var songObject = {
+				"song_id": data[i].song_id,
+				"song_name": data[i].song_name,
+				"artist_id": data[i].artist_id,
+				"display_artist": data[i].display_artist,
+				"spotify_id": data[i].spotify_id
+			}
+			console.log(songName + ", " + artistName);
+			lgget(songName, artistName, songfilename, songObject, i)
+		};
+
+	});
+});
 
 
 app.listen(port);

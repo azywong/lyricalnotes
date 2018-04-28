@@ -1,3 +1,4 @@
+song_id	song_name	display_artist	artist_id	spotify_id
 12059	We Will Rock You/We Are The Champions	Queen	277241	5C1N0wFUhhj5FgGKmfVdxy
 12307	Over The Rainbow	Gary Tanner	null	null
 12645	Stay The Night	The Faragher Bros.	null	null
@@ -2940,4 +2941,3 @@
 3981	I Want To Hold Your Hand	Boston Pops Orchestra  Arthur Fiedler	null	null
 420	Try Me	James Brown And The Famous Flames	null	7ogNAMjdIUg0rNXw5sZoHV
 8995	Imagine	John Lennon Plastic Ono Band	null	7pKfPomDEeI4TPT6EOYjn9
-song_id	song_name	display_artist	artist_id	spotify_id
