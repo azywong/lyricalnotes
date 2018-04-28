@@ -406,11 +406,29 @@ app.get('/lgget', function(req, res) {
 				"spotify_id": data[i].spotify_id
 			}
 			console.log(songName + ", " + artistName);
-			lgget(songName, artistName, songfilename, songObject, i)
+			lgget(songName, artistName, songfilename, songObject, i);
 		};
 
 	});
 });
+
+app.get('/missingunique', function(req, res) {
+	fs.readFile('missing-unique.tsv', 'utf8', function(err, data) {
+		if (err) throw err;
+		var data = tsv.parse(data);
+		var ws = fs.createWriteStream("missing-unique-2.tsv");
+		for (var i = 0; i < data.length - 1; i++) {
+			var songfilename = "data/missing/" + data[i].song_id + "-lyrics.json";
+			if(!fs.existsSync(songfilename)) {
+				ws.write(data[i].song_id + "\t" + data[i].song_name + "\t" + data[i].display_artist + "\t" + data[i].artist_id + "\t" + data[i].spotify_id + "\n");
+			}
+		};
+		ws.end();
+
+	});
+});
+
+
 
 
 app.listen(port);
