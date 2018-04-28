@@ -13,6 +13,7 @@ var APISEEDS_KEY = process.env.APISEEDS_KEY;
 
 var lgget = function(songName, artistName, filename, song, i) {
 	setTimeout(function() {
+		console.log(songName + ", " + artistName);
 		lg.get(artistName, songName, function(err, res){
 		    if(err){
 		        console.log(err);
@@ -395,8 +396,10 @@ app.get('/lgget', function(req, res) {
 		if (err) throw err;
 		var data = tsv.parse(data);
 		for (var i = 0; i < data.length - 1; i++) {
-			var songName = data[i].song_name.replace(/\(.+\)/, "");
-			var artistName = data[i].display_artist.replace(/ Featuring .+/,"");
+			var songName = String(data[i].song_name);
+			songName = songName.replace(/\(.+\)/, "");
+			var artistName = String(data[i].display_artist);
+			artistName = artistName.replace(/ Featuring .+/,"");
 			var songfilename = "data/missing/" + data[i].song_id + "-lyrics.json";
 			var songObject = {
 				"song_id": data[i].song_id,
@@ -405,7 +408,6 @@ app.get('/lgget', function(req, res) {
 				"display_artist": data[i].display_artist,
 				"spotify_id": data[i].spotify_id
 			}
-			console.log(songName + ", " + artistName);
 			lgget(songName, artistName, songfilename, songObject, i);
 		};
 
