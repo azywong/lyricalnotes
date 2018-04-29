@@ -36,7 +36,7 @@ function loadvis2 () {
 				};
 			}
 
-		d3.csv("../data/viz2.csv", rowConverter, function(data) {
+		d3.csv("data/viz2.csv", rowConverter, function(data) {
 				//Copy data into global dataset
       dataset = data;
 

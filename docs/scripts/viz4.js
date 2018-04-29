@@ -1,5 +1,5 @@
 function loadviz4 () {
-var margin = {top: 20, right: 20, bottom: 30, left: 50},
+var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 900 - margin.left - margin.right,
     height = 420 - margin.top - margin.bottom;
 var svg = d3.select("#chart svg")
@@ -31,7 +31,7 @@ var yAxis = d3.axisLeft(y);
     .y1(function(d) { return y(d.count); });
 
 
-d3.csv("../data/viz3_v2.csv", function(d, _, columns) {
+d3.csv("data/viz3_v2.csv", function(d, _, columns) {
   d.year = parseTime(d.year);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;

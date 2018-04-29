@@ -35,7 +35,7 @@ g.append("clipPath")
     .attr("width", width)
     .attr("height", height);
 
-d3.csv("../data/viz3_v2.csv", function(d, _, columns) {
+d3.csv("data/viz3_v2.csv", function(d, _, columns) {
   d.year = parseTime(d.year);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
