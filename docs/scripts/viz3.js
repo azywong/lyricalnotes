@@ -1,7 +1,7 @@
 function loadviz3() {
   var svg = d3.select("svg"),
-    margin = {top: 20, right: 200, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
+    margin = {top: 20, right: 200, bottom: 30, left: 100},
+    width = 900 - margin.left - margin.right,
     height = 420 - margin.top - margin.bottom;
   svg.attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -35,7 +35,7 @@ g.append("clipPath")
     .attr("width", width)
     .attr("height", height);
 
-d3.tsv("../data/viz3.tsv", function(d, _, columns) {
+d3.csv("../data/viz3_v2.csv", function(d, _, columns) {
   d.year = parseTime(d.year);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
@@ -112,15 +112,13 @@ d3.tsv("../data/viz3.tsv", function(d, _, columns) {
   keyword.append("text")
       .datum(function(d) {
     return {id: d.id, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) {
-    return "translate(" + x(d.value.year) + "," + y(d.value.count) + ")"; })
-      .attr("x", 3)
+       .attr("x", width + 5)
   		.attr("fill", function(d) { return z(d.id); })
   		.attr("y", function (d, i) {
-    			return -400 + (i*15);
+    			return margin.top + i*20;
   		})
       .attr("dy", "0.35em")
-      .style("font", "10px sans-serif")
+      .style("font", "15px sans-serif")
   		.text(function(d) { return d.id; })
     .on('click', function(d) {
     			var id = d.id.toUpperCase();
