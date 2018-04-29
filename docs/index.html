@@ -27,6 +27,22 @@
 	<section id='scroll'>
 		<div class='scroll__graphic sticky'>
 			<div id='chart'>
+				<div id="selection" class="hidden">
+					<label>
+					  Keyword
+					  <select class="group-select">
+					    <option value="0" selected>love</option>
+					    <option value="1">burn</option>
+					    <option value="2">baby</option>
+					    <option value="3">girl</option>
+					    <option value="4">boy</option>
+					    <option value="5">why</option>
+					    <option value="6">truck</option>
+					    <option value="7">happy</option>
+					    <option value="8">sad</option>
+					  </select>
+					</label>
+				</div>
 				<div id="tooltip" class="hidden">
 					<p><strong><span id = "title"> </span></strong></p>
 					<p><span id="artist"></span></p>
@@ -68,6 +84,7 @@
 	<script src='scripts/viz1.js'></script>
 	<script src='scripts/viz2.js'></script>
 	<script src='scripts/viz3.js'></script>
+	<script src='scripts/viz4.js'></script>
 	<script>
 		// using d3 for convenience
 		var container = d3.select('#scroll');
@@ -119,6 +136,9 @@
 			// update graphic based on step
 			chart.select("svg").remove();
 			chart.append("svg");
+			d3.select("#selection")
+				.classed("hidden", true)
+				.classed("show", false);
 			if (response.index == 0) {
 				loadviz1();
 			} else if (response.index == 1) {
@@ -126,10 +146,12 @@
 			} else if (response.index == 2) {
 				loadviz3();
 			}
-			//  else if (response.index == 3) {
-			// 	chart.append("input");
-			// 	loadviz4();
-			// }
+			 else if (response.index == 3) {
+				d3.select("#selection")
+					.classed("hidden", false)
+					.classed("show", true);
+				loadviz4();
+			}
 		}
 
 		function handleContainerEnter(response) {
