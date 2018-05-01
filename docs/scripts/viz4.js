@@ -2,7 +2,7 @@ function loadviz4 () {
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 900 - margin.left - margin.right,
     height = 420 - margin.top - margin.bottom;
-var svg = d3.select("#chart svg")
+var svg = d3.select("#viz4 .chart svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
 var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -69,7 +69,14 @@ d3.csv("data/viz3_v2.csv", function(d, _, columns) {
     g.selectAll(".keyword").remove();
   }
 
-  var draw = function (index) {
+  var draw = function (word) {
+    var index = -1;
+    for (var i = 0; i < keywords.length; i++) {
+      if (keywords[i].id == word) {
+        index = i;
+        break;
+      }
+    };
     var keyword = g.selectAll(".keyword")
   	.data([keywords[index]])
   	.enter().append("g")
@@ -96,9 +103,6 @@ d3.csv("data/viz3_v2.csv", function(d, _, columns) {
         .attr("x1", width)
         .attr("x2", width);
 
-    focus.append("circle")
-        .attr("r", 7.5);
-
     focus.append("text")
         .attr("x", 15)
       	.attr("dy", ".31em");
@@ -118,22 +122,23 @@ d3.csv("data/viz3_v2.csv", function(d, _, columns) {
           d0 = keywords[index].values[i - 1],
           d1 = keywords[index].values[i],
           d = x0 - d0.year > d1.year - x0 ? d1 : d0;
-      focus.attr("transform", "translate(" + x(d.year) + "," + y(d.count) + ")");
-      focus.select("text").text(function() { return d.count; });
-      focus.select(".x-hover-line").attr("y2", height - y(d.count));
-      focus.select(".y-hover-line").attr("x2", width + width);
+      focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
+      focus.select("text").text(function() { return d.year.getFullYear() + "| " + d.count + " instances"; });
+      focus.select(".x-hover-line").attr("y2", height);
+      // focus.select(".y-hover-line").attr("x2", width);
     }
 
   }
 
-  draw(0);
+  draw("baby");
 // New select element for allowing the user to select a group!
-var $groupSelector = document.querySelector('.group-select');
+var $inputSelector = document.querySelector('.viz4-form');
 
-$groupSelector.onchange = function(e) {
+$inputSelector.onsubmit = function(e) {
+  e.preventDefault();
   remove()
-  var index = e.target.value;
-  draw(index);
+  var word = document.querySelector('.input-select').value;
+  draw(word);
 };
 
 });

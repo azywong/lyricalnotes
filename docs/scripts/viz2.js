@@ -1,4 +1,4 @@
-function loadvis2 () {
+function loadviz2 () {
 
 //to-do
 /*
@@ -74,7 +74,7 @@ function loadvis2 () {
 								  .ticks(10);
 
 				//Create SVG element
-				var svg = d3.select("#chart svg")
+				var svg = d3.select("#viz2 .chart svg")
 							.attr("width", width)
 							.attr("height", height);
 

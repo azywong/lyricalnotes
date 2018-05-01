@@ -107,13 +107,13 @@ circle:hover {
 	line-height: 20px;
 }
 /*VIS4*/
-.axis path,
+/*.axis path,
 .axis line {
   fill: none;
   stroke: #D4D8DA;
   stroke-width: 1px;
   shape-rendering: crispEdges;
-}
+}*/
 
 .line {
   fill: none;
@@ -126,17 +126,12 @@ circle:hover {
   pointer-events: all;
 }
 
-.focus circle {
-  fill: #FFFFFF;
-  stroke: #0d1a2f;
-  stroke-width: 2px;
-}
-
 .hover-line {
   stroke: #0d1a2f;
-  stroke-width: 2px;
-  stroke-dasharray: 2,3;
+  stroke-width: 1px;
+  stroke-dasharray: 1,1;
 }
+/* do not delete */
 .hidden {
 	display: none;
 }

@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lyrical Notes</title>
+	<meta name="description" content="Lyrical Notes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="vendor/scrollama.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+
+</head>
+
+<body>
+	<section id='intro'>
+		<p class='intro__overline'>
+			Lyrical Notes
+		</p>
+		<h1 class='intro__hed'>Demo: Sticky Graphic</h1>
+		<p class='intro__dek'>
+			Start scrolling to see how it works.
+		</p>
+	</section>
+	<section id='scroll'>
+		<div class='scroll__graphic sticky'>
+			<div id='chart'>
+				<div id="selection" class="hidden">
+					<form class="vis4-form">
+						<label>
+						  Keyword
+						  <input type="text" class="input-select" value="baby"/>
+						</label>
+					</form>
+				</div>
+				<div id="tooltip" class="hidden">
+					<p><strong><span id = "title"> </span></strong></p>
+					<p><span id="artist"></span></p>
+			      	<p>First appearance: <span id="first_app"></span></p>
+			      	<p>Number of appearances: <span id="num_apps"></span></p>
+				</div>
+				<svg></svg>
+			</div>
+		</div>
+		<div class='scroll__text'>
+			<div class='step' data-step='1'>
+				<p>STEP 1</p>
+			</div>
+			<div class='step' data-step='2'>
+				<p>STEP 2</p>
+			</div>
+			<div class='step' data-step='3'>
+				<p>STEP 3</p>
+			</div>
+			<div class='step' data-step='4'>
+				<p>STEP 4</p>
+			</div>
+		</div>
+	</section>
+	<section id='outro'></section>
+	<section id='footer'>
+		<p>credits</p>
+		<ol>
+			<li><a href="https://github.com/rhnvrm/lyric-api">lyric-api</a> for lyrics</li>
+			<li><a href="https://orion.apiseeds.com/">apiseeds</a> for lyrics</li>
+			<li><a href="http://blockbuilder.org/mbostock/3884955">mbostock</a> for line/area chart examples</li>
+			<li><a href="https://github.com/russellgoldenberg/scrollama">srollama</a> + <a href="https://russellgoldenberg.github.io/scrollama/sticky-js/">demo</a> for scrollytelling</li>
+
+		</ol>
+	</section>
+	<script src='vendor/d3.min.js'></script>
+	<script src='vendor/stickyfill.min.js'></script>
+	<script src='https://unpkg.com/intersection-observer'></script>
+	<script src='https://unpkg.com/scrollama'></script>
+	<script src='scripts/viz1.js'></script>
+	<script src='scripts/viz2.js'></script>
+	<script src='scripts/viz3.js'></script>
+	<script src='scripts/viz4.js'></script>
+	<script>
+		// using d3 for convenience
+		var container = d3.select('#scroll');
+		var graphic = container.select('.scroll__graphic');
+		var chart = graphic.select('#chart');
+		var text = container.select('.scroll__text');
+		var step = text.selectAll('.step');
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepHeight = Math.floor(window.innerHeight * 0.75);
+			step.style('height', stepHeight + 'px');
+
+			// 2. update width/height of graphic element
+			var bodyWidth = d3.select('body').node().offsetWidth;
+			var textWidth = text.node().offsetWidth;
+
+			var graphicWidth = bodyWidth - textWidth;
+
+			graphic
+				.style('width', graphicWidth + 'px')
+				.style('height', window.innerHeight + 'px');
+
+			var chartMargin = 32;
+			var chartWidth = graphic.node().offsetWidth - chartMargin;
+
+			chart
+				.style('width', chartWidth + 'px')
+				.style('height', Math.floor(window.innerHeight / 2) + 'px');
+
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
+		// scrollama event handlers
+		function handleStepEnter(response) {
+			// response = { element, direction, index }
+
+			// add color to current step only
+			step.classed('is-active', function (d, i) {
+				return i === response.index;
+			})
+
+			// update graphic based on step
+			chart.select("svg").remove();
+			chart.append("svg");
+			d3.select("#selection")
+				.classed("hidden", true)
+				.classed("show", false);
+			if (response.index == 0) {
+				loadviz1();
+			} else if (response.index == 1) {
+				loadviz2();
+			} else if (response.index == 2) {
+				loadviz3();
+			}
+			 else if (response.index == 3) {
+				d3.select("#selection")
+					.classed("hidden", false)
+					.classed("show", true);
+				loadviz4();
+			}
+		}
+
+		function handleContainerEnter(response) {
+			// response = { direction }
+		}
+
+		function handleContainerExit(response) {
+			// response = { direction }
+		}
+
+		function setupStickyfill() {
+			d3.selectAll('.sticky').each(function () {
+				Stickyfill.add(this);
+			});
+		}
+
+		function init() {
+			setupStickyfill();
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			// 2. setup the scroller passing options
+			// this will also initialize trigger observations
+			// 3. bind scrollama event handlers (this can be chained like below)
+			scroller.setup({
+				container: '#scroll',
+				graphic: '.scroll__graphic',
+				text: '.scroll__text',
+				step: '.scroll__text .step',
+				debug: false,
+			})
+				.onStepEnter(handleStepEnter)
+				.onContainerEnter(handleContainerEnter)
+				.onContainerExit(handleContainerExit);
+
+			// setup resize event
+			window.addEventListener('resize', handleResize);
+		}
+
+		// kick things off
+		init();
+	</script>
+</body>
+
+</html>
