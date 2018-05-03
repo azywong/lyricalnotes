@@ -60,7 +60,7 @@ a:hover {
 /* demo */
 
 #intro {
-	margin-bottom: 320px;
+	margin-bottom: 100px;
 }
 
 #outro {
@@ -95,15 +95,15 @@ a:hover {
 
 .step {
 	margin: 2rem auto;
-	border: 1px solid #333;
+	/*border: 1px solid #333;*/
 }
 
-.step.is-active {
+/*.step.is-active {
 	background-color: lightgoldenrodyellow;
-}
+}*/
 
 .step p {
-	text-align: center;
+	text-align: justify;
 	padding: 1rem;
 	font-size: 1.5rem;
 }

@@ -430,6 +430,25 @@ app.get('/missingunique', function(req, res) {
 	});
 });
 
+app.get('/viz4', function(req, res) {
+	fs.readFile('docs/data/viz4.csv', 'utf8', function(err, data) {
+		if (err) throw err;
+		var newCsv = data.split('\n').map(function(line) {
+		    var columns = line.split(',');
+		    columns.splice(0, 1);
+		    columns.splice(1, 1);
+		    columns.splice(1, 1);
+		    columns.splice(1, 1);
+		    return columns;
+		}).join('\n');
+
+		var ws = fs.createWriteStream("docs/data/viz4-clean.csv");
+		ws.write(newCsv);
+		ws.end();
+		console.log("end");
+	});
+});
+
 
 
 

@@ -1,4 +1,24 @@
 /*GENERAL*/
+body {
+	font-family: 'Poppins', sans-serif !important;
+}
+.viz {
+	max-width: 40rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.chart {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.viz p, .viz ol {
+	text-align: justify;
+	font-size: 20px;
+	line-height: 1.25em;
+	margin: 1.75em;
+}
+
 #chart {
 	position: absolute;
 	right: 1rem;
@@ -7,6 +27,47 @@
 	-moz-transform: translate(-50%);
 	-webkit-transform: translate(-50%);
 	transform: translateY(-50%, -50%);
+}
+h2.intro {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.center {
+	text-align: center;
+}
+.intro_dek_em {
+	font-weight: bold;
+	font-size: 25px;
+	margin: 25px;
+}
+.sm {
+	font-size: 15px;
+}
+.em {
+	color: darkgray;
+}
+.intro__dek, #intro blockquote {
+	text-align: justify;
+	line-height: 1.5em;
+}
+.step {
+	min-height: 500px;
+	vertical-align: middle;
+	display:table;
+}
+.step ol {
+	padding: 1rem;
+    font-size: 1.5rem;
+}
+#outro {
+	max-width: 40rem;
+	margin: 1rem auto;
+}
+#outro .intro__dek {
+	margin: 25px;
+}
+#footer {
+	border-top: 1px dashed #000;
 }
 /*VIS1*/
 .labels {
