@@ -1,7 +1,7 @@
 function loadviz4 () {
 var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 900 - margin.left - margin.right,
-    height = 420 - margin.top - margin.bottom;
+    height = 600 - margin.top - margin.bottom;
 var svg = d3.select("#chart svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
@@ -58,6 +58,7 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
     d3.min(keywords, function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
     d3.max(keywords, function(c) { return d3.max(c.values, function(d) { return d.count; }); })
   ]);
+
   z.domain(keywords.map(function(c) { return c.id; }));
 
   xGroup.call(xAxis);
@@ -79,7 +80,7 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
     var index = -1;
     word = word.trim();
     for (var i = 0; i < keywords.length; i++) {
-      if (keywords[i].id.trim() == word) {
+      if (keywords[i].id == word) {
         index = i;
         break;
       }

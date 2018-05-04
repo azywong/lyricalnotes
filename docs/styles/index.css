@@ -2,10 +2,15 @@
 body {
 	font-family: 'Poppins', sans-serif !important;
 }
+#scroll {
+	margin-bottom: 1.5em;
+}
 .viz {
 	max-width: 40rem;
     margin: 1rem auto;
     text-align: center;
+    display: table;
+    vertical-align: middle;
 }
 .chart {
 	margin-right: auto;

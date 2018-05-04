@@ -1,7 +1,7 @@
 function loadviz4 () {
-var margin = {top: 20, right: 200, bottom: 30, left: 50},
+var margin = {top: 20, right: 50, bottom: 30, left: 50},
     width = 900 - margin.left - margin.right,
-    height = 420 - margin.top - margin.bottom;
+    height = 400 - margin.top - margin.bottom;
 var svg = d3.select("#viz4 .chart svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
@@ -31,14 +31,13 @@ var yAxis = d3.axisLeft(y);
     .y1(function(d) { return y(d.count); });
 
 
-d3.csv("data/viz4-clean.csv", function(d, _, columns) {
+d3.csv("data/viz4-mod.csv", function(d, _, columns) {
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   d.year = parseTime(d.year);
   return d;
 }, function(error, data) {
   if (error) throw error;
 
-  console.log(data);
 	var keywords = data.columns.slice(1).map(function(id) {
     return {
       id: id,

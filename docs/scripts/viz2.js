@@ -1,182 +1,241 @@
 function loadviz2 () {
-
-//to-do
-/*
-	bring highlighted song to front (append)
-	use color to highlight the songs by the same artist (use class)
-  legend for color
-  sync colors
-  rewrite labels with css
-*/
-
-		var width = 800;
-		var height = 470;
-		var padding = 100;
-    var xLabel = "Year";
+var xLabel = "Year";
     var yLabel1 = "Number";
     var yLabel2 = "of words";
     var title = "Unique Word Count of Top Songs";
 
-		var dataset, xScale, yScale, zScale, color, xAxis, yAxis;
+	var data, xScale, yScale, zScale, color, xAxis, yAxis;
 
-		//strings to dates
-		var parseTime = d3.timeParse("%Y-%m-%d");
+	//strings to dates
+	var parseTime = d3.timeParse("%Y-%m-%d");
+	var parseDate = d3.timeParse("%Y-%m-%d");
+	var parseYear = d3.timeParse("%Y");
 
-		//dates to strings
-		var formatTime = d3.timeFormat("%Y");
+	//dates to strings
+	var formatTime = d3.timeFormat("%Y");
 
-		//Function for converting CSV values from strings to Dates and numbers
-			var rowConverter = function(d) {
-				return {
-          song_name: d.song_name,
-          artist: d.artist,
-					first_app: parseTime(d.first_app),
-					vocab: parseInt(d.vocab),
-					num_apps: parseInt(d.num_apps)
-				};
-			}
+	var margin = {top: 100, right: 250, bottom: 50, left: 100},
+		h = 600 - margin.top - margin.bottom,
+		w = 900 - margin.right - margin.left;
 
-		d3.csv("data/viz2.csv", rowConverter, function(data) {
-				//Copy data into global dataset
-      dataset = data;
+	var svg = d3.select("#viz2 .chart svg")
+			    .attr("width", w + margin.left + margin.right)
+			    .attr("height", h + margin.top + margin.bottom)
+			  	.append("g");
 
-				//Get start and end dates in dataset
-				var startDate = d3.min(dataset, function(d) { return d.first_app; });
-				var endDate = d3.max(dataset, function(d) { return d.first_app; });
+	svg.append("text")
+	   .attr("class", "axisLabels")
+	   .attr("x", w/2 + margin.left)
+	   .attr("text-anchor", "middle")
+	   .attr("y", h + margin.top + margin.bottom - margin.bottom/2 + 20)
+	   .text("Year");
 
-				//Create scale functions
-				xScale = d3.scaleTime()
-							   .domain([
-									d3.timeYear.offset(startDate, -1),  //startDate minus one year for padding
-									d3.timeYear.offset(endDate, 1)	  //endDate plus one year for padding
-								  ])
-							   .range([padding, width - padding]);
-				yScale = d3.scaleLinear() //zero baseline
-							   .domain([0, d3.max(dataset, function(d) { return d.vocab; })])
-							   .range([height - padding, padding]);
+	var yTitlePos = h/2 + margin.top;
+	svg.append("text")
+       .attr("class", "axisLabels")
+	   .attr("x", 0)
+	   .attr("y", 0)
+	   .attr("text-anchor", "middle")
+	   .attr("transform", "translate(30, " + yTitlePos + ")rotate(270)") // translate and rotate y axis label
+	   .text("Number of Unique Words");
+
+  	// svg.append("text")
+   //    	 .attr("x", (w+margin.right-margin.left)/2)
+   //    	 .attr("y", margin.top/2)
+   //    	 .attr("class", "title")
+   //    	 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+   //    	 .attr("text-anchor", "middle")
+   //    	 // .attr("font-family", "sans-serif")
+   //    	 .text("Unique Word Count of Top Songs");
+
+	// console.log("hi")
+
+	// gridlines in y axis function
+	function make_y_gridlines() {
+	    return d3.axisLeft(yScale)
+	    		 .ticks(5);
+	}
+
+	d3.csv("data/viz2_v4.csv", function(dataset) {
+
+      	// console.log(dataset)
+
+      	dataset.forEach(function (d) {
+      		d.date = parseDate(d.date);
+      		d.year = parseYear(d.year);
+      		d.freq = +d.freq;
+      		d.vocab = +d.vocab;
+      	});
+
+      	// console.log(dataset);
+
+		//Get start and end dates in dataset
+		var startDate = d3.min(dataset, function(d) { return d.date; });
+		var endDate = d3.max(dataset, function(d) { return d.date; });
+
+		// console.log(startDate);
+		// console.log(endDate);
+
+		//Create scale functions
+		xScale = d3.scaleTime()
+				   	.domain([
+						d3.timeYear.offset(startDate, -1),  //startDate minus one year for padding
+						d3.timeYear.offset(endDate, 1)	  //endDate plus one year for padding
+					])
+					.range([0, w]),
+
+		yScale = d3.scaleLinear() //zero baseline
+				   .domain([0, Math.ceil(d3.max(dataset, function(d) { return d.vocab/50; }))*50])
+				   .range([h, 0]);
 
       	zScale = d3.scaleLinear() //zero baseline
-							   .domain([0, d3.max(dataset, function(d) { return d.num_apps; })])
-							   .range([2, 10]);
+				   .domain([0, d3.max(dataset, function(d) { return d.freq; })])
+				   .range([2, 10]);
 
-      	color = d3.scaleQuantize()
-      					.domain([d3.min(dataset, function(d){ return d.num_apps; }), d3.max(dataset, function(d){ return d.num_apps; })])
-      					.range(["rgb(107,183,255)", "rgb(28,188,0)", "rgb(255,242,127)", "rgb(255,195,127)", "rgb(255,127,135)"]); //sync colors with group
+      	var colorScale = d3.scaleLinear()
+				        .domain([d3.min(dataset, function(d) { return d.freq; }), d3.max(dataset, function(d) { return d.freq; })])
+				        .range([0.4, 1]);
 
-				//Define X axis
-				xAxis = d3.axisBottom()
-								  .scale(xScale)
-								  .ticks(10)
-								  .tickFormat(formatTime);
-				//Define Y axis
-				yAxis = d3.axisLeft()
-								  .scale(yScale)
-								  .ticks(10);
+		var rScale = d3.scaleLinear()
+				       .domain([d3.min(dataset, function(d) { return d.freq; }), d3.max(dataset, function(d) { return d.freq; })])
+				       .range([3, 18]);
 
-				//Create SVG element
-				var svg = d3.select("#viz2 .chart svg")
-							.attr("width", width)
-							.attr("height", height);
+		//Define X axis
+		xAxis = d3.axisBottom()
+				  .scale(xScale)
+				  .ticks(d3.timeYear.every(5));
 
-				var circles = svg.selectAll("circle")
-				   .data(dataset)
-				   .enter()
-				   .append("circle")
-        	 .attr("id", function(d) { return d.artist; })
-				   .attr("cx", function(d) {
-				   		return xScale(d.first_app);
-				   })
-				   .attr("cy", function(d) {
-				   		return yScale(d.vocab);
-				   })
+		//Define Y axis
+		yAxis = d3.axisLeft()
+				  .scale(yScale)
+				  .ticks(5);
+
+		var xPosX = margin.left,
+			xPosY = margin.top + h,
+			yPosX = margin.left,
+			yPosY = margin.top;
+
+		// draw x axis
+		svg.append("g")
+			.attr("class", "axis")
+			.attr("transform", "translate(" + xPosX + ", " + xPosY + ")")
+			.call(xAxis);
+
+		// draw y axis
+		svg.append("g")
+			.attr("class", "axis")
+			.attr("transform", "translate(" + 80 + ", " + yPosY + ")")
+			.call(yAxis);
+
+		// add the Y gridlines
+	  	svg.append("g")
+	       .attr("class", "grid")
+	       .style("stroke-width", 0.5)
+	       .style("opacity", 0.05)
+	       .attr("transform", "translate(" + 80 + ", " + yPosY + ")")
+	       .call(make_y_gridlines().tickSize(-w*1.05).tickFormat(""));
+
+		var circles = svg.selectAll("circle")
+		   .data(dataset)
+		   .enter()
+		   .append("circle")
+		   .attr("class", "circles")
+		   .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+	 	   .attr("id", function(d) { return d.artist; })
+		   .attr("cx", function(d) {
+		   		return xScale(d.date);
+		   })
+		   .attr("cy", function(d) {
+		   		return yScale(d.vocab);
+		   })
+		   // ----------------------------
+		   // OPTION 1
+		   .attr("r", function(d) {
+		   		return rScale(d.freq);
+		   })
+		   .style("fill", "rgb(255,165,0)")
+		   // ----------------------------
+		   // OPTION 2
+		   // .attr("r", 6)
+		   // .style("fill", function(d) {
+		   // 		return d3.interpolateOranges(colorScale(d.freq));
+		   // })
+		   // ----------------------------
+		   .on("mouseover", function(d) {
+
+	     		d3.selectAll("circle")
+	     		  // .transition()
+	     		  // .duration(50)
+	     		  // .ease(d3.easeLinear)
+	     		  .style("opacity", 0.3);
+
+	     		d3.select(this)
+	     		  // .transition(t)
+	     		  // .style("stroke-width", 2)
+	     		  // .style("stroke", "black")
+	     		  .style("fill", "rgb(255,120,71)")
+	     		  .style("opacity", 1);
+
+      			//Get x/y values
+				var xPosition = parseFloat(d3.select(this).attr("cx"));
+				var yPosition = parseFloat(d3.select(this).attr("cy"));
+
+				svg.append("text")
+		          .attr("class", "tooltip")
+		          .attr("x", xPosition-25)
+		          .attr("y", yPosition-81)
+		          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		          .attr("text-anchor", "start")
+		          .style("font-weight", 600)
+		          .style("font-size", "17px")
+		          // .style("font-weight", "bold")
+		          .text(d.name);
+
+		        svg.append("text")
+		          .attr("class", "tooltip")
+		          .attr("x", xPosition-25)
+		          .attr("y", yPosition-64)
+		          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		          .attr("text-anchor", "start")
+		          // .style("font-weight", 400)
+		          .style("font-size", "15.5px")
+		          .text(d.artist);
+
+		        svg.append("text")
+		          .attr("class", "tooltip")
+		          .attr("x", xPosition-25)
+		          .attr("y", yPosition-43)
+		          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		          .attr("text-anchor", "start")
+		          .style("font-size", "12px")
+		          .text("Appearances: " + d.freq);
+
+		        svg.append("text")
+		          .attr("class", "tooltip")
+		          .attr("x", xPosition-25)
+		          .attr("y", yPosition-28)
+		          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+		          .attr("text-anchor", "start")
+		          .style("font-size", "12px")
+		          .text("Unique Words: " + d.vocab);
+
+        	})
+        	.on("mouseout", function(d) {
+
+        		d3.selectAll(".tooltip").remove();
+
+		        d3.selectAll("circle")
+	      //   	   .style("stroke-width", 0)
+	      //   	   .style("fill", function(d) {
+				   // 		return d3.interpolateOranges(colorScale(d.freq));
+				   // })
 				   .attr("r", function(d) {
-          		//return zScale(d.num_apps);
-          		return d.num_apps * 0.1;
-        	 })
-        	 .attr("fill", function(d){
-             return color(d.num_apps);
-           })
-        	 .on("mouseover", function(d) {
-             circles.transition()
-             				.attr("fill", "LightGray");
+				   		return rScale(d.freq);
+				   })
+				   .style("fill", "rgb(255,165,0)")
+				   .style("opacity", 0.6);
 
-          //Get x/y values
-					var xPosition = parseFloat(d3.select(this).attr("cx"));
-					var yPosition = parseFloat(d3.select(this).attr("cy")) / 2 + height / 2;
-					//Update the tooltip position and value
-					var tooltip = d3.select("#tooltip")
-						.style("left", xPosition + "px")
-						.style("top", yPosition + "px")
+		    });
 
-          tooltip.select("#title")
-          			 .text(d.song_name)
-
-          tooltip.select("#artist")
-								 .text(d.artist)
-
-          tooltip.select("#first_app")
-           			 .text(formatTime(d.first_app));
-
-          tooltip.select("#num_apps")
-          			 .text(d.num_apps);
-
-
-					//Show the tooltip
-					d3.select("#tooltip").classed("hidden", false);
-        	 })
-        	 .on("mouseout", function(d) {
-          	d3.select("#tooltip").classed("hidden", true);
-            circles.transition(t)
-            		 .attr("fill", function(d) {
-            			return color(d.num_apps);
-           });
-            			 //.attr("fill", "black");
-        });
-
-	   			//Create X axis
-	   			svg.append("g")
-	   				.attr("class", "axis")
-	   				.attr("transform", "translate(0," + (height - padding) + ")")
-	   				.call(xAxis);
-
-	   			//Create Y axis
-	   			svg.append("g")
-	   				.attr("class", "axis")
-	   				.attr("transform", "translate(" + padding + ",0)")
-	   				.call(yAxis);
-
-
-      		//rewrite below with css later
-
-      		//x-axis label
-      		svg.append("text")
-          	 .attr("x", width/2 - 20)
-          	 .attr("y", height - 50)
-          	 .attr("font-family", "sans-serif")
-          	 .attr("font-size", "12px")
-          	 .text(xLabel);
-
-      		//y-axis label
-      		svg.append("text")
-          	 .attr("x", 10)
-          	 .attr("y", height/2)
-          	 .attr("font-family", "sans-serif")
-          	 .attr("font-size", "12px")
-          	 .text(yLabel1);
-
-      		svg.append("text")
-          	 .attr("x", 10)
-          	 .attr("y", height/2 + 20)
-             .attr("font-family", "sans-serif")
-          	 .attr("font-size", "12px")
-          	 .text(yLabel2);
-
-      		svg.append("text")
-          	 .attr("x", width/4)
-          	 .attr("y", 50)
-          	 .attr("font-family", "sans-serif")
-          	 .attr("font-size", "24px")
-          	 .text(title);
-
-			});
+	});
 }

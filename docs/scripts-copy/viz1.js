@@ -1,6 +1,6 @@
 function loadviz1() {
 var margin = {top: 200, right: 200, bottom: 50, left: 100},
-	h = 420 - margin.top - margin.bottom,
+	h = 600 - margin.top - margin.bottom,
 	w = 900 - margin.right - margin.left;
 
 var svg = d3.select("#chart svg")
