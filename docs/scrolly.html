@@ -161,7 +161,7 @@
 
 			chart
 				.style('width', chartWidth + 'px')
-				.style('height', Math.floor(window.innerHeight / 2) + 'px');
+				.style('height', Math.floor(window.innerHeight / 1.5) + 'px');
 
 
 			// 3. tell scrollama to update new element dimensions
@@ -184,13 +184,21 @@
 				.classed("hidden", true)
 				.classed("show", false);
 			if (response.index == 0) {
+				chart.classed('chart-big', true)
+				.classed('chart-small', false);
 				loadviz1();
 			} else if (response.index == 1) {
+				chart.classed('chart-big', true)
+				.classed('chart-small', false);
 				loadviz2();
 			} else if (response.index == 2) {
+				chart.classed('chart-small', true)
+				.classed('chart-big', false);
 				loadviz3();
 			}
 			 else if (response.index == 3) {
+			 	chart.classed('chart-small', true)
+			 	.classed('chart-big', false);
 				d3.select("#selection")
 					.classed("hidden", false)
 					.classed("show", true);

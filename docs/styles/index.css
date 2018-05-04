@@ -5,6 +5,10 @@ body {
 #scroll {
 	margin-bottom: 1.5em;
 }
+.step {
+	margin-left: 25px;
+	margin-right: 25px;
+}
 .viz {
 	max-width: 40rem;
     margin: 1rem auto;
@@ -24,7 +28,17 @@ body {
 	margin: 1.75em;
 }
 
-#chart {
+.chart-big {
+	position: absolute;
+	right: 1rem;
+	left: 50%;
+	top: 12%;
+	-moz-transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	transform: translateY(-50%, -50%);
+}
+
+.chart-small {
 	position: absolute;
 	right: 1rem;
 	left: 50%;
@@ -33,6 +47,8 @@ body {
 	-webkit-transform: translate(-50%);
 	transform: translateY(-50%, -50%);
 }
+
+
 h2.intro {
 	margin-bottom: 15px;
 	font-weight: bold;
