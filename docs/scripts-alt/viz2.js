@@ -14,11 +14,11 @@ var xLabel = "Year";
 	//dates to strings
 	var formatTime = d3.timeFormat("%Y");
 
-	var margin = {top: 50, right: 250, bottom: 50, left: 100},
+	var margin = {top: 100, right: 250, bottom: 50, left: 100},
 		h = 600 - margin.top - margin.bottom,
 		w = 900 - margin.right - margin.left;
 
-	var svg = d3.select("#chart svg")
+	var svg = d3.select("#viz2 .chart svg")
 			    .attr("width", w + margin.left + margin.right)
 			    .attr("height", h + margin.top + margin.bottom)
 			  	.append("g");

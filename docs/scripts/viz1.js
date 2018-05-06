@@ -3,7 +3,7 @@ var margin = {top: 200, right: 200, bottom: 50, left: 100},
 	h = 600 - margin.top - margin.bottom,
 	w = 900 - margin.right - margin.left;
 
-var svg = d3.select("#viz1 .chart svg")
+var svg = d3.select("#chart svg")
 		    .attr("width", w + margin.left + margin.right)
 		    .attr("height", h + margin.top + margin.bottom)
 		  	.append("g");

@@ -42,7 +42,7 @@ body {
 	position: absolute;
 	right: 1rem;
 	left: 50%;
-	top: 25%;
+	top: 20%;
 	-moz-transform: translate(-50%);
 	-webkit-transform: translate(-50%);
 	transform: translateY(-50%, -50%);
@@ -76,9 +76,12 @@ h2.intro {
 	vertical-align: middle;
 	display:table;
 }
+.step p {
+    font-size: 1.25rem;
+}
 .step ol {
 	padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 #outro {
 	max-width: 40rem;
@@ -159,35 +162,53 @@ h2.intro {
 }
 
 /*VIS 2*/
-circle:hover {
-   fill: blue;
+.tooltip {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	/*transform: scale(1, 1.03);		*/
 }
 
-#tooltip {
-	position: absolute;
-	width: 200px;
-	height: auto;
-	padding: 10px;
-	background-color: white;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-	pointer-events: none;
+.labels {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -0.5px;
 }
 
-#tooltip.hidden {
-	display: none;
+.axis path {
+	stroke: rgb(220,220,220);
+	opacity: 0;
 }
 
-#tooltip p {
-	margin: 0;
-	font-family: sans-serif;
-	font-size: 11px;
-	line-height: 20px;
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	letter-spacing: -3.5px;
+	transform: scale(1, 1.03);
 }
+
+.subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 15px;
+	transform: scale(1, 1.03);
+}
+
+.axisLabels {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+.axis text {
+	font-family: 'Poppins', sans-serif;
+}
+
+.circles {
+	opacity: 0.6;
+}
+
 /*VIS4*/
 /*.axis path,
 .axis line {

@@ -1,8 +1,8 @@
 function loadviz4 () {
-var margin = {top: 20, right: 50, bottom: 30, left: 50},
+var margin = {top: 20, right: 200, bottom: 30, left: 50},
     width = 900 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
-var svg = d3.select("#viz4 .chart svg")
+var svg = d3.select("#chart svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
 var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -32,9 +32,13 @@ var yAxis = d3.axisLeft(y);
 
 
 d3.csv("data/viz4-mod.csv", function(d, _, columns) {
-  for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
-  d.year = parseTime(d.year);
-  return d;
+  var e = {}
+  e.year = parseTime(d.year);
+  for (var i = 1; i < columns.length; ++i) {
+    var c = columns[i];
+    e[c] = +d[c];
+  }
+  return e;
 }, function(error, data) {
   if (error) throw error;
 
@@ -46,6 +50,7 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
       })
     };
   });
+
   var xExtent = d3.extent(data, function(d) { return d.year; });
 
   x.domain(d3.extent(data, function(d) { return d.year; }));
@@ -53,6 +58,7 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
     d3.min(keywords, function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
     d3.max(keywords, function(c) { return d3.max(c.values, function(d) { return d.count; }); })
   ]);
+
   z.domain(keywords.map(function(c) { return c.id; }));
 
   xGroup.call(xAxis);
@@ -72,61 +78,66 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
 
   var draw = function (word) {
     var index = -1;
+    word = word.trim();
     for (var i = 0; i < keywords.length; i++) {
-      if (keywords[i].id.trim() == word.trim()) {
+      if (keywords[i].id == word) {
         index = i;
         break;
       }
     };
+    if (index > -1) {
     var keyword = g.selectAll(".keyword")
   	.data([keywords[index]])
   	.enter().append("g")
   	.attr("class", "keyword");
 
-  var paths = keyword.append("path")
-    .attr("fill", "steelblue")
-    .attr("d", function(d) {return area(d.values); })
-  	.attr("opacity", 0.5)
-  	.attr("id", function(d) {
-      	return d.id.toUpperCase();
-      });
+    var paths = keyword.append("path")
+      .attr("fill", "steelblue")
+      .attr("d", function(d) {return area(d.values); })
+    	.attr("opacity", 0.5)
+    	.attr("id", function(d) {
+        	return d.id.toUpperCase();
+        });
 
-  var focus = g.append("g")
-        .attr("class", "focus")
-        .style("display", "none");
-	focus.append("line")
-        .attr("class", "x-hover-line hover-line")
-        .attr("y1", 0)
-        .attr("y2", height);
+    var focus = g.append("g")
+          .attr("class", "focus")
+          .style("display", "none");
+  	focus.append("line")
+          .attr("class", "x-hover-line hover-line")
+          .attr("y1", 0)
+          .attr("y2", height);
 
-    focus.append("line")
-        .attr("class", "y-hover-line hover-line")
-        .attr("x1", width)
-        .attr("x2", width);
+      focus.append("line")
+          .attr("class", "y-hover-line hover-line")
+          .attr("x1", width)
+          .attr("x2", width);
 
-    focus.append("text")
-        .attr("x", 15)
-      	.attr("dy", ".31em");
+      focus.append("text")
+          .attr("x", 15)
+        	.attr("dy", ".31em");
 
-  svg.append("rect")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        .attr("class", "overlay")
-        .attr("width", width)
-        .attr("height", height)
-        .on("mouseover", function() { focus.style("display", null); })
-        .on("mouseout", function() { focus.style("display", "none"); })
-        .on("mousemove", mousemove);
+    svg.append("rect")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+          .attr("class", "overlay")
+          .attr("width", width)
+          .attr("height", height)
+          .on("mouseover", function() { focus.style("display", null); })
+          .on("mouseout", function() { focus.style("display", "none"); })
+          .on("mousemove", mousemove);
 
-    function mousemove() {
-      var x0 = x.invert(d3.mouse(this)[0]),
-          i = bisectDate(keywords[index].values, x0, 1),
-          d0 = keywords[index].values[i - 1],
-          d1 = keywords[index].values[i],
-          d = x0 - d0.year > d1.year - x0 ? d1 : d0;
-      focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
-      focus.select("text").text(function() { return d.year.getFullYear() + ": " + d.count + " instances"; });
-      focus.select(".x-hover-line").attr("y2", height);
-      // focus.select(".y-hover-line").attr("x2", width);
+      function mousemove() {
+        var x0 = x.invert(d3.mouse(this)[0]),
+            i = bisectDate(keywords[index].values, x0, 1),
+            d0 = keywords[index].values[i - 1],
+            d1 = keywords[index].values[i],
+            d = x0 - d0.year > d1.year - x0 ? d1 : d0;
+        focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
+        focus.select("text").text(function() { return d.year.getFullYear() + "| " + d.count + " instances"; });
+        focus.select(".x-hover-line").attr("y2", height);
+        // focus.select(".y-hover-line").attr("x2", width);
+      }
+    } else {
+      console.log("not found")
     }
 
   }
@@ -139,6 +150,7 @@ $inputSelector.onsubmit = function(e) {
   e.preventDefault();
   remove()
   var word = document.querySelector('.input-select').value;
+  console.log(word);
   draw(word);
 };
 
