@@ -459,7 +459,7 @@
 		    		}
 		       	})
 		  		.on('mouseover', function(d) {
-		  			// d3.event.stopPropagation();
+		  			d3.event.stopPropagation();
 		    		var id = d.id.toUpperCase();
 		    		d3.selectAll(".pathLines")
 		    		  .style("opacity", 0.8)
@@ -474,14 +474,14 @@
 		    			}
 	        		});
 		    		d3.select('#' + id)
-		    		  .transition()
-		    		  .duration(100)
-		    		  .ease(d3.easeLinear)
+		    		  // .transition()
+		    		  // .duration(100)
+		    		  // .ease(d3.easeLinear)
 		              .style("fill", function(d) { 
 		              	return colors[d.id]; 
 		              })
 		    		  .style('opacity', 1);
-	    		    this.isHidden = false;
+	    		    // this.isHidden = false;
 		    		// var g = document.getElementById(id).parentNode;
 		    		// g.parentNode.appendChild(g);
 		  		})
