@@ -5,9 +5,6 @@
 <head>
 	<title>Viz Project Scatterplot</title>	
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script src="https://d3js.org/d3-color.v1.min.js"></script>
-	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 	<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600" rel="stylesheet">
 	<style>
@@ -32,8 +29,8 @@
 
 	.title {
 		font-family: 'Poppins', sans-serif;
-		font-weight: 400;
-		font-size: 46px;
+		font-weight: 600;
+		font-size: 60px;
 		letter-spacing: -3.5px;
 		transform: scale(1, 1.03);
 	}
@@ -66,11 +63,6 @@
 
 	<script type="text/javascript">
 
-	    var xLabel = "Year";
-	    var yLabel1 = "Number";
-	    var yLabel2 = "of words";
-	    var title = "Unique Word Count of Top Songs";
-
 		var data, xScale, yScale, zScale, color, xAxis, yAxis;
 
 		//strings to dates
@@ -81,7 +73,7 @@
 		//dates to strings
 		var formatTime = d3.timeFormat("%Y");
 
-		var margin = {top: 100, right: 250, bottom: 50, left: 100},
+		var margin = {top: 170, right: 250, bottom: 50, left: 100},
 			h = 550 - margin.top - margin.bottom,
 			w = 1000 - margin.right - margin.left;
 
@@ -107,14 +99,21 @@
 		   .attr("transform", "translate(30, " + yTitlePos + ")rotate(270)") // translate and rotate y axis label
 		   .text("Number of Unique Words");
 
-	  	// svg.append("text")
-	   //    	 .attr("x", (w+margin.right-margin.left)/2)
-	   //    	 .attr("y", margin.top/2)
-	   //    	 .attr("class", "title")
-	   //    	 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
-	   //    	 .attr("text-anchor", "middle")
-	   //    	 // .attr("font-family", "sans-serif")
-	   //    	 .text("Unique Word Count of Top Songs");
+	  	svg.append("text")
+	      	 .attr("x", (w+margin.right-margin.left)/2)
+	      	 .attr("y", margin.top/2-20)
+	      	 .attr("class", "title")
+	      	 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+	      	 .attr("text-anchor", "middle")
+	      	 // .attr("font-family", "sans-serif")
+	      	 .text("Vocabulary Across Time");
+
+	    svg.append("text")
+           .attr("class", "subtitle")
+           .attr("x", (w+margin.right-margin.left)/2)
+		   .attr("y", margin.top/2 + 27-20)
+		   .attr("text-anchor", "middle")
+		   .text("Number Of Unique Words Of The Top 200 Most Popular Songs");
 
 		// console.log("hi")
 
@@ -124,7 +123,7 @@
 		    		 .ticks(5);
 		}
 
-		d3.csv("viz2_v4.csv", function(dataset) {
+		d3.csv("DATA/viz2_v4.csv", function(dataset) {
 
 	      	// console.log(dataset)
 
@@ -203,7 +202,85 @@
 		       .attr("transform", "translate(" + 80 + ", " + yPosY + ")")
 		       .call(make_y_gridlines().tickSize(-w*1.05).tickFormat(""));
 
-			var circles = svg.selectAll("circle")
+		    var min = d3.min(dataset, function(d) { return d.freq; }),
+		    	max = d3.max(dataset, function(d) { return d.freq; }),
+		    	mid = Math.floor((max + min)/2);
+
+		   	var legendBuffer = 70,
+		   		yy = -30;
+
+		   	// console.log(min, max, mid);
+
+		    var legendData = [{"size":18, "value": max, "x": w + margin.left + legendBuffer, "y": margin.top + h/2 + 10 + yy},
+		    				  {"size":10, "value": mid, "x": w + margin.left + legendBuffer, "y": margin.top + h/2 + 50 + yy},
+		    				  {"size":3, "value": min, "x": w + margin.left + legendBuffer, "y": margin.top + h/2 + 90 + yy}];
+
+			var legend = svg.selectAll(".legend")
+			             	.data(legendData)
+			                .enter()
+			                .append("g")
+			                .attr("class", "legend"); 
+
+			legend.append("circle")
+				.attr("class", "legendC")
+				.attr("cx", function(c) { return c.x})
+			    .attr("cy", function(c) { return c.y})
+			    .attr("r", function(c) { return c.size})
+			    .style("opacity", 0.7)
+			    .style("fill", "rgb(255,165,0)");
+
+			legend.append("text")
+			    .attr("y", function(d){ return d.y + 4})
+			    .attr("x", function(d){ return d.x + 27})
+			    .attr("class", "legend")
+			    .style("font-family", "Poppins")
+			    .style("font-size", "12px")
+			    .attr("text-anchor", "start")
+			    .style("font-weight", "300")
+			    .text(function(d) {return d.value});
+
+			svg.append("text")
+			    .attr("y", margin.top + h/2 - 60 + yy)
+			    .attr("class", "legend")
+			    .attr("x", w + margin.left + legendBuffer - 18)
+			    .style("font-family", "Poppins")
+			    .style("font-size", "15px")
+			    .attr("text-anchor", "start")
+			    .style("text-decoration", "underline")
+			    .style("font-weight", "400")
+			    .text("Legend");
+
+			svg.append("text")
+			    .attr("y", margin.top + h/2 - 45 + yy)
+			    .attr("class", "legend")
+			    .attr("x", w + margin.left + legendBuffer - 18)
+			    .style("font-family", "Poppins")
+			    .style("font-size", "12px")
+			    .attr("text-anchor", "start")
+			    .style("font-weight", "300")
+			    .text("Number of times the");
+
+			svg.append("text")
+			    .attr("y", margin.top + h/2 - 32 + yy)
+			    .attr("class", "legend")
+			    .attr("x", w + margin.left + legendBuffer - 18)
+			    .style("font-family", "Poppins")
+			    .style("font-size", "12px")
+			    .attr("text-anchor", "start")
+			    .style("font-weight", "300")
+			    .text("song has appeared");
+
+			svg.append("text")
+			    .attr("y", margin.top + h/2 - 19 + yy)
+			    .attr("class", "legend")
+			    .attr("x", w + margin.left + legendBuffer - 18)
+			    .style("font-family", "Poppins")
+			    .style("font-size", "12px")
+			    .attr("text-anchor", "start")
+			    .style("font-weight", "300")
+			    .text("on the Hot 100");
+
+			var circles = svg.selectAll(".circles")
 			   .data(dataset)
 			   .enter()
 			   .append("circle")
@@ -230,8 +307,8 @@
 			   // })
 			   // ----------------------------
 			   .on("mouseover", function(d) {
-		     		
-		     		d3.selectAll("circle")
+
+		     		d3.selectAll(".circles")
 		     		  // .transition()
 		     		  // .duration(50)
 		     		  // .ease(d3.easeLinear)
@@ -244,15 +321,23 @@
 		     		  .style("fill", "rgb(255,120,71)")
 		     		  .style("opacity", 1);
 
+		     		d3.selectAll(".legend") 
+		     		  .transition()
+		     		  .duration(100)
+		     		  .ease(d3.easeLinear)
+		     		  .style("opacity", 0);
+
 	      			//Get x/y values
 					var xPosition = parseFloat(d3.select(this).attr("cx"));
 					var yPosition = parseFloat(d3.select(this).attr("cy"));
+
+					var xOffset = margin.left-15;
 
 					svg.append("text")
 			          .attr("class", "tooltip")
 			          .attr("x", xPosition-25)
 			          .attr("y", yPosition-81)
-			          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+			          .attr("transform", "translate(" + xOffset + ", " + margin.top + ")")
 			          .attr("text-anchor", "start")
 			          .style("font-weight", 600)
 			          .style("font-size", "17px")
@@ -263,7 +348,7 @@
 			          .attr("class", "tooltip")
 			          .attr("x", xPosition-25)
 			          .attr("y", yPosition-64)
-			          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+			          .attr("transform", "translate(" + xOffset + ", " + margin.top + ")")
 			          .attr("text-anchor", "start")
 			          // .style("font-weight", 400)
 			          .style("font-size", "15.5px")
@@ -273,7 +358,7 @@
 			          .attr("class", "tooltip")
 			          .attr("x", xPosition-25)
 			          .attr("y", yPosition-43)
-			          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+			          .attr("transform", "translate(" + xOffset + ", " + margin.top + ")")
 			          .attr("text-anchor", "start")
 			          .style("font-size", "12px")
 			          .text("Appearances: " + d.freq);
@@ -282,7 +367,7 @@
 			          .attr("class", "tooltip")
 			          .attr("x", xPosition-25)
 			          .attr("y", yPosition-28)
-			          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+			          .attr("transform", "translate(" + xOffset + ", " + margin.top + ")")
 			          .attr("text-anchor", "start")
 			          .style("font-size", "12px")
 			          .text("Unique Words: " + d.vocab);
@@ -292,7 +377,21 @@
 
 	        		d3.selectAll(".tooltip").remove();
 
-			        d3.selectAll("circle")
+	        		d3.selectAll(".legend") 
+		     		  .transition()
+		     		  .delay(700)
+		     		  .duration(100)
+		     		  .ease(d3.easeLinear)
+		     		  .style("opacity", 1);
+
+		     		d3.selectAll(".legendC") 
+		     		  .transition()
+		     		  .delay(700)
+		     		  .duration(100)
+		     		  .ease(d3.easeLinear)
+		     		  .style("opacity", 0.7);
+
+			        d3.selectAll(".circles")
 		      //   	   .style("stroke-width", 0)
 		      //   	   .style("fill", function(d) {
 					   // 		return d3.interpolateOranges(colorScale(d.freq));
