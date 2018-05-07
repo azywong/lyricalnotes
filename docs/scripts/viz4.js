@@ -183,13 +183,17 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
     } else {
       indexKey = 0;
     }
-    console.log(keywords);
     for (var i = 0; i < keywords[indexKey].length; i++) {
       if (keywords[indexKey][i].id == word) {
         index = i;
         break;
       }
     };
+
+    console.log(keywords);
+    console.log(indexKey);
+    console.log(index);
+
     if (index > -1) {
       var keyword = g.selectAll(".keyword")
       .data([keywords[indexKey][index]])
@@ -242,7 +246,12 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
         // focus.select(".y-hover-line").attr("x2", width);
       }
     } else {
-      console.log("not found")
+      console.log("not found");
+      d3.select(".overlay").on("mousemove", function(){
+        var focus = d3.select(".focus");
+        focus.select("text").style("display", "none");
+        focus.select(".x-hover-line").style("display", "none");
+      });
     }
 
   }
