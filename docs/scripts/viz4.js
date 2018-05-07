@@ -7,6 +7,7 @@ var svg = d3.select("#chart svg")
           .attr("height", height + margin.top + margin.bottom)
 var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var keywords = [];
 
 var parseTime = d3.timeParse("%Y"),
     bisectDate = d3.bisector(function(d) { return d.year; }).left;
@@ -31,18 +32,18 @@ var yAxis = d3.axisLeft(y);
     .y1(function(d) { return y(d.count); });
 
 
-d3.csv("data/viz4-mod.csv", function(d, _, columns) {
+d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
   var e = {}
-  e.year = parseTime(d.year);
   for (var i = 1; i < columns.length; ++i) {
     var c = columns[i];
     e[c] = +d[c];
   }
+  e.year = parseTime(d.year);
   return e;
 }, function(error, data) {
   if (error) throw error;
 
-	var keywords = data.columns.slice(1).map(function(id) {
+	keywords[0] = data.columns.slice(2).map(function(id) {
     return {
       id: id,
       values: data.map(function(d) {
@@ -50,16 +51,13 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
       })
     };
   });
-
   var xExtent = d3.extent(data, function(d) { return d.year; });
 
   x.domain(d3.extent(data, function(d) { return d.year; }));
   y.domain([
-    d3.min(keywords, function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
-    d3.max(keywords, function(c) { return d3.max(c.values, function(d) { return d.count; }); })
+    d3.min(keywords[0], function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
+    d3.max(keywords[0], function(c) { return d3.max(c.values, function(d) { return d.count; }); })
   ]);
-
-  z.domain(keywords.map(function(c) { return c.id; }));
 
   xGroup.call(xAxis);
 	yGroup.call(yAxis)
@@ -72,24 +70,131 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
       .text("Count")
   	.select(".domain").remove();
 
+
+  draw("baby");
+  });
+
+  d3.csv("data/viz4_DtoG.csv", function(d, _, columns) {
+    var e = {}
+    for (var i = 1; i < columns.length; ++i) {
+      var c = columns[i];
+      e[c] = +d[c];
+    }
+    e.year = parseTime(d.year);
+    return e;
+  }, function(error, data) {
+    if (error) throw error;
+
+    keywords[1] = data.columns.slice(2).map(function(id) {
+      return {
+        id: id,
+        values: data.map(function(d) {
+          return {year: d.year, count: d[id]};
+        })
+      };
+    });
+
+  });
+
+  d3.csv("data/viz4_HtoN.csv", function(d, _, columns) {
+    var e = {}
+    for (var i = 1; i < columns.length; ++i) {
+      var c = columns[i];
+      e[c] = +d[c];
+    }
+    e.year = parseTime(d.year);
+    return e;
+  }, function(error, data) {
+    if (error) throw error;
+
+    keywords[2] = data.columns.slice(2).map(function(id) {
+      return {
+        id: id,
+        values: data.map(function(d) {
+          return {year: d.year, count: d[id]};
+        })
+      };
+    });
+
+  });
+
+  d3.csv("data/viz4_OtoS.csv", function(d, _, columns) {
+    var e = {}
+    for (var i = 1; i < columns.length; ++i) {
+      var c = columns[i];
+      e[c] = +d[c];
+    }
+    e.year = parseTime(d.year);
+    return e;
+  }, function(error, data) {
+    if (error) throw error;
+
+    keywords[3] = data.columns.slice(2).map(function(id) {
+      return {
+        id: id,
+        values: data.map(function(d) {
+          return {year: d.year, count: d[id]};
+        })
+      };
+    });
+
+  });
+
+  d3.csv("data/viz4_TtoEnd.csv", function(d, _, columns) {
+    var e = {}
+    for (var i = 1; i < columns.length; ++i) {
+      var c = columns[i];
+      e[c] = +d[c];
+    }
+    e.year = parseTime(d.year);
+    return e;
+  }, function(error, data) {
+    if (error) throw error;
+
+    keywords[4] = data.columns.slice(2).map(function(id) {
+      return {
+        id: id,
+        values: data.map(function(d) {
+          return {year: d.year, count: d[id]};
+        })
+      };
+    });
+
+  });
+
+
   var remove = function() {
     g.selectAll(".keyword").remove();
   }
 
   var draw = function (word) {
     var index = -1;
+    var indexKey = -1;
     word = word.trim();
-    for (var i = 0; i < keywords.length; i++) {
-      if (keywords[i].id == word) {
+    var c = word.substring(0,1).toLowerCase()
+    if (c >= "d" && c <= "g") {
+      indexKey = 1;
+    } else if (c >= "h" && c <= "n") {
+      indexKey = 2;
+    } else if (c >= "o" && c <= "s") {
+      indexKey = 3;
+    } else if (c >= "t" && c <= "z") {
+      indexKey = 4;
+    } else {
+      indexKey = 0;
+    }
+    console.log(keywords);
+    for (var i = 0; i < keywords[indexKey].length; i++) {
+      if (keywords[indexKey][i].id == word) {
         index = i;
         break;
       }
     };
     if (index > -1) {
-    var keyword = g.selectAll(".keyword")
-  	.data([keywords[index]])
-  	.enter().append("g")
-  	.attr("class", "keyword");
+      var keyword = g.selectAll(".keyword")
+      .data([keywords[indexKey][index]])
+      .enter().append("g")
+      .attr("class", "keyword");
 
     var paths = keyword.append("path")
       .attr("fill", "steelblue")
@@ -127,9 +232,9 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
 
       function mousemove() {
         var x0 = x.invert(d3.mouse(this)[0]),
-            i = bisectDate(keywords[index].values, x0, 1),
-            d0 = keywords[index].values[i - 1],
-            d1 = keywords[index].values[i],
+            i = bisectDate(keywords[indexKey][index].values, x0, 1),
+            d0 = keywords[indexKey][index].values[i - 1],
+            d1 = keywords[indexKey][index].values[i],
             d = x0 - d0.year > d1.year - x0 ? d1 : d0;
         focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
         focus.select("text").text(function() { return d.year.getFullYear() + "| " + d.count + " instances"; });
@@ -142,7 +247,6 @@ d3.csv("data/viz4-mod.csv", function(d, _, columns) {
 
   }
 
-  draw("baby");
 // New select element for allowing the user to select a group!
 var $inputSelector = document.querySelector('.viz4-form');
 
@@ -154,5 +258,4 @@ $inputSelector.onsubmit = function(e) {
   draw(word);
 };
 
-});
 }
