@@ -201,9 +201,8 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
       .attr("class", "keyword");
 
     var paths = keyword.append("path")
-      .attr("fill", "steelblue")
+      .attr("fill", "rgb(135,206,250)")
       .attr("d", function(d) {return area(d.values); })
-    	.attr("opacity", 0.5)
     	.attr("id", function(d) {
         	return d.id.toUpperCase();
         });
@@ -222,8 +221,15 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
           .attr("x2", width);
 
       focus.append("text")
+          .attr("class", "text-right")
           .attr("x", 15)
-        	.attr("dy", ".31em");
+        	.attr("dy", ".31em")
+
+      focus.append("text")
+          .attr("class", "text-left")
+          .attr("x", -15)
+          .attr("dy", ".31em")
+          .attr("text-anchor", "end");
 
     svg.append("rect")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
@@ -241,7 +247,8 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
             d1 = keywords[indexKey][index].values[i],
             d = x0 - d0.year > d1.year - x0 ? d1 : d0;
         focus.attr("transform", "translate(" + x(d.year) + "," + 0 + ")");
-        focus.select("text").text(function() { return d.year.getFullYear() + "| " + d.count + " instances"; });
+        focus.select(".text-right").text(function() { return d.count + " instances"; });
+        focus.select(".text-left").text(function() { return d.year.getFullYear(); });
         focus.select(".x-hover-line").attr("y2", height);
         // focus.select(".y-hover-line").attr("x2", width);
       }
