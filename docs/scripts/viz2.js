@@ -27,25 +27,25 @@ function loadviz2 () {
 
 	var yTitlePos = h/2 + margin.top;
 	svg.append("text")
-	   .attr("class", "axisLabels")
+       .attr("class", "axisLabels")
 	   .attr("x", 0)
 	   .attr("y", 0)
 	   .attr("text-anchor", "middle")
 	   .attr("transform", "translate(30, " + yTitlePos + ")rotate(270)") // translate and rotate y axis label
 	   .text("Number of Unique Words");
 
-		svg.append("text")
-	  	 .attr("x", (w+margin.right-margin.left)/2)
-	  	 .attr("y", margin.top/2-20)
-	  	 .attr("class", "title")
-	  	 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
-	  	 .attr("text-anchor", "middle")
-	  	 // .attr("font-family", "sans-serif")
-	  	 .text("Vocabulary Across Time");
+  	svg.append("text")
+      	 .attr("x", (w+margin.right-margin.left)/2)
+      	 .attr("y", margin.top/2-20)
+      	 .attr("class", "title")
+      	 .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+      	 .attr("text-anchor", "middle")
+      	 // .attr("font-family", "sans-serif")
+      	 .text("Vocabulary Across Time");
 
-	svg.append("text")
-	   .attr("class", "subtitle")
-	   .attr("x", (w+margin.right-margin.left)/2)
+    svg.append("text")
+       .attr("class", "subtitle")
+       .attr("x", (w+margin.right-margin.left)/2)
 	   .attr("y", margin.top/2 + 27-20)
 	   .attr("text-anchor", "middle")
 	   .text("Number Of Unique Words Of The Top 200 Most Popular Songs");
@@ -60,16 +60,16 @@ function loadviz2 () {
 
 	d3.csv("data/viz2_v4.csv", function(dataset) {
 
-	  	// console.log(dataset)
+      	// console.log(dataset)
 
-	  	dataset.forEach(function (d) {
-	  		d.date = parseDate(d.date);
-	  		d.year = parseYear(d.year);
-	  		d.freq = +d.freq;
-	  		d.vocab = +d.vocab;
-	  	});
+      	dataset.forEach(function (d) {
+      		d.date = parseDate(d.date);
+      		d.year = parseYear(d.year);
+      		d.freq = +d.freq;
+      		d.vocab = +d.vocab;
+      	});
 
-	  	// console.log(dataset);
+      	// console.log(dataset);
 
 		//Get start and end dates in dataset
 		var startDate = d3.min(dataset, function(d) { return d.date; });
@@ -90,11 +90,11 @@ function loadviz2 () {
 				   .domain([0, Math.ceil(d3.max(dataset, function(d) { return d.vocab/50; }))*50])
 				   .range([h, 0]);
 
-	  	zScale = d3.scaleLinear() //zero baseline
+      	zScale = d3.scaleLinear() //zero baseline
 				   .domain([0, d3.max(dataset, function(d) { return d.freq; })])
 				   .range([2, 10]);
 
-	  	var colorScale = d3.scaleLinear()
+      	var colorScale = d3.scaleLinear()
 				        .domain([d3.min(dataset, function(d) { return d.freq; }), d3.max(dataset, function(d) { return d.freq; })])
 				        .range([0.4, 1]);
 
@@ -262,7 +262,7 @@ function loadviz2 () {
 	     		  .ease(d3.easeLinear)
 	     		  .style("opacity", 0);
 
-	  			//Get x/y values
+      			//Get x/y values
 				var xPosition = parseFloat(d3.select(this).attr("cx"));
 				var yPosition = parseFloat(d3.select(this).attr("cy"));
 
@@ -307,12 +307,12 @@ function loadviz2 () {
 		          .style("font-size", "12px")
 		          .text("Unique Words: " + d.vocab);
 
-	    	})
-	    	.on("mouseout", function(d) {
+        	})
+        	.on("mouseout", function(d) {
 
-	    		d3.selectAll(".tooltip").remove();
+        		d3.selectAll(".tooltip").remove();
 
-	    		d3.selectAll(".legend")
+        		d3.selectAll(".legend")
 	     		  .transition()
 	     		  .delay(700)
 	     		  .duration(100)

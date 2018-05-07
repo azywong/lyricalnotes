@@ -82,7 +82,10 @@
 			</div>
 			<div class='step' data-step='2'>
 				<p>
-					We decided to start with the number of unique words in a song, expecting to see a general decrease over time. But, contrary to what we thought, the number of unique words in a song did not actually vary much. Instead, what we did find, that was interesting, were the songs that did have the highest vocabularies. (ELABORATE HERE)
+					We decided to start with the number of unique words in a song, expecting to see a general decrease over time. But, contrary to what we thought, the number of unique words in a song did not actually vary much. Instead, what we did find, that was interesting, were the songs that did have the highest vocabularies.
+				</p>
+				<p>
+					Notice Thrift Shop in the upper right hand corner and other songs with high unique word count that also have rap sections. (such as Gold Digger and Get Low).
 				</p>
 
 			</div>
@@ -181,25 +184,19 @@
 			// update graphic based on step
 			chart.select("svg").remove();
 			chart.append("svg");
+			chart.classed('chart-big', true);
+
 			d3.select("#selection")
 				.classed("hidden", true)
 				.classed("show", false);
 			if (response.index == 0) {
-				chart.classed('chart-big', true)
-				.classed('chart-small', false);
 				loadviz1();
 			} else if (response.index == 1) {
-				chart.classed('chart-big', true)
-				.classed('chart-small', false);
 				loadviz2();
 			} else if (response.index == 2) {
-				chart.classed('chart-small', true)
-				.classed('chart-big', false);
 				loadviz3();
 			}
 			 else if (response.index == 3) {
-			 	chart.classed('chart-small', true)
-			 	.classed('chart-big', false);
 				d3.select("#selection")
 					.classed("hidden", false)
 					.classed("show", true);
