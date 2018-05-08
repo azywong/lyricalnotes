@@ -59,7 +59,7 @@
 					<form class="viz4-form">
 						<label>
 						  Keyword
-						  <input type="text" class="input-select" value="baby"/>
+						  <input type="text" class="input-select" placeholder="Enter a word or symbol" value="baby"/>
 						</label>
 					</form>
 				</div>
@@ -84,7 +84,7 @@
 					We decided to start with the number of unique words in a song, expecting to see a general decrease over time. But, contrary to what we thought, the number of unique words in a song did not actually vary much. Instead, what we did find, that was interesting, were the songs that did have the highest vocabularies.
 				</p>
 				<p>
-					Notice Thrift Shop in the upper right hand corner and other songs with high unique word count that also have rap sections. (such as Gold Digger and Get Low).
+					Notice Thrift Shop in the upper right hand corner and other songs with high unique word count that also have lengthy rap sections. (such as Gold Digger and Get Low).
 				</p>
 
 			</div>
@@ -101,7 +101,7 @@
 					</ol>
 			</div>
 			<div class='step' data-step='4'>
-				<p>If you’re wondering how the usage of other words varied, simply input your favorite word (or symbol, or name, or slang) below and if it’s among the 46,193 unique words that we’ve rostered, the graph will output your word’s usage over time.</p>
+				<p>If you’re wondering how the usage of other words varied, simply input your favorite word (or symbol, or name, or slang) in the search bar to the right and if it’s among the 46,193 unique words that we’ve rostered, the graph will output your word’s usage over time.</p>
 			</div>
 		</div>
 	</section>
@@ -134,6 +134,9 @@
 	<script src='scripts/viz3.js'></script>
 	<script src='scripts/viz4.js'></script>
 	<script>
+		window.onbeforeunload = function () {
+		  window.scrollTo(0, 0);
+		}
 		// using d3 for convenience
 		var container = d3.select('#scroll');
 		var graphic = container.select('.scroll__graphic');

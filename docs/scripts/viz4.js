@@ -54,10 +54,7 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
   var xExtent = d3.extent(data, function(d) { return d.year; });
 
   x.domain(d3.extent(data, function(d) { return d.year; }));
-  y.domain([
-    d3.min(keywords[0], function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
-    d3.max(keywords[0], function(c) { return d3.max(c.values, function(d) { return d.count; }); })
-  ]);
+
 
   xGroup.call(xAxis);
 	yGroup.call(yAxis)
@@ -190,11 +187,14 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
       }
     };
 
-    console.log(keywords);
-    console.log(indexKey);
-    console.log(index);
-
     if (index > -1) {
+
+      y.domain([0,
+        d3.max(keywords[indexKey][index].values, function(c) { return c.count; })
+      ]);
+
+      yGroup.call(yAxis);
+
       var keyword = g.selectAll(".keyword")
       .data([keywords[indexKey][index]])
       .enter().append("g")
@@ -206,6 +206,7 @@ d3.csv("data/viz4_startToC.csv", function(d, _, columns) {
     	.attr("id", function(d) {
         	return d.id.toUpperCase();
         });
+
 
     var focus = g.append("g")
           .attr("class", "focus")

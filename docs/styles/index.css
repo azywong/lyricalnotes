@@ -93,6 +93,11 @@ h2.intro {
 #footer {
 	border-top: 1px dashed #000;
 }
+.input-select {
+	font-family: 'Poppins';
+	font-size: 18px;
+	width: 15rem;
+}
 /*VIS1*/
 .labels {
 	font-family: 'Poppins', sans-serif;
