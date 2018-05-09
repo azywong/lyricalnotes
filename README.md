@@ -14,7 +14,7 @@ located in /docs folder
 ### purpose
 gets song chart data from http://billboard.modulo.site/
 
-and accompanying lyrics data from https://orion.apiseeds.com/
+and accompanying lyrics data from https://orion.apiseeds.com/ or https://github.com/rhnvrm/lyric-api	
 
 currently it is limited to 1990-2015
 
@@ -70,7 +70,13 @@ module.exports = config;
 	- to remove duplicates, run the following in terminal
 	
 	sort missing.tsv | uniq > missing-unique.tsv
-	
+
+/songs/:fileName
+	- gets all lyrics from a specific billboard json file (saved locally)
+	- takes the file location + name as input
+
+/missinglyrics
+	- creates a missing.tsv file with information about all songs in billboard data set with missing lyrics	
 
 
 
