@@ -46,15 +46,14 @@ a:hover {
 }
 
 .intro__hed {
-	font-size: 1.4rem;
-	margin: 1.5rem auto;
+	font-size:2.5rem;
 	text-transform: uppercase;
 	font-weight: 900;
 	letter-spacing: 0.05em;
 }
 
 .intro__dek {
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 }
 
 /* demo */
