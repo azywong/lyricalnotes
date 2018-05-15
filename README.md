@@ -14,7 +14,7 @@ located in /docs folder
 ### purpose
 gets song chart data from http://billboard.modulo.site/
 
-and accompanying lyrics data from https://orion.apiseeds.com/ or https://github.com/rhnvrm/lyric-api	
+and accompanying lyrics data from https://orion.apiseeds.com/ and https://github.com/rhnvrm/lyric-api	
 
 currently it is limited to 1990-2015
 
@@ -33,7 +33,7 @@ module.exports = config;
 
 `node app.js`
 
-### end points
+### node.js end points
 /lyrics/:fileName
 
 	- where fileName is the name of a file with all the data from a certain billboard date
@@ -48,7 +48,7 @@ module.exports = config;
 	- Each API call is saved as <date>.json
 
 
-/date?:date
+/date/:date
 
 	- where date is the date in the format that the billboard api wants
 	- files are saved as <date>.json
@@ -68,17 +68,35 @@ module.exports = config;
 	- saves all missing songs in missing.tsv
 	- HAS DUPLICATES
 	- to remove duplicates, run the following in terminal
-	
-	sort missing.tsv | uniq > missing-unique.tsv
+	- sort missing.tsv | uniq > missing-unique.tsv
 
 /songs/:fileName
+
 	- gets all lyrics from a specific billboard json file (saved locally)
 	- takes the file location + name as input
 
 /missinglyrics
-	- creates a missing.tsv file with information about all songs in billboard data set with missing lyrics	
+
+	- creates a missing.tsv file with information about all songs in billboard data set with missing lyrics
 
 
+/getmissinglyrics
+	
+	- requires missing-unique.tsv (the aggregate file of missing lyrics)
+	- uses apiseeds api to run through the missing songs for lyrics
+	
+
+/lgget
+	
+	- requires missing-unique-2.tsv (the aggregate file of missing lyrics)
+	- uses lyrics-get npm package to get more missing lyrics
+
+
+/missingunique
+	
+	- requires missing-unique-2.tsv (the aggregate file of missing lyrics)
+	- goes through missing-unique-2.tsv, and if song files don't exist, add it to missing-unique-3.tsv
+	- creates missing-unique-3.tsv which is a subset of missing-unique-2.tsv that still doesn't have lyrics
 
 
 None of the endpoints actually do/return anything, they just spin and save files.
