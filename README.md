@@ -1,15 +1,93 @@
 # lyricalnotes
 
-## Web portion
+# project write up
+https://docs.google.com/document/d/1QpyhTGKJNkaBwNbFvk8FzATcaUi5xgRW74LpQchLyb8/edit?usp=sharing
+
+# documentation
+
+## /docs
 
 ### purpose
-to host our project's data visualization portion
+Web portion to host our project's data visualization portion
 
 ### location
 located in /docs folder
 
+### details
 
-## Node.js App
+/beta
+
+	- our initial visualizations for the beta release are hosted here
+
+/data
+
+	- data for each visualization is hosted here
+	
+/scripts-alt
+
+	- our "old" scripts folder with scripts for each viz relating to the static index without scrollytelling
+
+/scripts
+
+	- where the javascript files (written by us) for each visualization are hosted
+	
+/styles
+
+	- where the css files (written by us) for the website are hosted
+
+/vendor
+
+	- where the vendor files are stored, css and javascript libararies we did not write
+
+index.html is our main site
+static.html is the static initial site without scrollytelling
+
+## /data
+### purpose
+where the raw data for our project was stored
+
+### details
+<songId>-lyrics.json
+	
+	- lyrics file for <songId>
+
+<date>.json
+	
+	- that week's billboard chart data
+
+/missing
+
+	- update to previously missing lyrics files (same naming convention and format)
+
+## /processed-data
+### purpose
+Where the processed data files (after running through R) for each visualization initially were kept.  We went through several iterations, so these files are the initial ones
+
+## /views
+### purpose
+to host the views for the node.js app.  Originally Allison was going to use node/express/jade to build the site.  But as we did not need backend processing power, and no one else had worked with jade templating, this idea was abandoned.
+
+## other files in main folder
+
+### missing*.tsv
+	
+	- files with information on songs with missing lyrics in our dataset
+	- We went through several iterations trying to find more lyrics.
+	- missing.tsv is the aggregate (with duplicates) from all the billboard files
+	- missing-unique*.tsv are the unique remaining songs with no lyrics as went went on
+	- the most up to date is missing-unique-3.tsv with 804 entries
+	-missingFreq.csv is the frequency of missing songs BEFORE we ran more code to get lyrics
+
+### package.json
+	
+	- the node.js packages we used in the node.js portion
+
+### VizProj.R
+
+	- the R file we used to clean up and aggregate the data.
+
+
+## app.js
 
 ### purpose
 gets song chart data from http://billboard.modulo.site/
@@ -19,7 +97,7 @@ and accompanying lyrics data from https://orion.apiseeds.com/ and https://github
 currently it is limited to 1990-2015
 
 ### config.js
-needs a config file that contains the follow.  Replace key with your API key from https://orion.apiseeds.com/
+needs a config file in the main folder that contains the following.  Replace key with your API key from https://orion.apiseeds.com/
 
 ```
 var config = {
@@ -32,6 +110,8 @@ module.exports = config;
 ### getting started
 
 `node app.js`
+
+then access localhost:8080/<your chosen endpoint> in the browser
 
 ### node.js end points
 /lyrics/:fileName
