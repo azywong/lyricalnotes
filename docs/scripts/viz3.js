@@ -217,7 +217,7 @@ function loadviz3() {
                             {
                                   note: {
                                     label: "In the wake of September 11, rallies for peace and outpours of support sees the word \"love\" flood the airwaves.",
-                                    title: "September 2011",
+                                    title: "September 2001",
                                     wrap: 250,
                                     align: "middle"
                                   },
