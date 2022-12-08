@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "csv": "^3.0.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "jade": "^1.11.0",
     "lyric-get": "^1.0.3",
     "tsv": "^0.2.0"
